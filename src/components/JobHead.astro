@@ -1,0 +1,111 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { getCurrentLocale, getLocalizedData } from "../i18n/utils";
+import { WORKING_PLACES } from "../constants";
+
+interface Props {
+  job: CollectionEntry<"jobs">;
+}
+interface NestedRecord {
+  [k: string]: string | NestedRecord;
+}
+
+const { job } = Astro.props;
+const {
+  title: jobTitle,
+  workingHours,
+  workingPlace,
+  jobDate,
+  tasks,
+  qualifications,
+} = job.data;
+const currentLocale = getCurrentLocale(Astro.currentLocale);
+const { jobs: jobTexts } = getLocalizedData({ currentLocale });
+const employmentType = jobTexts.details.workingHoursLDEnum[workingHours];
+const currentYear = new Date().getFullYear();
+const endOfYear = new Date(currentYear, 11, 31);
+
+let jobLocation: NestedRecord = {};
+if (workingPlace === WORKING_PLACES.first) {
+  jobLocation = {
+    "@type": "Place",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "Teststreet 1",
+      addressLocality: WORKING_PLACES.first,
+      postalCode: "53227",
+      addressRegion: "North Rhine-Westphalia",
+      addressCountry: "Germany",
+    },
+  };
+}
+if (workingPlace === WORKING_PLACES.second) {
+  jobLocation = {
+    "@type": "Place",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "Teststreet 1",
+      addressLocality: WORKING_PLACES.second,
+      postalCode: "20457",
+      addressRegion: "Hamburg",
+      addressCountry: "Germany",
+    },
+  };
+}
+if (workingPlace === WORKING_PLACES.third) {
+  jobLocation = {
+    "@type": "Place",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "Teststreet 1",
+      addressLocality: WORKING_PLACES.third,
+      postalCode: "15-445",
+      addressRegion: "Podlaskie",
+      addressCountry: "Poland",
+    },
+  };
+}
+
+const schema: NestedRecord[] = [
+  {
+    "@context": "http://schema.org",
+    "@type": "Corporation",
+    name: "Company",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "Teststreet",
+      addressLocality: "Bonn",
+      postalCode: "53227",
+      addressCountry: "Germany",
+    },
+  },
+  {
+    "@context": "http://schema.org",
+    "@type": "JobPosting",
+    title: jobTitle,
+    description: `<p>Dann bewirb Dich jetzt bei uns als ${jobTitle}!</p><br>"<p>Was Dich bei uns erwartet</p><ul>${tasks.map(({ task }) => `<li>${task}</li>`)}</ul><br><p>Wenn Du folgende Voraussetzungen mitbringst</p><ul>${qualifications.map(({ qualification }) => `<li>${qualification}</li>`)}</ul><p>… dann wollen wir Dich kennenlernen!</p>"`,
+    datePosted: jobDate.toLocaleDateString("de-DE", {
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit",
+    }),
+    validThrough: endOfYear.toLocaleDateString("de-DE", {
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit",
+    }),
+    hiringOrganization: {
+      "@type": "Organization",
+      name: "Company",
+    },
+    employmentType: employmentType,
+    jobLocation: jobLocation,
+  },
+];
+---
+
+<script
+  is:inline
+  type="application/ld+json"
+  set:html={JSON.stringify(schema)}
+/>

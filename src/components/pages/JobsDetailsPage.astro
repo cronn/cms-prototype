@@ -1,0 +1,89 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { getCurrentLocale, getLocalizedData } from "../../i18n/utils";
+import { Image } from "astro:assets";
+import FormattedDate from "../FormattedDate.astro";
+import jobHeader from "../../images/blog-placeholder-2.jpg";
+import CheckedListItem from "../ui/CheckedListItem.astro";
+import JobLayout from "../../layouts/JobLayout.astro";
+
+interface Props {
+  job: CollectionEntry<"jobs">;
+}
+
+const currentLocale = getCurrentLocale(Astro.currentLocale);
+const { jobs: jobTexts } = getLocalizedData({ currentLocale });
+
+const { job } = Astro.props;
+const {
+  title,
+  jobDate,
+  workingHours,
+  workingPlace,
+  tasks,
+  qualifications,
+  benefits,
+} = job.data;
+---
+
+<JobLayout job={job}>
+  <article class="mx-auto">
+    <div class="relative mb-12">
+      <Image
+        width={1020}
+        height={510}
+        src={jobHeader}
+        alt="title image"
+        class="max-h-96 object-cover"
+      />
+      <div class="absolute inset-0 flex flex-col items-start justify-center">
+        <p class="my-2 ml-8 text-white">{workingPlace}</p>
+        <h1 class="ml-8 text-white">{title} {jobTexts.details.titleSuffix}</h1>
+        <p class="ml-8 text-white">
+          {jobTexts.details.jobDateFrom}<FormattedDate date={jobDate} /> | {
+            jobTexts.details.workingHoursEnum[workingHours]
+          }
+        </p>
+      </div>
+    </div>
+    <div class="divide-y divide-y-2 divide-dotted divide-teal-500">
+      <div class="pb-12">
+        <p class="m-0 p-0 text-xl">{jobTexts.details.whoWeAre}</p>
+        <h2 class="mb-4">{jobTexts.details.weAreTitle}</h2>
+        <p>{jobTexts.details.weAreDescription}</p>
+      </div>
+      <div class="py-16">
+        <h3>{jobTexts.details.tasks}</h3>
+        <ul>
+          {tasks.map(({ task }) => <CheckedListItem item={task} />)}
+        </ul>
+      </div>
+      <div class="py-16">
+        <h3>{jobTexts.details.qualifications}</h3>
+        <ul>
+          {
+            qualifications.map(({ qualification }) => (
+              <CheckedListItem item={qualification} />
+            ))
+          }
+        </ul>
+      </div>
+      <div class="py-16">
+        <h3 class="mb-8">{jobTexts.details.benefits}</h3>
+        <div
+          class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4"
+        >
+          {
+            benefits.map(({ benefit }) => (
+              <div class="rounded shadow-sm shadow-teal-500">
+                <div class="p-6">
+                  <p>{benefit}</p>
+                </div>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </div>
+  </article>
+</JobLayout>

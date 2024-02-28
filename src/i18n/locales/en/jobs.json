@@ -1,0 +1,24 @@
+{
+  "title": "Jobs",
+  "openPositions": "Open positions",
+  "noOpenPositions": "No open positions in",
+  "details": {
+    "jobDateFrom": "from",
+    "workingHoursEnum": {
+      "fullTime": "full-time",
+      "partTime": "part-time"
+    },
+    "workingHoursLDEnum": {
+      "fullTime": "FULL_TIME",
+      "partTime": "PART_TIME"
+    },
+    "titleSuffix": "(m/f/d)",
+    "whoWeAre": "who we are",
+    "weAreTitle": "we are a company",
+    "weAreDescription": "Change the way you do business - adopt unparalleled enterprises. We use our long-term market foci to proactively manage our emerging market expectations. Our industry leader development lifecycle enables holistic, mission critical standpoints. Our business transforms best practices to globally and reliably synergise our self-driving stand-up.",
+    "tasks": "What tasks await you",
+    "qualifications": "If you meet the following requirements",
+    "benefits": "our benefits",
+    "benefitsTitle": "Work at company"
+  }
+}

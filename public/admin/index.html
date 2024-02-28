@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>Content Manager</title>
+  </head>
+  <body>
+    <!-- Include the script that builds the page and powers Decap CMS -->
+    <!-- <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+    <script>
+      CMS.registerEditorComponent({
+        // -> https://decapcms.org/docs/custom-widgets/
+        id: "quote",
+        label: "Zitat",
+        fields: [
+          { name: "authorPic", label: "Bild Autor*in", widget: "image" },
+          {
+            name: "authorPicAltText",
+            label: "Alternativtext Bild",
+            widget: "string",
+          },
+          { name: "quote", label: "Zitat", widget: "string" },
+          { name: "authorName", label: "Autor*in", widget: "string" },
+        ],
+        pattern:
+          /^<figure class="flex rounded-md p-6 my-4 border-l-4 border-teal-200 bg-teal-50">$\s*?<img$\s*?class="w-24 h-24 md:w-32 md:h-32 rounded-full"$\s*?src="(.*?)"$\s*?alt="(.*?)"$\s*?\/>$\s*?<div class="pt-6 md:p-8 text-center md:text-left space-y-1">$\s*?<blockquote class="border-none pl-0">$\s*?<p class="text-lg font-medium italic mb-0">(.*?)<\/p>$\s*?<\/blockquote>$\s*?<figcaption class="font-medium mt-0">(.*?)<\/figcaption>$\s*?<\/div>$\s*?<\/figure>$/ms,
+        fromBlock: function (match) {
+          return {
+            authorPic: match[1],
+            authorPicAltText: match[2],
+            quote: match[3],
+            authorName: match[4],
+          };
+        },
+        toBlock: function (data) {
+          return `<figure class="flex rounded-md p-6 my-4 border-l-4 border-teal-200 bg-teal-50">
+              <img
+                class="w-24 h-24 md:w-32 md:h-32 rounded-full"
+                src="${data.authorPic}"
+                alt="${data.authorPicAltText}"
+              />
+              <div class="pt-6 md:p-8 text-center md:text-left space-y-1">
+                <blockquote class="border-none pl-0">
+                  <p class="text-lg font-medium italic mb-0">${data.quote}</p>
+                </blockquote>
+                <figcaption class="font-medium mt-0">${data.authorName}</figcaption>
+              </div>
+            </figure>`;
+        },
+        toPreview: function (data) {
+          return `<figure class="flex rounded-md p-6 my-4 border-l-4 border-teal-200 bg-teal-50">
+              <img
+                class="w-24 h-24 md:w-32 md:h-32 rounded-full"
+                src="${data.authorPic}"
+                alt="${data.authorPicAltText}"
+              />
+              <div class="pt-6 md:p-8 text-center md:text-left space-y-1">
+                <blockquote class="border-none pl-0">
+                  <p class="text-lg font-medium italic mb-0">${data.quote}</p>
+                </blockquote>
+                <figcaption class="font-medium mt-0">${data.authorName}</figcaption>
+              </div>
+            </figure>`;
+        },
+      });
+    </script>
+  </body>
+</html>

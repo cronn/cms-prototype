@@ -1,0 +1,14 @@
+---
+import type { LinkProps } from "../types/data";
+type Props = LinkProps;
+
+const { href, background = "light", ...props } = Astro.props;
+---
+
+<a
+  href={href}
+  class={`text-lg ${background === "light" ? "hover:text-gray-50  text-gray-950" : "text-gray-50 hover:text-gray-950"}  underline decoration-solid decoration-3 underline-offset-8 font-normal transition ease-in-out`}
+  {...props}
+>
+  <slot />
+</a>

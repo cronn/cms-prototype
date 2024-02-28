@@ -1,0 +1,40 @@
+---
+import HeaderLink from "./HeaderLink.astro";
+import Link from "./Link.astro";
+import LanguagePicker from "./LanguagePicker.astro";
+import { getRelativeLocaleUrl } from "astro:i18n";
+import { getCurrentLocale, getLocalizedData } from "../i18n/utils";
+import Logo from "./icons/Logo.astro";
+
+const currentLocale = getCurrentLocale(Astro.currentLocale);
+const { header } = getLocalizedData({ currentLocale });
+---
+
+<header class="bg-teal-500 py-4">
+  <nav
+    class="mx-4 flex flex-col items-center justify-around gap-4 md:mx-0 md:flex-row md:gap-0"
+  >
+    <Link href="/">
+      <Logo className="fill-gray-950 hover:fill-gray-50" />
+    </Link>
+
+    <div class="flex flex-col gap-6 self-start md:flex-row md:self-center">
+      <HeaderLink href={getRelativeLocaleUrl(currentLocale, "/about")}
+        >{header.nav.about}</HeaderLink
+      >
+      <HeaderLink href={getRelativeLocaleUrl(currentLocale, "/blog")}
+        >{header.nav.blog}</HeaderLink
+      >
+      <HeaderLink href={getRelativeLocaleUrl(currentLocale, "referenzen")}
+        >{header.nav.references}</HeaderLink
+      >
+      <HeaderLink href={getRelativeLocaleUrl(currentLocale, "/jobs")}
+        >{header.nav.jobs}</HeaderLink
+      >
+      <HeaderLink href={getRelativeLocaleUrl(currentLocale, "/wiki")}
+        >{header.nav.wiki}</HeaderLink
+      >
+    </div>
+    <LanguagePicker />
+  </nav>
+</header>

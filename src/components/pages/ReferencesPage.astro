@@ -1,0 +1,47 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getRelativeLocaleUrl } from "astro:i18n";
+import { Image } from "astro:assets";
+import { getCurrentLocale, getLocalizedData } from "../../i18n/utils";
+import PageTitle from "../ui/PageTitle.astro";
+
+const currentLocale = getCurrentLocale(Astro.currentLocale);
+const { references: referenceTexts } = getLocalizedData({ currentLocale });
+const references = (await getCollection("references")).filter((reference) =>
+  reference.id.includes(`${currentLocale}/`),
+);
+---
+
+<BaseLayout title={referenceTexts.title} description={referenceTexts.title}>
+  <PageTitle title={referenceTexts.title} />
+  <section>
+    <ul class="grid grid-cols-3 gap-6">
+      {
+        references.map((reference) => (
+          <>
+            <li class="max-w-sm overflow-hidden rounded shadow-lg hover:shadow-xl">
+              <a
+                href={getRelativeLocaleUrl(
+                  currentLocale,
+                  `referenzen/${reference.slug.split("/")[1]}`,
+                )}
+              >
+                <Image
+                  class="max-h-40 w-full rounded-none object-cover"
+                  src={reference.data.titleImage}
+                  alt=""
+                  width={100}
+                  height={200}
+                />
+                <div class="px-6 py-4">
+                  <h2 class="mb-2 text-xl font-bold">{reference.data.title}</h2>
+                </div>
+              </a>
+            </li>
+          </>
+        ))
+      }
+    </ul>
+  </section>
+</BaseLayout>

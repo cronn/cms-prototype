@@ -1,0 +1,20 @@
+---
+import { type CollectionEntry, getCollection } from "astro:content";
+import JobsDetailsPage from "../../../components/pages/JobsDetailsPage.astro";
+
+export async function getStaticPaths() {
+  const jobs = await getCollection("jobs");
+  return jobs
+    .filter((reference) => reference.id.includes("en/"))
+    .map((reference) => {
+      const [lang, ...id] = reference.id.split("/");
+
+      return { params: { lang, id: id.join("/") }, props: reference };
+    });
+}
+type Props = CollectionEntry<"jobs">;
+
+const job = Astro.props;
+---
+
+<JobsDetailsPage job={job} />
