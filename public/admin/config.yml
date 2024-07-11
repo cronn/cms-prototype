@@ -1,0 +1,239 @@
+# when using the default proxy server port
+local_backend: true
+# publish_mode: editorial_workflow
+
+backend:
+  name: git-gateway
+  # branch: main
+  # cms_label_prefix: decap-cms/
+  # squash_merges: true
+
+media_folder: "src/images"
+
+i18n:
+  structure: "multiple_folders"
+  locales: [de, en]
+  default_locale: "de"
+
+locale: "de"
+
+collections:
+  - name: "posts"
+    title: "posts"
+    i18n: true
+    label: "Blog Posts"
+    folder: "src/content/blog"
+    create: true
+    delete: true
+    fields:
+      - name: "title"
+        label: "Post Title"
+        widget: "string"
+        i18n: true
+      - label: "OG Titel"
+        name: "ogTitle"
+        widget: "string"
+        i18n: true
+      - label: "OG Beschreibung"
+        name: "ogDescription"
+        widget: "string"
+        i18n: true
+      - label: "Titelbild"
+        name: "titleImage"
+        widget: "image"
+        i18n: true
+      - label: "PublikationsDatum"
+        name: "pubDate"
+        widget: "datetime"
+        format: "YYYY-MM-DD"
+        i18n: "duplicate"
+      - label: "Autor*innen"
+        name: "authors"
+        widget: "relation"
+        collection: "authors"
+        search_fields: ["name"]
+        value_field: "{{slug}}"
+        display_fields: ["name"]
+        multiple: true
+        min: 1
+        i18n: "duplicate"
+      - name: "body"
+        widget: "markdown"
+        label: "Post Body"
+        i18n: true
+  - name: "articles"
+    title: "articles"
+    i18n: true
+    label: "Wiki Artikel"
+    folder: "src/content/wiki"
+    create: true
+    delete: true
+    slug: "{{fields.slug}}"
+    fields:
+      - name: "title"
+        label: "Post Title"
+        widget: "string"
+        i18n: true
+      - label: "Slug"
+        name: "slug"
+        widget: "string"
+        i18n: true
+      - label: "Titelbild"
+        name: "titleImage"
+        widget: "image"
+        i18n: true
+      - label: "OG Titel"
+        name: "ogTitle"
+        widget: "string"
+        i18n: true
+      - label: "OG Beschreibung"
+        name: "ogDescription"
+        widget: "string"
+        i18n: true
+      - label: "Text"
+        name: "body"
+        widget: "markdown"
+        i18n: true
+      - label: "Weitere Themen"
+        name: "relatedArticles"
+        widget: "relation"
+        collection: "articles"
+        search_fields: ["title"]
+        value_field: "{{fields.slug}}"
+        display_fields: ["title"]
+        required: false
+        multiple: true
+        max: 3
+        i18n: true
+  - name: "references"
+    title: "references"
+    i18n: true
+    label: "Referenzen"
+    folder: "src/content/references"
+    create: true
+    delete: true
+    slug: "{{fields.slug}}"
+    fields:
+      - name: "title"
+        label: "Referenz Titel"
+        widget: "string"
+        i18n: true
+      - label: "Slug"
+        name: "slug"
+        widget: "string"
+        i18n: true
+      - label: "OG Beschreibung"
+        name: "ogDescription"
+        widget: "string"
+        i18n: true
+      - label: "Titelbild"
+        name: "titleImage"
+        widget: "image"
+        i18n: true
+      - label: "Kundenlogo"
+        name: "customerLogo"
+        widget: "image"
+        i18n: true
+      - label: "Kundentitel"
+        name: "customerTitle"
+        widget: "string"
+        i18n: true
+      - label: "Projektaspekte"
+        name: "projectAspects"
+        label_singular: "Aspekt"
+        widget: "list"
+        fields:
+          - { label: "Titel", name: "title", widget: "string" }
+          - { label: "Spezifikation", name: "specification", widget: "string" }
+        i18n: true
+      - label: "Pluspunkte"
+        name: "plusPoints"
+        label_singular: "Pluspunkt"
+        widget: "list"
+        fields:
+          - { label: "Titel", name: "title", widget: "string" }
+          - { label: "Spezifikation", name: "specification", widget: "string" }
+        i18n: true
+      - label: "Text"
+        name: "body"
+        widget: "markdown"
+        i18n: true
+      - label: "Weitere Projekte"
+        name: "relatedReferences"
+        widget: "relation"
+        collection: "references"
+        search_fields: ["title"]
+        value_field: "{{fields.slug}}"
+        display_fields: ["title"]
+        required: false
+        multiple: true
+        max: 3
+        i18n: true
+  - name: "jobs"
+    i18n: true
+    label: "Jobs"
+    folder: "src/content/jobs"
+    create: true
+    delete: true
+    extension: "json"
+    fields:
+      - name: "title"
+        label: "Titel"
+        widget: "string"
+        i18n: true
+      - label: "Datum"
+        name: "jobDate"
+        widget: "datetime"
+        format: "YYYY-MM-DD"
+        i18n: "duplicate"
+      - label: "Arbeitszeit"
+        name: "workingHours"
+        widget: "select"
+        options:
+          [
+            { label: "Vollzeit", value: "fullTime" },
+            { label: "Teilzeit", value: "partTime" },
+          ]
+        default: ["Vollzeit"]
+        i18n: true
+      - label: "Arbeitsort"
+        name: "workingPlace"
+        widget: "select"
+        options: ["Standort Eins", "Standort Zwei", "Standort Drei"]
+        i18n: true
+      - label: "Aufgaben"
+        name: "tasks"
+        label_singular: "Aufgabe"
+        widget: "list"
+        fields:
+          - { label: "Aufgabe", name: "task", widget: "string" }
+        i18n: true
+      - label: "Qualikationen"
+        name: "qualifications"
+        widget: "list"
+        label_singular: "Qualifikation"
+        fields:
+          - { label: "Qualifikation", name: "qualification", widget: "string" }
+        i18n: true
+      - label: "Benefits"
+        name: "benefits"
+        widget: "list"
+        label_singular: "Benefit"
+        fields:
+          - { label: "Benefit", name: "benefit", widget: "string" }
+        i18n: true
+  - name: "authors"
+    label: "Autor*innen"
+    folder: "src/content/authors"
+    create: true
+    delete: true
+    extension: "json"
+    slug: "{{name}}"
+    fields:
+      - name: "name"
+        identifier_field: name
+        label: "Autor*in"
+        widget: "string"
+      - label: "Bild"
+        name: "image"
+        widget: "image"

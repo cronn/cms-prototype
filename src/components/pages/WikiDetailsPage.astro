@@ -1,0 +1,96 @@
+---
+import { getEntries, type CollectionEntry } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { Image } from "astro:assets";
+import InternalLink from "../../components/InternalLink.astro";
+import { getCurrentLocale, getLocalizedData } from "../../i18n/utils";
+import { getRelativeLocaleUrl } from "astro:i18n";
+
+interface Props {
+  article: CollectionEntry<"wiki">;
+}
+
+const currentLocale = getCurrentLocale(Astro.currentLocale);
+const { wiki } = getLocalizedData({ currentLocale });
+
+const { article } = Astro.props;
+const { title, titleImage, ogDescription, ogTitle, relatedArticles } =
+  article.data;
+const { Content, headings } = await article.render();
+const relatedArticlesDetails = await getEntries(relatedArticles ?? []);
+const pathname = Astro.url.pathname;
+
+const normalizedPathname = pathname
+  .split("/")
+  .filter((entry) => entry && entry !== currentLocale)
+  .join("/");
+---
+
+<BaseLayout title={ogTitle} description={ogDescription} image={titleImage}>
+  <div class="mx-auto">
+    {
+      titleImage && (
+        <Image
+          width={1020}
+          height={255}
+          src={titleImage}
+          alt="title"
+          class="max-h-80 object-cover"
+          loading="eager"
+        />
+      )
+    }
+    <h1 class="my-8">{title}</h1>
+    <hr class="my-6" />
+    <div class="">
+      <p class="text-2xl">{wiki.content}:</p>
+      <ol class="mb-8">
+        {
+          headings
+            .filter((heading) => heading.depth === 2)
+            .map((heading) => (
+              <li class="ml-4 list-disc">
+                <InternalLink
+                  href={`${normalizedPathname}#${heading.slug.replace("/", "")}`}
+                >
+                  {heading.text}
+                </InternalLink>
+              </li>
+            ))
+        }
+      </ol>
+    </div>
+    <hr class="my-6" />
+    <Content />
+    {
+      !!relatedArticlesDetails.length && (
+        <div class="row-start-6 md:col-span-2 md:row-start-7">
+          <h3 class="mb-8 text-center">{wiki.relatedArticles}</h3>
+          <ul class="grid grid-cols-3 grid-rows-subgrid gap-8">
+            {relatedArticlesDetails?.map((article) => (
+              <li class="max-w-sm overflow-hidden rounded shadow-lg hover:shadow-xl">
+                <a
+                  href={getRelativeLocaleUrl(
+                    currentLocale,
+                    `wiki/${article.slug.split("/")[1]}`,
+                  )}
+                >
+                  <Image
+                    class="max-h-40 w-full rounded-none object-cover"
+                    src={article.data.titleImage}
+                    alt=""
+                    width={100}
+                    height={200}
+                  />
+                  <div class="px-6 py-4">
+                    <h2 class="mb-2 text-xl font-bold">{article.data.title}</h2>
+                  </div>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )
+    }
+  </div>
+</BaseLayout>

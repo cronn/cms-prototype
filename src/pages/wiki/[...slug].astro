@@ -1,0 +1,22 @@
+---
+import { type CollectionEntry, getCollection } from "astro:content";
+import WikiDetailsPage from "../../components/pages/WikiDetailsPage.astro";
+
+export async function getStaticPaths() {
+  const articles = await getCollection("wiki");
+  return articles
+    .filter((article) => article.id.includes("de/"))
+    .map((article) => {
+      const [lang, ...slug] = article.slug.split("/");
+      return {
+        params: { lang, slug: slug.join("/") || undefined },
+        props: article,
+      };
+    });
+}
+type Props = CollectionEntry<"wiki">;
+
+const article = Astro.props;
+---
+
+<WikiDetailsPage article={article} />

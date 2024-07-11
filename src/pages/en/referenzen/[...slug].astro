@@ -1,0 +1,22 @@
+---
+import { getCollection, type CollectionEntry } from "astro:content";
+import ReferenceDetailsPage from "../../../components/pages/ReferenceDetailsPage.astro";
+
+export async function getStaticPaths() {
+  const references = await getCollection("references");
+  return references
+    .filter((reference) => reference.id.includes("en/"))
+    .map((reference) => {
+      const [lang, ...slug] = reference.slug.split("/");
+      return {
+        params: { lang, slug: slug.join("/") || undefined },
+        props: reference,
+      };
+    });
+}
+type Props = CollectionEntry<"references">;
+
+const reference = Astro.props;
+---
+
+<ReferenceDetailsPage reference={reference} />

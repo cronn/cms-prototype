@@ -1,0 +1,24 @@
+{
+  "title": "Jobs",
+  "openPositions": "Offene Stellen",
+  "noOpenPositions": "Keine offenen Stellen in",
+  "details": {
+    "jobDateFrom": "ab",
+    "workingHoursEnum": {
+      "fullTime": "Vollzeit",
+      "partTime": "Teilzeit"
+    },
+    "workingHoursLDEnum": {
+      "fullTime": "FULL_TIME",
+      "partTime": "PART_TIME"
+    },
+    "titleSuffix": "(m/w/d)",
+    "whoWeAre": "wer wir sind",
+    "weAreTitle": "wir sind company",
+    "weAreDescription": "Our World-Class Synergy solution offers deliverables a suite of customer-focused offerings. Change the way you do business - adopt seamless brands. Wholesale team players are becoming actionable architecture experts. Strategically revolutionizing dynamically immersive prince2 practitioners is crucial to our cloud native standard setter.",
+    "tasks": "Was Dich bei uns erwartet",
+    "qualifications": "Wenn Du folgende Voraussetzungen mitbringst",
+    "benefits": "Unsere Angebote",
+    "benefitsTitle": "Arbeiten bei company"
+  }
+}

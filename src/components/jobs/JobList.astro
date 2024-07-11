@@ -1,0 +1,46 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { getRelativeLocaleUrl } from "astro:i18n";
+import ArrowNext from "../icons/ArrowNext.astro";
+import { type Language } from "../../i18n";
+import { getLocalizedData } from "../../i18n/utils";
+
+interface Props {
+  title: string;
+  language: Language;
+  jobs?: CollectionEntry<"jobs">[];
+}
+
+const { title, language, jobs } = Astro.props;
+const { jobs: jobTexts } = getLocalizedData({ currentLocale: language });
+---
+
+<section>
+  <h3>{title}</h3>
+  <ul class="w-full">
+    {
+      jobs?.length ? (
+        jobs.map((job) => (
+          <li class="flex items-center rounded border-2 border-blue-100 bg-blue-50 shadow-md shadow-gray-200 hover:shadow-inner">
+            <a
+              href={getRelativeLocaleUrl(
+                language,
+                `jobs/${job.id.split("/")[1]}`,
+              )}
+              class="flex w-full flex-row items-center gap-2 p-2"
+            >
+              <>
+                <ArrowNext className="fill-sky-400" width="16" height="16" />
+                <h4 class="m-0 p-0 text-xl">{job.data.title}</h4>
+              </>
+            </a>
+          </li>
+        ))
+      ) : (
+        <li class="text-gray-400">
+          {jobTexts.noOpenPositions} {title}
+        </li>
+      )
+    }
+  </ul>
+</section>

@@ -1,0 +1,38 @@
+{
+  "name": "cms-prototype",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "format": "prettier  --plugin=prettier-plugin-astro --plugin=prettier-plugin-tailwindcss --write .",
+    "lint": "eslint src"
+  },
+  "dependencies": {
+    "@astrojs/check": "0.8.0",
+    "@astrojs/mdx": "3.1.2",
+    "@astrojs/rss": "4.0.7",
+    "@astrojs/sitemap": "3.1.6",
+    "@astrojs/tailwind": "5.1.0",
+    "astro": "4.11.5"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.6.0",
+    "@tailwindcss/forms": "0.5.7",
+    "@tailwindcss/typography": "0.5.13",
+    "@types/eslint__js": "8.42.3",
+    "eslint": "9.6.0",
+    "eslint-plugin-astro": "^1.2.3",
+    "eslint-plugin-jsx-a11y": "^6.9.0",
+    "prettier": "3.3.2",
+    "prettier-plugin-astro": "0.14.0",
+    "prettier-plugin-tailwindcss": "0.6.5",
+    "sharp": "0.33.4",
+    "tailwindcss": "3.4.4",
+    "typescript": "5.5.3",
+    "typescript-eslint": "8.0.0-alpha.41"
+  }
+}

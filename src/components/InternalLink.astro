@@ -1,0 +1,19 @@
+---
+import { getCurrentLocale } from "../i18n/utils";
+import type { LinkProps } from "../types/data";
+import { getRelativeLocaleUrl } from "astro:i18n";
+type Props = LinkProps;
+const { href, background = "light", className, ...props } = Astro.props;
+const currentLocale = getCurrentLocale(Astro.currentLocale);
+---
+
+<a
+  href={getRelativeLocaleUrl(currentLocale, href.toString())}
+  class:list={[
+    `text-lg ${background === "light" ? "hover:underline-none text-teal-600 hover:bg-teal-600 hover:text-gray-50" : "text-gray-50 hover:text-gray-950"} font-normal transition ease-in-out`,
+    className,
+  ]}
+  {...props}
+>
+  <slot />
+</a>

@@ -1,0 +1,11 @@
+{
+  "nav": {
+    "logo": "Logo",
+    "home": "Startseite",
+    "blog": "Blog",
+    "references": "Referenzen",
+    "jobs": "Jobs",
+    "wiki": "Wiki",
+    "about": "Über uns"
+  }
+}

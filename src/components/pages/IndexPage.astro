@@ -1,0 +1,22 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCurrentLocale, getLocalizedData } from "../../i18n/utils";
+
+const currentLocale = getCurrentLocale(Astro.currentLocale);
+const { index } = getLocalizedData({ currentLocale });
+---
+
+<BaseLayout title={index.title} description={index.title}>
+  <h1>🧑‍🚀 {index.primaryHeading}</h1>
+  <p>
+    {index.paragraphOne}
+  </p>
+  <p>
+    {index.paragraphTwo}
+  </p>
+  <p>{index.paragraphThree}</p>
+
+  <p>
+    {index.paragraphFour}
+  </p>
+</BaseLayout>

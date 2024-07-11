@@ -1,0 +1,133 @@
+---
+import { getEntries, type CollectionEntry } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { Image } from "astro:assets";
+import { getCurrentLocale, getLocalizedData } from "../../i18n/utils";
+import { getRelativeLocaleUrl } from "astro:i18n";
+
+interface Props {
+  reference: CollectionEntry<"references">;
+}
+
+const currentLocale = getCurrentLocale(Astro.currentLocale);
+const { references: referenceTexts } = getLocalizedData({ currentLocale });
+
+const { reference } = Astro.props;
+
+const {
+  title,
+  titleImage,
+  customerLogo,
+  customerTitle,
+  projectAspects,
+  plusPoints,
+  relatedReferences,
+  ogDescription,
+} = reference.data;
+const { Content } = await reference.render();
+
+const relatedReferencesDetails = await getEntries(relatedReferences ?? []);
+---
+
+<BaseLayout title={title} description={ogDescription} image={titleImage}>
+  <article class="mx-auto">
+    <div class="relative mb-12">
+      <Image
+        width={1020}
+        height={510}
+        src={titleImage}
+        alt="title"
+        class="max-h-64 w-full object-cover"
+        loading="eager"
+      />
+      <div class="absolute inset-0 flex items-center justify-start">
+        <h1 class="ml-4 bg-gray-950/30 p-2 text-white">{title}</h1>
+      </div>
+    </div>
+    <div class="grid-auto-rows col-auto grid gap-8">
+      <div class="col-span-1 row-start-2 mb-8 md:row-start-1">
+        <h2 class="flex flex-col">
+          <span class="text-lg font-normal">{referenceTexts.ourCustomer}:</span>
+          {customerTitle}
+        </h2>
+        <hr class="h-px w-10/12 border-2 border-solid border-teal-500" />
+      </div>
+      <div
+        class="col-span-1 col-start-1 row-start-1 mb-4 md:col-start-2 md:mb-0"
+      >
+        <Image
+          width={60}
+          height={60}
+          src={customerLogo}
+          alt="customer logo"
+          loading="eager"
+        />
+      </div>
+      <!-- <div class="row-span-4"> -->
+      <div class="row-start-4 md:row-span-4 md:row-start-2">
+        <Content />
+      </div>
+
+      <div
+        class="col-span-1 row-start-3 md:col-start-2 md:row-span-1 md:row-start-2"
+      >
+        <h4 class="mb-4">{referenceTexts.theProject}</h4>
+        {
+          projectAspects.map((aspect) => (
+            <>
+              <h5>{aspect.title}</h5>
+              <p>{aspect.specification}</p>
+            </>
+          ))
+        }
+      </div>
+      <!-- plus points -->
+      <div
+        class="col-span-1 row-start-5 md:col-start-2 md:row-span-1 md:row-start-4"
+      >
+        <h4 class="mb-4">{referenceTexts.plusPoints}</h4>
+        {
+          plusPoints.map((plus) => (
+            <>
+              <h5>{plus.title}</h5>
+              <p>{plus.specification}</p>
+            </>
+          ))
+        }
+      </div>
+      <!-- related references -->
+      {
+        !!relatedReferencesDetails.length && (
+          <div class="row-start-6 md:col-span-2 md:row-start-7">
+            <h3 class="mb-8 text-center">{referenceTexts.otherProjects}</h3>
+            <ul class="grid grid-cols-3 grid-rows-subgrid gap-8">
+              {relatedReferencesDetails?.map((reference) => (
+                <li class="max-w-sm overflow-hidden rounded shadow-lg hover:shadow-xl">
+                  <a
+                    href={getRelativeLocaleUrl(
+                      currentLocale,
+                      `referenzen/${reference.slug.split("/")[1]}`,
+                    )}
+                  >
+                    <Image
+                      class="max-h-40 w-full rounded-none object-cover"
+                      src={reference.data.titleImage}
+                      alt=""
+                      width={100}
+                      height={200}
+                    />
+                    <div class="px-6 py-4">
+                      <h2 class="mb-2 text-xl font-bold">
+                        {reference.data.title}
+                      </h2>
+                    </div>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )
+      }
+    </div>
+  </article>
+</BaseLayout>

@@ -1,0 +1,20 @@
+---
+import { getRelativeLocaleUrl } from "astro:i18n";
+import { LANGUAGES } from "../i18n";
+const localePath = Astro.url.pathname?.replace(`/${LANGUAGES.EN}`, "");
+const isGerman = Astro.currentLocale === LANGUAGES.DE;
+---
+
+<div class="flex flex-row gap-2">
+  <a
+    href={getRelativeLocaleUrl("de", `${localePath}`)}
+    class=`text-gray-950 uppercase hover:text-gray-50 ${isGerman && "underline decoration-solid underline-offset-8"}`
+    >{LANGUAGES.DE}</a
+  >
+  <div>/</div>
+  <a
+    href={getRelativeLocaleUrl("en", `${localePath}`).replace(/\/+$/, "")}
+    class=` text-gray-950 uppercase hover:text-gray-50 ${!isGerman && "underline decoration-solid underline-offset-8 "}`
+    >{LANGUAGES.EN}</a
+  >
+</div>
