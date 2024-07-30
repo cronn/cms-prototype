@@ -19,7 +19,11 @@ const image = "";
 <!doctype html>
 <html lang={currentLocale}>
   <head>
-    <BaseHead title={`${job.data.title}, ${job.data.workingPlace}`} description={description} image={image} />
+    <BaseHead
+      title={`${job.data.title}, ${job.data.workingPlace}`}
+      description={description}
+      image={image}
+    />
     <JobHead job={job} />
   </head>
   <body class="text-gray-0 flex min-h-screen flex-col text-lg">
