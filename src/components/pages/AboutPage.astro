@@ -9,7 +9,7 @@ const currentLocale = getCurrentLocale(Astro.currentLocale);
 const { about, header } = getLocalizedData({ currentLocale });
 ---
 
-<BaseLayout title={header.nav.about} description={header.nav.about}>
+<BaseLayout title={header.nav.about} ogDescription={header.nav.about}>
   <PageTitle title={header.nav.about} />
   <article class="prose mx-auto text-lg">
     <div class="mx-auto">

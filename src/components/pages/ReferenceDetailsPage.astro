@@ -29,7 +29,7 @@ const { Content } = await reference.render();
 const relatedReferencesDetails = await getEntries(relatedReferences ?? []);
 ---
 
-<BaseLayout title={title} description={ogDescription} image={titleImage}>
+<BaseLayout title={title} ogDescription={ogDescription} image={titleImage}>
   <article class="mx-auto">
     <div class="relative mb-12">
       <Image

@@ -26,7 +26,12 @@ const normalizedPathname = pathname
   .join("/");
 ---
 
-<BaseLayout title={ogTitle} description={ogDescription} image={titleImage}>
+<BaseLayout
+  title={title}
+  ogTitle={ogTitle}
+  ogDescription={ogDescription}
+  image={titleImage}
+>
   <div class="mx-auto">
     {
       titleImage && (

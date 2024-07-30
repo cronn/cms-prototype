@@ -14,7 +14,12 @@ const { blog } = getLocalizedData({ currentLocale });
 const postAuthors = await getEntries(authors);
 ---
 
-<BaseLayout title={ogTitle} description={ogDescription} image={titleImage}>
+<BaseLayout
+  title={title}
+  ogTitle={ogTitle}
+  ogDescription={ogDescription}
+  image={titleImage}
+>
   <article class="prose text-lg">
     <div class="mx-auto">
       {titleImage && <img width={1020} height={510} src={titleImage} alt="" />}

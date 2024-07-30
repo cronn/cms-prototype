@@ -12,7 +12,7 @@ const articles = (await getCollection("wiki")).filter((article) =>
 );
 ---
 
-<BaseLayout title={wiki.title} description={wiki.title}>
+<BaseLayout title={wiki.title} ogDescription={wiki.title}>
   <PageTitle title={wiki.title} />
   <section>
     <ul class="w-full">
