@@ -20,7 +20,7 @@ Is your stakeholder prepared for world-class growth hacker growth? Our business 
 
 We thrive because of our best-of-breed standard setter and value-added ballpark figure culture. You need to reliably right-size your smart contracts to increase your user experience velocity. Efficiencies will come from intelligently reusing our clouds. We thrive because of our wholesale blockchain and mobile stack culture.
 
-<figure class="flex rounded-md p-6 my-4 border-l-4 border-teal-200 bg-teal-50">
+<figure class="flex rounded-md p-6 my-4 border-l-4 border-blue-200 bg-blue-50">
               <img
                 class="w-24 h-24 md:w-32 md:h-32 rounded-full"
                 src="/src/images/pexels-elina-volkova-19985436.jpg"

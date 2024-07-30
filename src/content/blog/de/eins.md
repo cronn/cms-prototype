@@ -5,8 +5,8 @@ ogDescription: Erster Post
 titleImage: /src/images/pexels-barbaventuras-20116341.jpg
 pubDate: 2024-04-12
 authors:
-  - hans-dampf
   - marie-musterfrau
+  - max-mustermann
 ---
 ## Is your bandwidth prepared for senior brand growth? 
 

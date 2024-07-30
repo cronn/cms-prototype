@@ -7,13 +7,12 @@ const { href, ...props } = Astro.props;
 
 const { pathname } = Astro.url;
 const subpath = pathname.replace("/en", "").match(/[^/]+/g);
-const isActive =
-  href === pathname || (subpath?.[0] && href?.toString().includes(subpath[0]));
+const isActive = href === pathname || (subpath?.[0] && href?.toString().includes(subpath[0]));
 ---
 
 <a
   href={href}
-  class={`text-xl font-medium transition ease-in-out hover:text-gray-50 ${isActive ? "text-gray-50 underline decoration-solid underline-offset-8" : "text-gray-950"}`}
+  class={`text-xl font-medium transition ease-in-out hover:text-blue-700 ${isActive ? "text-blue-700 underline decoration-solid underline-offset-8" : "text-gray-950"}`}
   {...props}
 >
   <slot />

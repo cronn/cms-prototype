@@ -10,7 +10,7 @@ const currentLocale = getCurrentLocale(Astro.currentLocale);
 <a
   href={getRelativeLocaleUrl(currentLocale, href.toString())}
   class:list={[
-    `text-lg ${background === "light" ? "hover:underline-none text-teal-600 hover:bg-teal-600 hover:text-gray-50" : "text-gray-50 hover:text-gray-950"} font-normal transition ease-in-out`,
+    `text-lg ${background === "light" ? "hover:underline-none text-gray-600 hover:bg-gray-600 hover:text-gray-50" : "text-gray-50 hover:text-gray-950"} font-normal transition ease-in-out`,
     className,
   ]}
   {...props}
