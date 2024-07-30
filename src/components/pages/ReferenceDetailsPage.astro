@@ -29,7 +29,7 @@ const { Content } = await reference.render();
 const relatedReferencesDetails = await getEntries(relatedReferences ?? []);
 ---
 
-<BaseLayout title={title} description={ogDescription} image={titleImage}>
+<BaseLayout title={title} ogDescription={ogDescription} image={titleImage}>
   <article class="mx-auto">
     <div class="relative mb-12">
       <Image
@@ -50,7 +50,7 @@ const relatedReferencesDetails = await getEntries(relatedReferences ?? []);
           <span class="text-lg font-normal">{referenceTexts.ourCustomer}:</span>
           {customerTitle}
         </h2>
-        <hr class="h-px w-10/12 border-2 border-solid border-teal-500" />
+        <hr class="h-px w-10/12 border-2 border-solid border-gray-500" />
       </div>
       <div
         class="col-span-1 col-start-1 row-start-1 mb-4 md:col-start-2 md:mb-0"

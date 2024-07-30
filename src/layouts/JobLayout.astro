@@ -21,12 +21,12 @@ const image = "";
   <head>
     <BaseHead
       title={`${job.data.title}, ${job.data.workingPlace}`}
-      description={description}
+      ogDescription={description}
       image={image}
     />
     <JobHead job={job} />
   </head>
-  <body class="text-slate-0 flex min-h-screen flex-col text-lg">
+  <body class="text-gray-0 flex min-h-screen flex-col text-lg">
     <Header />
     <main
       class="xs:max-w-screen-xs md:max-screen-md mx-auto my-8 w-full grow sm:max-w-screen-sm md:px-0 lg:max-w-screen-lg"

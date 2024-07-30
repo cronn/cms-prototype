@@ -5,8 +5,8 @@ ogDescription: First Post
 titleImage: /src/images/pexels-barbaventuras-20116341.jpg
 pubDate: 2024-04-12
 authors:
-  - hans-dampf
   - marie-musterfrau
+  - max-mustermann
 ---
 ## Company-wide propositions are becoming mobile market focus experts. 
 

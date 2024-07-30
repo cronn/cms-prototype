@@ -20,7 +20,7 @@ Our stand-up development lifecycle enables cloud native, self-driving step-chang
 
 Dynamically engineering strategically customer-focused synergies is crucial to our company-wide growth hacker. You need to globally synergise your siloes to increase your platform velocity. Efficiencies will come from ethically impacting our verticals. We aim to reliably virtualise our proposition by conservatively revolutionizing our competitive innovative emerging markets.
 
-<figure class="flex rounded-md p-6 my-4 border-l-4 border-teal-200 bg-teal-50">
+<figure class="flex rounded-md p-6 my-4 border-l-4 border-blue-200 bg-blue-50">
               <img
                 class="w-24 h-24 md:w-32 md:h-32 rounded-full"
                 src="/src/images/pexels-elina-volkova-19985436.jpg"

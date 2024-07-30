@@ -6,7 +6,7 @@ const currentLocale = getCurrentLocale(Astro.currentLocale);
 const { index } = getLocalizedData({ currentLocale });
 ---
 
-<BaseLayout title={index.title} description={index.title}>
+<BaseLayout title={index.title} ogDescription={index.title}>
   <h1>🧑‍🚀 {index.primaryHeading}</h1>
   <p>
     {index.paragraphOne}
