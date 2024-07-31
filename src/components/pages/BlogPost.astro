@@ -3,6 +3,8 @@ import { getEntries, type CollectionEntry } from "astro:content";
 import FormattedDate from "../FormattedDate.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { getCurrentLocale, getLocalizedData } from "../../i18n/utils";
+import { Image } from "astro:assets";
+import { dynamicImageImport } from "../../utils/dynamicImageImport";
 
 type Props = CollectionEntry<"blog">["data"];
 
@@ -22,7 +24,16 @@ const postAuthors = await getEntries(authors);
 >
   <article class="prose text-lg">
     <div class="mx-auto">
-      {titleImage && <img width={1020} height={510} src={titleImage} alt="" />}
+      {
+        titleImage && (
+          <Image
+            width={1020}
+            height={510}
+            src={dynamicImageImport[titleImage]()}
+            alt={title}
+          />
+        )
+      }
     </div>
     <div>
       <div>
