@@ -32,7 +32,7 @@ Inside of your Astro project, you'll see the following folders and files:
 │   ├── styles/
 │   ├── types/
 │   └── constants.ts
-├── .prettierrs.mjs
+├── .prettierrc.mjs
 ├── astro.config.mjs
 ├── eslint.config.mjs
 ├── package.json
