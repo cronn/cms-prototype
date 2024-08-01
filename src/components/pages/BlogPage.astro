@@ -39,8 +39,8 @@ function getAuthors(
             <a href={`blog/${post.slug.split("/")[1]}`}>
               {post.data.titleImage && (
                 <Image
-                  width={720}
-                  height={360}
+                  width={350}
+                  height={250}
                   src={dynamicImageImport[post.data.titleImage]()}
                   alt={post.data.title}
                 />

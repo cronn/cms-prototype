@@ -1,14 +1,19 @@
 ---
 import type { HTMLAttributes } from "astro/types";
+import { LANGUAGES } from "../i18n";
 
 type Props = HTMLAttributes<"a">;
 
 const { href, ...props } = Astro.props;
 
 const { pathname } = Astro.url;
-const subpath = pathname.replace("/en", "").match(/[^/]+/g);
+const normalizedPathname = pathname.replace(".html", "");
+const subpath = normalizedPathname
+  .replace(`/${LANGUAGES.EN}`, "")
+  .match(/[^/]+/g);
 const isActive =
-  href === pathname || (subpath?.[0] && href?.toString().includes(subpath[0]));
+  href === normalizedPathname ||
+  (subpath?.[0] && href?.toString().includes(subpath[0]));
 ---
 
 <a
