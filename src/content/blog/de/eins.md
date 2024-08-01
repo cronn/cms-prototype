@@ -1,7 +1,7 @@
 ---
 title: Eins
 ogTitle: eins
-ogDescription: Erster Post
+ogDescription: Dies ist ein Test, hier gibt es nichts zu sehen.
 titleImage: /src/images/pexels-barbaventuras-20116341.jpg
 pubDate: 2024-04-12
 authors:
