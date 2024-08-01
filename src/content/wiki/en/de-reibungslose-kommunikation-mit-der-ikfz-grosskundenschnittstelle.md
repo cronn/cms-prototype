@@ -1,6 +1,6 @@
 ---
 title: Reibungslose Kommunikation mit der i-Kfz-Großkundenschnittstelle
-slug: en/reibungslose-kommunikation-mit-der-ikfz-grosskundenschnittstelle
+slug: en/ikfz
 titleImage: /src/images/ikfz-titel.svg
 ogTitle: Ihre Software als Kfz-Großkunde
 ogDescription: iKfz-Wikiartikel
