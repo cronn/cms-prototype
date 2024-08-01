@@ -3,7 +3,7 @@ title: Competent expertise for entertaining streaming
 slug: en/streamingspaß
 ogDescription: streamingspaß-Referenz
 titleImage: /src/images/pexels-elina-volkova-19985436.jpg
-customerLogo: /src/images/autor1.jpg
+customerLogo: /src/images/g4611.png
 customerTitle: streamingspaß
 projectAspects:
   - title: Services
