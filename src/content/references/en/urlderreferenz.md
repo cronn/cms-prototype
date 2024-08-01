@@ -3,7 +3,7 @@ title: Neue Referenz
 slug: en/urlderreferenz
 ogDescription: OG
 titleImage: /src/images/pexels-winson-ng-20057853.jpg
-customerLogo: /src/images/g50.png
+customerLogo: /src/images/g51.png
 customerTitle: Kunde
 projectAspects:
   - title: Nice sausage
