@@ -3,7 +3,7 @@ title: Bequeme Lieferketten- und Auftragsverwaltung
 slug: de/eieiei
 ogDescription: eieiei-Referenz
 titleImage: /src/images/pexels-canacrtrk-20035207.jpg
-customerLogo: /src/images/g50.png
+customerLogo: /src/images/g4705.png
 customerTitle: eieiei
 projectAspects:
   - title: Leistungen
