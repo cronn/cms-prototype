@@ -5,10 +5,6 @@ titleImage: /src/images/ikfz-titel.svg
 ogTitle: Ihre Software als Kfz-Großkunde
 ogDescription: iKfz-Wikiartikel
 ---
-![]()
-
-![]()
-
 Digitale An- und Abmeldung von hunderten Kraftfahrzeugen? Läuft! Über Software, die cronn entwickelt hat und die mit der Großkundenschnittstelle (GKS) für i-Kfz Stufe 4 des Kraftfahrt-Bundesamts alle notwendigen Daten austauscht.
 
 ### i-Kfz – Die Zukunft der Autozulassung für Großkunden
@@ -20,8 +16,6 @@ Seit dem 1. September 2023 ist die Neuverkündung der Fahrzeug-Zulassungsverordn
 ### Wie greift man auf die neue Schnittstelle des Kraftfahrt-Bundesamtes zu?
 
 Damit das gelingt braucht es auf Seiten der Großkunden aber eine zuverlässige Software, die alle Daten problemlos an die Schnittstelle sendet. cronn hat genau das für einen Partner entwickelt. Für einen Zulassungsdienstleister konzipierten und bauten wir die Zulassersoftware [ZULEX](https://www.zulex.de/). Teil davon ist eine nahtlose Integration der GKS.
-
-
 
 ### Digitalisierung gelingt nur mit hervorragender Software
 
