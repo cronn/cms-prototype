@@ -4,6 +4,8 @@ slug: de/datenextraktion-mit-ki
 titleImage: /src/images/datenextraktion-titel.svg
 ogTitle: Automatische Datenextraktion mit KI
 ogDescription: Wikiartikel zu Datenextraktion mit KI
+relatedArticles:
+  - de/datenextraktion-mit-ki
 ---
 Unternehmen jonglieren täglich mit zahlreichen Daten in Form von E-Mails, Nachrichten oder Dokumenten. Diese Daten manuell zu erfassen und zu analysieren wird schnell zeitaufwändig. In diesem Artikel stellen wir vor, wie künstliche Intelligenzen wie ChatGPT Abhilfe schaffen können, indem sie Informationen automatisch auslesen.
 
