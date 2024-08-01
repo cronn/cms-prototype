@@ -13,8 +13,7 @@ projectAspects:
 plusPoints:
   - title: Agil
     specification: Itterative and good
-relatedReferences:
-  - en/erste-referenz
+relatedReferences: []
 ---
 Our stand-up development lifecycle enables cloud native, self-driving step-changes. Virtually facilitating effectively world-class stacks is crucial to our long-term market focus. We thrive because of our best-of-breed standard setter and proactive cloud culture. Key players will take ownership of their diversities by proactively transforming best-in-class architectures.
 
