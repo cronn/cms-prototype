@@ -29,7 +29,7 @@ const articles = (await getCollection("wiki")).filter((article) =>
                   class="max-h-48 w-full shrink rounded-none object-cover"
                   src={dynamicImageImport[article.data.titleImage]()}
                   alt={article.data.title}
-                  width={100}
+                  width={550}
                   height={200}
                 />
                 <div class="px-6 py-4">
