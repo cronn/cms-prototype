@@ -4,7 +4,7 @@ slug: de/streamingspaß
 ogDescription: streamingspaß-Referenz
 titleImage: /src/images/pexels-elina-volkova-19985436.jpg
 customerLogo: /src/images/autor1.jpg
-customerTitle: blabla
+customerTitle: streamingspaß
 projectAspects:
   - title: Leistungen
     specification: Softwareentwicklung, Testautomatisierung, Last- und
