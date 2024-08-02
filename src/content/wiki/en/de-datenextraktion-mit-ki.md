@@ -10,7 +10,7 @@ relatedArticles:
 ---
 Unternehmen jonglieren täglich mit zahlreichen Daten in Form von E-Mails, Nachrichten oder Dokumenten. Diese Daten manuell zu erfassen und zu analysieren wird schnell zeitaufwändig. In diesem Artikel stellen wir vor, wie künstliche Intelligenzen wie ChatGPT Abhilfe schaffen können, indem sie Informationen automatisch auslesen.
 
-### Welche Vorteile bietet die automatische Datenextraktion für Unternehmen?
+## Welche Vorteile bietet die automatische Datenextraktion für Unternehmen?
 
 Die automatische Datenextraktion mit künstlicher Intelligenz (KI) aus E-Mails, Nachrichten und Dokumenten bietet eine Reihe von Vorteilen aus Unternehmenssicht:
 
@@ -33,11 +33,11 @@ Die automatische Datenextraktion mit künstlicher Intelligenz (KI) aus E-Mails, 
 
   Durch die automatische Extraktion und Analyse von Daten aus Unternehmens­dokumenten kann die Einhaltung von gesetzlichen Vorschriften überwacht und Risiken besser gemanagt werden.
 
-### Welche Herausforderungen birgt die automatische Datenextraktion mit Hilfe von KI?
+## Welche Herausforderungen birgt die automatische Datenextraktion mit Hilfe von KI?
 
 Trotz dieser Vorteile sind bei der Implementierung solcher Systeme auch Herausforderungen zu berücksichtigen, wie beispiel­sweise Datenschutz und Sicherheit, die Qualität und Relevanz der extrahierten Daten und die Notwendigkeit, das System ständig zu überwachen und anzupassen, um sicherzustellen, dass es wie beabsichtigt funktioniert.
 
-### Wie funktioniert die Datenextraktion mit KI?
+## Wie funktioniert die Datenextraktion mit KI?
 
 Die Daten­extraktion aus Texten mit ChatGPT, oder allgemein mit großen Sprach­modellen (Large Language Models, LLMs), basiert auf der Fähigkeit dieser Modelle, menschliche Sprache zu „verstehen“ und semantische Zusammenhänge in Texten zu erkennen. Im Kern handelt es sich dabei um eine automatisierte Textanalyse. Der grundlegende Prozess sieht wie folgt aus:
 
@@ -54,7 +54,7 @@ Die Daten­extraktion aus Texten mit ChatGPT, oder allgemein mit großen Sprach�
 
   Nachdem ChatGPT eine Antwort geliefert hat, wird diese oft noch weiterverarbeitet, um sie in ein standardisiertes Format zu überführen, das von nachgelagerten Computer­systemen leichter verarbeitet werden kann. In manchen Fällen kann das Modell auch dazu gebracht werden, direkt im gewünschten Ausgabeformat zu antworten.
 
-### Wie kann cronn Unternehmen bei der automatischen Datenextraktion unterstützen?
+## Wie kann cronn Unternehmen bei der automatischen Datenextraktion unterstützen?
 
 Als Software­entwickler verfügt cronn über Erfahrungen aus hunderten Projekten und steht Kunden mit Rat und Tat zur Seite. Um eine automatisierte Daten­extraktion zu ermöglichen, geht cronn wie folgt vor:
 
@@ -68,7 +68,7 @@ Unsere Analysten und Software­entwickler
 6. unterstützen Sie bei der Integration des Services in bereits vorhandene Software
 7. übernehmen die Pflege der Prompts und des Services, damit Sie von Aktualisierungen profitieren und sicherheits­kritische Updates verwenden können
 
-### Fazit
+## Fazit
 
 Die KI-gestützte Daten­extraktion aus E-Mails, Nachrichten und Dokumenten spart Zeit und entlastet das Personal. Sie eröffnet neue Analyse­möglichkeiten, die mit herkömmlichen Methoden nur schwer zugänglich waren.
 
