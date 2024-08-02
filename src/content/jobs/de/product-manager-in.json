@@ -1,0 +1,66 @@
+{
+  "workingHours": "fullTime",
+  "jobDate": "2024-06-01",
+  "title": "Product Manager/-in",
+  "workingPlace": "Standort Eins",
+  "tasks": [
+    {
+      "task": "Du arbeitest mit bestehenden und potenziellen Kunden zusammen, um die Marktanforderungen und Kundenbedürfnisse zu verstehen und daraus klare Produktziele abzuleiten"
+    },
+    {
+      "task": "Als Teil des Vertriebes ist es Deine Aufgabe neue Kunden der Produkte zu identifizieren, zu akquirieren und Bestandskunden weiterzuentwickeln"
+    },
+    {
+      "task": "Du bereitest Ideen für unsere Produkte als User Stories auf, um sicherzustellen, dass die Entwicklungsarbeit genau auf die Bedürfnisse unserer Kunden zugeschnitten ist"
+    },
+    {
+      "task": "Du ergänzt das Produkt-Backlog und berätst bei der fortlaufenden Priorisierung der Anforderungen in Abstimmung mit dem Product Owner"
+    },
+    {
+      "task": "Du führst Markt- und Wettbewerbsanalysen durch, um frühzeitig neue Produktideen zu identifizieren und Potenziale für Produktverbesserungen sowie die Integration neuer Technologien zu erkennen"
+    },
+    {
+      "task": "Du entwickelst Business Cases und verfolgst diese konsequent und eigenständig"
+    }
+  ],
+  "qualifications": [
+    {
+      "qualification": "Du hast ein Studium in Informatik, Naturwissenschaften oder Betriebswirtschaftslehre mindestens gut abgeschlossen"
+    },
+    {
+      "qualification": "Du bringst bereits Berufserfahrung in einem ähnlichen Tätigkeitsfeld mit, idealerweise im digitalen Produktmanagement, in der Produktentwicklung oder im Vertrieb von Softwareprodukten"
+    },
+    {
+      "qualification": "Du hast bereits fundierte Kenntnisse in agilen Entwicklungsmethoden wie Scrum"
+    },
+    {
+      "qualification": "Du bringst Spaß an der Arbeit in Matrixfunktionen und Leidenschaft für digitale Produkte mit"
+    },
+    {
+      "qualification": "Du hast bereits Erfahrung mit cloudbasierten Produkten und Services"
+    },
+    {
+      "qualification": "Du bringst Berufserfahrung im Vertrieb von Softwarelösungen, IT-Dienstleistungen oder IT-Projekten mit"
+    }
+  ],
+  "benefits": [
+    {
+      "benefit": "Unser Team und unsere Fähigkeiten  Unser Slogan lautet: wir entwickeln software_ – und das tun wir mit Leidenschaft und Freude. Wir mögen Software Craftsmanship, guten Code und punkten mit einem Team, das fachlich wie menschlich überzeugt."
+    },
+    {
+      "benefit": "Interessante & herausfordernde Projekte  Unsere Projekte sind branchenübergreifend angelegt. Wir arbeiten für Start-ups genauso wie für Konzerne. Wir sind dabei nicht festgelegt, sondern möchten mit und an den Aufgaben wachsen."
+    },
+    {
+      "benefit": "Hardware & Betriebssystem nach Deinem Wunsch  Du weißt schließlich am besten, womit Du gerne arbeitest. Unsere Arbeitsplätze sind zudem mit höhenverstellbaren Tischen und ergonomischen Stühlen ausgestattet.​"
+    },
+    {
+      "benefit": "Weiterbildungsmöglichkeiten  Mit einem jährlichen Fortbildungsbudget und 2 Tagen Sonderurlaub möchten wir jeden cronner in der persönlichen Weiterentwicklung fördern – sei es mit Konferenzen, Workshops oder Zertifizierungen, alleine, zu zweit oder mit dem ganzen Team."
+    },
+    {
+      "benefit": "Flexible Arbeitszeiten & 30 Urlaubstage  Um unseren cronnern das bestmögliche Verhältnis zwischen Arbeits- und Privatleben zu ermöglichen, bieten wir flexible Arbeitszeiten und Home-Office-Tage.​"
+    },
+    {
+      "benefit": " Firmen- & Teamevents  Spätestens nach Deiner ersten Weihnachtsfeier mit uns wirst Du merken, dass wir gerne und gut zusammen feiern. Aber auch über das restliche Jahr verteilt finden immer mal wieder Events statt: ob Biertastings, Sommerfeste, Teilnahmen an Läufen, Ausflüge, gemeinsame Cycling-Runden oder einfach nur unser wöchentliches Feierabendbier. Alles kann, nichts muss.​"
+    }
+  ]
+}
