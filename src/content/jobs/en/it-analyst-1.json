@@ -1,0 +1,74 @@
+{
+  "title": "IT Analyst",
+  "workingHours": "fullTime",
+  "workingPlace": "Standort Eins",
+  "tasks": [
+    {
+      "task": "Einstieg in die Softwareentwicklung als IT-Analyst/-in (m/w/d) ohne einschlägige Vorkenntnisse"
+    },
+    {
+      "task": "Strukturierte Einarbeitung durch Dein cronn-Team"
+    },
+    {
+      "task": "Analyse von geschäftsbezogenen Aufgaben, Anforderungserfassung sowie IT-Systemanalyse"
+    },
+    {
+      "task": "Arbeit an der Schnittstelle zwischen Entwicklung und Fachabteilung/Kunde und ggf. als Proxy Product Owner"
+    },
+    {
+      "task": "Erstellen von Spezifikationen / Schnittstellenspezifikationen"
+    },
+    {
+      "task": "Kommunikation mit dem Kunden"
+    },
+    {
+      "task": "Die Möglichkeit, Dich gemäß Deinen Stärken und Vorlieben auch in andere Gebiete (automatisiertes Testen) einzuarbeiten, wo Du dann auch Tests für die Software entwickelst"
+    }
+  ],
+  "qualifications": [
+    {
+      "qualification": "Du hast Spaß an der Analyse komplexer Systeme und hast das möglichst auch in Deinen bisherigen Tätigkeiten unter Beweis gestellt"
+    },
+    {
+      "qualification": "Das Thema Softwaretests klingt für Dich nach einer spannenden Aufgabe, in die Du Dich – falls Du Interesse hast – tiefer einarbeiten möchtest"
+    },
+    {
+      "qualification": "Du besitzt einen überdurchschnittlichen Hochschulabschluss in Informatik, Maschinenbau, Elektrotechnik oder als Naturwissenschaftler (z.B. in Mathematik, Physik, Chemie) – gerne auch mit Promotion"
+    },
+    {
+      "qualification": "Dir gehen Deutsch und Englisch fließend über die Finger und Zunge"
+    },
+    {
+      "qualification": "Du arbeitest selbstständig und eigenverantwortlich"
+    },
+    {
+      "qualification": "Du kommunizierst gerne mit Menschen und legst das Erreichte auch gerne schriftlich nieder"
+    },
+    {
+      "qualification": "Du organisierst Deine Arbeit gut und verlierst das Ziel nicht aus den Augen"
+    },
+    {
+      "qualification": "und als Add-On Du vielleicht darüber hinaus noch Erfahrungen mit einigen der folgenden Tools, Methoden und Technologien gesammelt hast: Java und objektorientierte Programmierung, Scrum und Jira, UML und BPMN, LaTex, DITA, Docbook oder Markdown-Sprachen, Relationale Datenbanken und SQL, IntelliJ, Eclipse, Git"
+    }
+  ],
+  "benefits": [
+    {
+      "benefit": "Unser Team und unsere Fähigkeiten  Unser Slogan lautet: wir entwickeln software_ – und das tun wir mit Leidenschaft und Freude. Wir mögen Software Craftsmanship, guten Code und punkten mit einem Team, das fachlich wie menschlich überzeugt."
+    },
+    {
+      "benefit": "Interessante & herausfordernde Projekte  Unsere Projekte sind branchenübergreifend angelegt. Wir arbeiten für Start-ups genauso wie für Konzerne. Wir sind dabei nicht festgelegt, sondern möchten mit und an den Aufgaben wachsen."
+    },
+    {
+      "benefit": "Hardware & Betriebssystem nach Deinem Wunsch  Du weißt schließlich am besten, womit Du gerne arbeitest. Unsere Arbeitsplätze sind zudem mit höhenverstellbaren Tischen und ergonomischen Stühlen ausgestattet.​"
+    },
+    {
+      "benefit": "Weiterbildungsmöglichkeiten  Mit einem jährlichen Fortbildungsbudget und 2 Tagen Sonderurlaub möchten wir jeden cronner in der persönlichen Weiterentwicklung fördern – sei es mit Konferenzen, Workshops oder Zertifizierungen, alleine, zu zweit oder mit dem ganzen Team."
+    },
+    {
+      "benefit": "Flexible Arbeitszeiten & 30 Urlaubstage  Um unseren cronnern das bestmögliche Verhältnis zwischen Arbeits- und Privatleben zu ermöglichen, bieten wir flexible Arbeitszeiten und Home-Office-Tage.​"
+    },
+    {
+      "benefit": "Ein cooles Office in der Innenstadt In unserem modernen, hellen und gut gelegenen Büro in der Hamburger Innenstadt lässt es sich angenehm arbeiten. Aufgrund der citynahen Lage finden sich einige schöne Cafés und Läden in unmittelbarer Umgebung.​"
+    }
+  ]
+}
