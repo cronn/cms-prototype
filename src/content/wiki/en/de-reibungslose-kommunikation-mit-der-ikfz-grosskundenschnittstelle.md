@@ -3,7 +3,8 @@ title: Reibungslose Kommunikation mit der i-Kfz-Großkundenschnittstelle
 slug: en/ikfz
 titleImage: /src/images/ikfz-titel.svg
 ogTitle: Ihre Software als Kfz-Großkunde
-ogDescription: iKfz-Wikiartikel
+ogDescription: Mit maßgeschneiderten Anwendungen von cronn melden Sie problemlos
+  hunderte Kfz im Jahr an und ab.
 ---
 Digitale An- und Abmeldung von hunderten Kraftfahrzeugen? Läuft! Über Software, die cronn entwickelt hat und die mit der Großkundenschnittstelle (GKS) für i-Kfz Stufe 4 des Kraftfahrt-Bundesamts alle notwendigen Daten austauscht.
 
