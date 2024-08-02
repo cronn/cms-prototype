@@ -1,40 +1,40 @@
 {
   "workingHours": "fullTime",
-  "jobDate": "2024-07-01",
-  "title": "Senior-Software-Developer",
-  "workingPlace": "Standort Eins",
+  "jobDate": "2024-08-01",
+  "title": "Sales Manager/-in Softwarelösungen",
+  "workingPlace": "Standort Zwei",
   "tasks": [
     {
-      "task": "Du unterstützt unser Team und unsere Kunden bei der agilen Softwareentwicklung, bei der jeder im Team seine Ideen, Konzepte und sein Feedback einbringt"
+      "task": "Du gewinnst neue Kunden für unsere Dienstleistungen im Umfeld und Bereich der Softwareentwicklungsprojekte"
     },
     {
-      "task": "Du übernimmst Mitverantwortung für den Erfolg des Teams bei der Entwicklung geschäftskritischer, kundenspezifischer Softwarelösungen in verschiedenen Business Umgebungen"
+      "task": "Du nimmst aktiv Kontakt zu potenziellen Neukunden auf und erweiterst Dein Netzwerk an Kundenkontakten"
     },
     {
-      "task": "TDD, Pair-Programming, Code-Reviews, Knowledge-Sharing, Craftsmanship, CI & CD begegnen Dir in Deiner täglichen Arbeit"
+      "task": "Du entwickelst identifizierte Leads zu Neukunden – gern auch auf Messen und Netzwerkveranstaltungen"
     },
     {
-      "task": "Entwicklung im Backend u.a. mit Java, Kotlin, Spring Boot, Spring Cloud, Hibernate/JPA, REST, Gradle, Jenkins/GitLab, Docker, Kubernetes, JUnit etc. und/oder im Frontend mit TypeScript, React, Angular, Selenium/Playwright/Cypress, Jenkins/GitLab etc. – Du musst aber nicht in allen Bereichen Experte sein"
+      "task": "Du erarbeitest mit den Kollegen aus Vertrieb und Marketing eigene Sales-Kampagnen"
     }
   ],
   "qualifications": [
     {
-      "qualification": "Du hast mehrjährige Erfahrung in der (agilen) Softwareentwicklung"
+      "qualification": "Du bist ein geborener Hunter – die Akquise von Neukunden ist genau Dein Ding"
     },
     {
-      "qualification": "Clean Code und Software-Craftsmanship sind keine Fremdworte für Dich"
+      "qualification": "Du weißt aber auch, wie Farming funktioniert und wie man ein Partnermanagement aufbaut"
     },
     {
-      "qualification": "Du schreibst Tests genauso gerne wie produktiven Code und refactorst gern"
+      "qualification": "Du bringst Berufserfahrung im Vertrieb von Softwarelösungen, IT-Dienstleistungen oder IT-Projekten mit"
     },
     {
-      "qualification": "Teamplayer und selbstständiges Arbeiten sind keine Gegensätze für Dich"
+      "qualification": "Du hast ein Studium erfolgreich abgeschlossen"
     },
     {
-      "qualification": "Du hast ein fachbezogenes Studium mit Erfolg abgeschlossen"
+      "qualification": "Du hast idealerweise bereits ein eigenes Netzwerk an (potenziellen) Kunden"
     },
     {
-      "qualification": "Deutsch und Englisch gehen Dir fließend über Finger und Zunge"
+      "qualification": "Dir gehen Deutsch und Englisch fließend über Finger und Zunge"
     }
   ],
   "benefits": [
@@ -54,7 +54,7 @@
       "benefit": "Flexible Arbeitszeiten & 30 Urlaubstage  Um unseren cronnern das bestmögliche Verhältnis zwischen Arbeits- und Privatleben zu ermöglichen, bieten wir flexible Arbeitszeiten und Home-Office-Tage.​"
     },
     {
-      "benefit": "Ein cooles Office am Bonner Bogen  In unserem modernen, hellen und gut gelegenen Büro lässt es sich Wohlfühlen. ​Am Arcade-Automaten oder Kickertisch kannst Du jederzeit eine Runde zocken, es gibt guten (!) Kaffee und eine Getränkeflatrate. Und falls mal der kleine Hunger kommt, ist auch dafür gesorgt. Ansonsten sind Foodtruck, Bäcker und Kantinen auch nicht weit.​​​"
+      "benefit": "Ein cooles Office in der Innenstadt  In unserem modernen, hellen und gut gelegenen Büro in der Hamburger Innenstadt lässt es sich angenehm arbeiten. Aufgrund der citynahen Lage finden sich einige schöne Cafés und Läden in unmittelbarer Umgebung.​"
     }
   ]
 }
