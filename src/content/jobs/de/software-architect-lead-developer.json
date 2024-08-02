@@ -1,0 +1,63 @@
+{
+  "workingHours": "fullTime",
+  "jobDate": "2024-08-02",
+  "title": "Software Architect / Lead Developer",
+  "workingPlace": "Standort Eins",
+  "tasks": [
+    {
+      "task": "Du übernimmst die Beratung, Analyse, Konzeption und Implementierung von modernen Softwarearchitekturen basierend auf Java (Spring) und / oder TypeScript (React)"
+    },
+    {
+      "task": "In Deinem Team hast Du die Rolle des technischen Leads"
+    },
+    {
+      "task": "Du definierst und optimierst in Zusammenarbeit mit Team und Kunden die Entwicklungsprozesse im Projekt und wählst Sprachen, Frameworks, Tools, Prozesse und Methoden aus, die am besten zum jeweiligen Projekt passen"
+    },
+    {
+      "task": "Du stimmst mit dem Team und externen Stakeholdern Qualitätsanforderungen wie Effizienz, Zuverlässigkeit, Benutzbarkeit ab und setzt diese um"
+    },
+    {
+      "task": "Du sicherst die exzellente Qualität durch Deinen direkten Draht zu den Softwaretestern im Projekt"
+    }
+  ],
+  "qualifications": [
+    {
+      "qualification": "Du hast bereits moderne Architekturen mit Java (Spring) / TypeScript (React) umgesetzt bzw. Software-Architekturen definiert"
+    },
+    {
+      "qualification": "Agile Softwareentwicklungsprozesse sind Dein Heimspiel"
+    },
+    {
+      "qualification": "Dich interessieren Geschäftsmodelle, Produkte und Erfolg unserer Kunden"
+    },
+    {
+      "qualification": "Deine guten analytischen wie auch starken kommunikativen Fähigkeiten helfen Dir bei der Erfüllung Deiner komplexen Aufgaben"
+    },
+    {
+      "qualification": "Deutsch und Englisch gehen Dir fließend über Finger und Zunge"
+    },
+    {
+      "qualification": "Du hast ein fachbezogenes Studium erfolgreich abgeschlossen"
+    }
+  ],
+  "benefits": [
+    {
+      "benefit": "Unser Team und unsere Fähigkeiten  Unser Slogan lautet: wir entwickeln software_ – und das tun wir mit Leidenschaft und Freude. Wir mögen Software Craftsmanship, guten Code und punkten mit einem Team, das fachlich wie menschlich überzeugt."
+    },
+    {
+      "benefit": "Interessante & herausfordernde Projekte  Unsere Projekte sind branchenübergreifend angelegt. Wir arbeiten für Start-ups genauso wie für Konzerne. Wir sind dabei nicht festgelegt, sondern möchten mit und an den Aufgaben wachsen."
+    },
+    {
+      "benefit": "Hardware & Betriebssystem nach Deinem Wunsch  Du weißt schließlich am besten, womit Du gerne arbeitest. Unsere Arbeitsplätze sind zudem mit höhenverstellbaren Tischen und ergonomischen Stühlen ausgestattet.​"
+    },
+    {
+      "benefit": "Weiterbildungsmöglichkeiten  Mit einem jährlichen Fortbildungsbudget und 2 Tagen Sonderurlaub möchten wir jeden cronner in der persönlichen Weiterentwicklung fördern – sei es mit Konferenzen, Workshops oder Zertifizierungen, alleine, zu zweit oder mit dem ganzen Team."
+    },
+    {
+      "benefit": "Flexible Arbeitszeiten & 30 Urlaubstage  Um unseren cronnern das bestmögliche Verhältnis zwischen Arbeits- und Privatleben zu ermöglichen, bieten wir flexible Arbeitszeiten und Home-Office-Tage.​"
+    },
+    {
+      "benefit": "Ein cooles Office am Bonner Bogen  In unserem modernen, hellen und gut gelegenen Büro lässt es sich Wohlfühlen. ​Am Arcade-Automaten oder Kickertisch kannst Du jederzeit eine Runde zocken, es gibt guten (!) Kaffee und eine Getränkeflatrate. Und falls mal der kleine Hunger kommt, ist auch dafür gesorgt. Ansonsten sind Foodtruck, Bäcker und Kantinen auch nicht weit.​​​"
+    }
+  ]
+}
