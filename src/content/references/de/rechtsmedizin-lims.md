@@ -1,6 +1,6 @@
 ---
 title: Ein spezialisiertes LIMS für ein spezielles Institut
-slug: rechtsmedizin-lims
+slug: de/rechtsmedizin-lims
 ogDescription: limsilims-Referenz
 titleImage: /src/images/pexels-barbaventuras-20116341.jpg
 customerLogo: /src/images/g4629.png
