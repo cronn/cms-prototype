@@ -1,0 +1,20 @@
+{
+  "title": "Dublikat Erster Job 2",
+  "workingHours": "fullTime",
+  "workingPlace": "Standort Eins",
+  "tasks": [
+    {
+      "task": "Alles abarbeiten"
+    }
+  ],
+  "qualifications": [
+    {
+      "qualification": "Sehr gut sein"
+    }
+  ],
+  "benefits": [
+    {
+      "benefit": "Gratis Limo"
+    }
+  ]
+}
