@@ -1,0 +1,75 @@
+{
+  "workingHours": "fullTime",
+  "jobDate": "2024-08-02",
+  "title": "Junior-Frontend-Developer",
+  "workingPlace": "Standort Drei",
+  "tasks": [
+    {
+      "task": "Frontend development with JavaScript and TypeScript"
+    },
+    {
+      "task": "Learning path to explore together with experienced developer assigned to you as your mentor"
+    },
+    {
+      "task": "TDD, Pair Programming, Code Reviews"
+    },
+    {
+      "task": "Small and experienced teams where you can learn by doing"
+    },
+    {
+      "task": "Knowledge Sharing, Craftsmanship, Continuous Improvement"
+    },
+    {
+      "task": "Development of business-critical, customer-specific software solutions"
+    }
+  ],
+  "qualifications": [
+    {
+      "qualification": "You know basics of JavaScript and TypeScript"
+    },
+    {
+      "qualification": "…but you are still willing to learn and get hands-on experience"
+    },
+    {
+      "qualification": "Quality, agility, open-mindedness and passion describe your working style"
+    },
+    {
+      "qualification": "Clean Code and Software Craftsmanship are no foreign words for you"
+    },
+    {
+      "qualification": "You can communicate in English in speaking as well as in writing"
+    },
+    {
+      "qualification": "You are going to love writing tests as much as productive code"
+    },
+    {
+      "qualification": "You have successfully completed a subject-related course of study (or are in the process of doing so)"
+    },
+    {
+      "qualification": "You are willing to work on-site in our cool office in Białystok"
+    },
+    {
+      "qualification": "on top of this, you want to gain experience with a few of the following tools and technologies: ReactJS, Redux, MobX, NPM, Webpack, Babel, Mocha/Jest/QUnit, Cucumber, Selenium, Testcontainers, Git, SonarQube, Jenkins; Mobile-First-, Offline-First-Design"
+    }
+  ],
+  "benefits": [
+    {
+      "benefit": "Our teams and our abilities  Our catchphrase is „wir entwicklen software“ – developing software brings us joy. We believe in Software Craftsmanship, good code and score with a team that brings both competence and a healthy attitude to the table.​das tun wir mit Leidenschaft und Freude. Wir mögen Software Craftsmanship, guten Code und punkten mit einem Team, das fachlich wie menschlich überzeugt."
+    },
+    {
+      "benefit": "Interesting and challenging software development projects  Our projects are laid out within in a wide scope of fields. We show the same enthusiasm for start-ups as we do for multinational corporations. We embrace challenges and believe in development and growth.egt. Wir arbeiten für Start-ups genauso wie für Konzerne. Wir sind dabei nicht festgelegt, sondern möchten mit und an den Aufgaben wachsen."
+    },
+    {
+      "benefit": "Hardware and operating system according to your preferences  Because you know best what you like to work with. On top of that all of our work stations are equipped with height-adjustable tables and ergonomic chairs.​ Du gerne arbeitest. Unsere Arbeitsplätze sind zudem mit höhenverstellbaren Tischen und ergonomischen Stühlen ausgestattet.​"
+    },
+    {
+      "benefit": "Further training opportunities  We encourage personal growth with a yearly further education budget and two days exceptional leave for you to use on conferences, workshops or certifications – alone, with a colleague or with the whole team.​rlaub möchten wir jeden cronner in der persönlichen Weiterentwicklung fördern – sei es mit Konferenzen, Workshops oder Zertifizierungen, alleine, zu zweit oder mit dem ganzen Team."
+    },
+    {
+      "benefit": "Flexible working hours  We want cronners to find their best possible work-life balance: that’s why we have flexible working hours and home office days.und Privatleben zu ermöglichen, bieten wir flexible Arbeitszeiten und Home-Office-Tage.​"
+    },
+    {
+      "benefit": "A cool office  It’s easy to feel comfortable in our modern, sunny and well-located office. We have good tea and coffee (really good!) and unlimited soft drinks. We also make sure there’s always something to nibble on, be it sweet, salty or healthy.​ühlen. ​Es gibt guten (!) Kaffee und eine Getränkeflatrate. Und falls mal der kleine Hunger kommt, ist auch dafür gesorgt.​​"
+    }
+  ]
+}
