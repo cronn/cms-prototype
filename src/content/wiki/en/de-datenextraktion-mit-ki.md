@@ -3,7 +3,8 @@ title: Automatische Datenextraktion durch künstliche Intelligenz
 slug: en/datenextraktion-mit-ki
 titleImage: /src/images/datenextraktion-titel.svg
 ogTitle: Automatische Datenextraktion mit KI
-ogDescription: Wikiartikel zu Datenextraktion mit KI
+ogDescription: Entdecken Sie, wie KI Unternehmen bei der Extraktion von Daten
+  unterstützen kann, indem sie Informationen automatisch ausliest.
 relatedArticles:
   - de/datenextraktion-mit-ki
 ---
