@@ -77,7 +77,7 @@ Wenn ihr bereit seid, die Komfortzone der Java-Abstraktionsebenen zu verlassen u
 Schauen wir uns an, wie wir unser Beispiel in ein triggerbasiertes Auditing-System umwandeln können.
 Im ersten Schritt zeichnen wir jede Änderungsart in einer separaten Tabelle `dog_audit_log` auf, die eine Spalte für `new_value` und eine für `old_value`, jeweils vom Typ `jsonb`, beinhaltet. Wir verwenden `jsonb` für eine einfache Handhabung und um Anpassungen flexibel zu gestalten. Änderungen in der Struktur der Entität `Dog`, wie das Hinzufügen oder Entfernen von Spalten, beeinflussen unsere Audit-Log-Tabelle nicht.
 
-![Zwei Tabellen, die linke bildet die Entität 'dog' ab, die rechte das Audit-Log](/src/images/pexels-barbaventuras-20116341.jpg "Zwei Tabellen, die linke bildet die Entität 'dog' ab, die rechte das Audit-Log")
+![Zwei Tabellen, die linke bildet die Entität 'dog' ab, die rechte das Audit-Log](_astro/pexels-barbaventuras-20116341.jpg "Zwei Tabellen, die linke bildet die Entität 'dog' ab, die rechte das Audit-Log")
 
 Damit wir das erreichen, setzen wir eine Funktion in der *PostgreSQL*-Datenbank um, die die vorgenommenen Änderungen verarbeitet. Zudem müssen wir einen Trigger einrichten, der diese Funktion aktiviert, sobald eine `INSERT`-, `UPDATE`- oder `DELETE`-Operation durchgeführt wird.
 
