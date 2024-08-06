@@ -1,8 +1,8 @@
 {
   "workingHours": "fullTime",
   "jobDate": "2024-08-01",
-  "title": "Expert IT-Security (m/w/d)",
-  "workingPlace": "Standort Eins",
+  "title": "Expert IT-Security",
+  "workingPlace": "Standort Zwei",
   "tasks": [
     {
       "task": "Unterstützung und Beratung unserer Projektteams und unserer Kunden bei der Erstellung, Planung und Umsetzung des Security Development Lifecycle und der Security Architecture"
@@ -42,28 +42,25 @@
   ],
   "benefits": [
     {
-      "benefit": "Flexible Arbeitszeiten, 30 Urlaubstage und mögliche Home-Office-Tage bringen Work und Life in Balance"
+      "benefit": "Unser Team und unsere Fähigkeiten Unser Slogan lautet: wir entwickeln software_ – und das tun wir mit Leidenschaft und Freude. Wir mögen Software Craftsmanship, guten Code und punkten mit einem Team, das fachlich wie menschlich überzeugt."
     },
     {
-      "benefit": "Dein jährliches Fortbildungsbudget und zwei Sonderurlaubstage für Deine Weiterbildung bringen Dich persönlich vorwärts"
+      "benefit": "Interessante & herausfordernde Projekte Unsere Projekte sind branchenübergreifend angelegt. Wir arbeiten für Start-ups genauso wie für Konzerne. Wir sind dabei nicht festgelegt, sondern möchten mit und an den Aufgaben wachsen."
     },
     {
-      "benefit": "Deine Endgeräte, Betriebssysteme und Tools wählst Du selbst aus"
+      "benefit": "Hardware & Betriebssystem nach Deinem Wunsch Du weißt schließlich am besten, womit Du gerne arbeitest. Unsere Arbeitsplätze sind zudem mit höhenverstellbaren Tischen und ergonomischen Stühlen ausgestattet.​"
     },
     {
-      "benefit": "Unsere schicken Büros am Bonner Bogen sind modern und ergonomisch ausgestattet und Du bekommst ein Deutschland-Ticket, um stressfrei und nachhaltig dorthin zu gelangen"
+      "benefit": "Weiterbildungsmöglichkeiten Mit einem jährlichen Fortbildungsbudget und 2 Tagen Sonderurlaub möchten wir jeden cronner in der persönlichen Weiterentwicklung fördern – sei es mit Konferenzen, Workshops oder Zertifizierungen, alleine, zu zweit oder mit dem ganzen Team."
     },
     {
-      "benefit": "Du erhältst im Office für Dein Mittagessen einen Zuschuss vom Arbeitgeber"
+      "benefit": "Flexible Arbeitszeiten & 30 Urlaubstage Um unseren cronnern das bestmögliche Verhältnis zwischen Arbeits- und Privatleben zu ermöglichen, bieten wir flexible Arbeitszeiten und Home-Office-Tage.​"
     },
     {
-      "benefit": "Nach der Probezeit kannst Du auf Wunsch ein cronn-bike bekommen"
+      "benefit": "Ein cooles Office in der Innenstadt In unserem modernen, hellen und gut gelegenen Büro in der Hamburger Innenstadt lässt es sich angenehm arbeiten. Aufgrund der citynahen Lage finden sich einige schöne Cafés und Läden in unmittelbarer Umgebung.​"
     },
     {
-      "benefit": "Gestaltungsfreiraum und Zusammenarbeit auf Augenhöhe gehören bei uns zur CI"
-    },
-    {
-      "benefit": "Auf den großen und kleineren Teamevents wird der Zusammenhalt gestärkt"
+      "benefit": "Ein cooles Office in der Innenstadt In unserem modernen, hellen und gut gelegenen Büro in der Hamburger Innenstadt lässt es sich angenehm arbeiten. Aufgrund der citynahen Lage finden sich einige schöne Cafés und Läden in unmittelbarer Umgebung.​"
     }
   ]
 }
