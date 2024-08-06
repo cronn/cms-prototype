@@ -1,6 +1,6 @@
 ---
 title: Test Ablösung von MS Access mittels webbasierter Lösungen
-slug: de/Abloesung-von-MS-Access-test
+slug: de/Abloesung-von-MS-Access-test2
 titleImage: /src/images/pexels-barbaventuras-20116341.jpg
 ogTitle: Ablösung von MS-Access-Anwendungen
 ogDescription: Ersetzen Sie Ihre MS Access-Anwendung für eine bessere
