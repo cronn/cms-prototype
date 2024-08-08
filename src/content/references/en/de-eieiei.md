@@ -31,7 +31,7 @@ eieiei used a solution based on the PHP programming language for order managemen
 
 > Thanks to our partner cronn, we have someone who always keeps our software up to date and supports us with words and deeds.
 >
-> — Liselotte Lümpel, COO, Eieiei GmbH
+> — Liselotte Lümpel, Chief Eggsectutive Officer, Eieiei GmbH
 
 ### **Solution**
 
