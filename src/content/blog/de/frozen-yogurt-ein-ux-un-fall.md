@@ -3,10 +3,10 @@ title: Frozen Yogurt. Ein UX-(Un)Fall
 ogTitle: cronn GmbH – Frozen Yogurt. Ein UX-(Un)Fall
 ogDescription: Unser Autor Fabien zeigt an einer nicht so gelungenen UI was bei
   guter UX wichtig ist.
-titleImage: /src/images/blog-placeholder-about.jpg
+titleImage: /src/images/frozen-joghurt-featured.jpg
 pubDate: 2024-08-08
 authors:
-  - rudi-rempel
+  - ui-ux
 ---
 **Wenn das mentale Modell der UI-Designer*innen   nicht mit dem der User übereinstimmt, kann es schnell zu ungewollten Ergebnissen führen – wie unser Beispiel zeigt.** 
 
