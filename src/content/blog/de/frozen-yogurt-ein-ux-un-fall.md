@@ -1,5 +1,5 @@
 ---
-title: Frozen Yogurt. Ein UX-(Un)Fall
+title: Frozen Yogurt. Ein UX-(Un)Fall.
 ogTitle: cronn GmbH – Frozen Yogurt. Ein UX-(Un)Fall.
 ogDescription: Unser Autor Fabien zeigt an einer nicht so gelungenen UI was bei
   guter UX wichtig ist.
@@ -25,7 +25,7 @@ Wie sich herausstellte, hatten wir den Frozen Yogurt zu verantworten, da wir die
 
 Anders als die meisten Kühlschränke, die wir kennen, hatte dieser    keinen Drehregler, um die Kühlleistung von niedrig bis hoch einzustellen, sondern eine digitale Temperaturregelung, die die konkrete Zieltemperatur im Kühlschrank einstellt. Bei genauerer Betrachtung befindet sich ganz rechts auf der Verkleidung sogar ein unscheinbares „°C“ Icon. Wir hatten also die Temperatur auf 1 °C anstatt auf die niedrigste Stufe 1 gestellt.
 
-![Illustration der Benutzeroberfläche des Kühlschranks, das Zeichen für „°C“ ist schwer zu erkennen](../../../images/ux_unfall_interface.png "Illustration der Benutzeroberfläche des Kühlschranks.")
+![Illustration der Benutzeroberfläche des Kühlschranks, das Zeichen für „°C“ ist schwer zu erkennen](/src/images/ux_unfall_interface.png "Illustration der Benutzeroberfläche des Kühlschranks.")
 
 ## Lag der Fehler also wirklich bei uns, den Usern?
 
@@ -35,7 +35,7 @@ Die Frage kann mit einem klaren „Nein“ beantwortet werden. Zwar waren wir di
 
 Der Begriff „mentales Modell“ wurde von Donald Norman bereits im Jahr 1988 in seinem Buch „The Design of Everyday Things“ geprägt.  Noch vor der eigentlichen Interaktion haben wir eine bestimmte Vorstellung, wie ein Interface funktioniert oder sich verhalten wird. Diese Vorstellung wird durch unsere persönliche Erfahrung, kulturelle Einflüsse und allgemeine Konventionen geprägt. Wir bilden ein mentales Modell, wie sich ein System bei der Interaktion verhalten wird. Dieses Modell basiert auf einer Erwartungshaltung und nicht auf Fakten. 
 
-![Schaubild zu mentalen Modellen nach Donald Normann.](../../../images/ux_unfall_mentale_modelle.png "Die abweichenden mentalen Modelle im Frozen-Yogurt-Fall")
+![Schaubild zu mentalen Modellen nach Donald Normann.](/src/images/ux_unfall_mentale_modelle.png "Die abweichenden mentalen Modelle im Frozen-Yogurt-Fall")
 
 In dem Fall um den Frozen Yogurt hatten wir aufgrund unserer jahrelangen Erfahrung als Kühlschranknutzer  das mentale Modell gebildet, dass eine kleine Zahl einer niedrigen Kühlleistung entsprechen würde. Das mentale Modell der Designer*innen sah vor, dass die Zahl der tatsächlichen Temperatur entspricht.
 
