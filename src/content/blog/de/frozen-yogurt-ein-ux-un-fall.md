@@ -1,5 +1,5 @@
 ---
-title: Frozen Yogurt. Ein UX-(Un)Fall
+title: Frozen Yogurt. Ein UX-(Un)Fall.
 ogTitle: cronn GmbH – Frozen Yogurt. Ein UX-(Un)Fall.
 ogDescription: Unser Autor Fabien zeigt an einer nicht so gelungenen UI was bei
   guter UX wichtig ist.
