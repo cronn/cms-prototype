@@ -31,7 +31,7 @@ Für den Prozess der Auftragsverwaltung und Lieferkettenverifizierung verfügte 
 
 > Dank unseres Partners cronn haben wir jemanden, der unsere Software immer auf dem aktuellen Stand hält und uns mit Rat und Tat unterstützt.
 >
-> — Liselotte Lümpel, Chief Eggsectutive Officer, eieiei GmbH
+> — Dieter Dotter, Chief Eggsectutive Officer, eieiei GmbH
 
 ### **Lösung**
 
