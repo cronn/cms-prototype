@@ -1,13 +1,11 @@
 # when using the default proxy server port
-local_backend: true
-
 backend:
   name: git-gateway
   branch: main
   cms_label_prefix: decap-cms/
   squash_merges: true
 
-# publish_mode: editorial_workflow
+publish_mode: editorial_workflow
 
 media_folder: "src/images"
 
