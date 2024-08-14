@@ -1,5 +1,6 @@
 ---
 title: Software-as-a-Service-Applikation mit NB-IoT
+referenceDate: 2024-08-13
 slug: en/flitzefahrrad
 ogDescription: flitzefahrrad-Referenz
 titleImage: /src/images/pexels-canacrtrk-20035207.jpg

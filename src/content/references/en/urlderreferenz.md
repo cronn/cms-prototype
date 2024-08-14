@@ -1,5 +1,6 @@
 ---
 title: Neue Referenz
+referenceDate: 2024-08-09
 slug: en/urlderreferenz
 ogDescription: OG
 titleImage: /src/images/pexels-winson-ng-20057853.jpg

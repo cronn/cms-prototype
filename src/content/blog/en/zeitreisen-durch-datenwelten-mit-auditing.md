@@ -7,9 +7,13 @@ titleImage: /src/images/feature-img.jpg
 pubDate: 2024-08-05
 authors:
   - rudi-rempel
+teaser: Die Implementierung geeigneter Audit-Verfahren zur Überwachung und
+  Dokumentation von Datenänderungen in Datenbanken ist für bestimmte Anwendungen
+  und Einsatzszenarien essenziell. Dieser Artikel beleuchtet verschiedene
+  Strategien für unterschiedliche Bedürfnisse und Herausforderungen,
+  insbesondere die Unterschiede zwischen den Tools Hibernate Envers, JPA Data
+  und triggerbasiertem Auditing.
 ---
-Die Implementierung geeigneter Audit-Verfahren zur Überwachung und Dokumentation von Datenänderungen in Datenbanken ist für bestimmte Anwendungen und Einsatzszenarien essenziell. Dieser Artikel beleuchtet verschiedene Strategien für unterschiedliche Bedürfnisse und Herausforderungen, insbesondere die Unterschiede zwischen den Tools Hibernate Envers, JPA Data und triggerbasiertem Auditing.
-
 ## Hüter der Datenhistorie
 
 Audit-Verfahren sind im Bereich des Datenmanagements unverzichtbar. Sie fungieren als Hüter der Datenhistorie und gewährleisten, dass jede Änderung an Daten nicht nur nachverfolgt, sondern auch detailliert festgehalten wird. Audit-Methoden ermöglichen uns eine Art Zeitreise durch die Datenhistorie, um zu verstehen, wer, wann und welche Änderungen vorgenommen hat.
@@ -45,7 +49,7 @@ Zu diesen Tabellen zählen die Übersicht der auditierten Entitäten, die `REVIN
 
 Envers bietet umfangreiche Konfigurationsmöglichkeiten, um sämtlichen Anforderungen an das Auditing gerecht zu werden. Das reicht vom Ausschluss bestimmter Eigenschaften von der Auditierung bis hin zur individuellen Anpassung der Auditing-Tabellen. Weitere Informationen dazu findet man in der offiziellen [Dokumentation](https://docs.jboss.org/hibernate/orm/current/userguide/html_single/Hibernate_User_Guide.html#envers).
 
-![Drei von Hibernate erzeugte Tabellen](/src/images/pexels-marinca-liviu-20064362.jpg "Drei von Hibernate erzeugte Tabellen")
+![Drei von Hibernate erzeugte Tabellen](../../../images/pexels-marinca-liviu-20064362.jpg "Drei von Hibernate erzeugte Tabellen")
 
 Um Audit-Daten abzurufen, bietet Envers die `AuditReaderFactory` an, die es ermöglicht, alle Zustandsschnappschüsse einer Entität zu ermitteln. Für unser Beispiel mit der Entität `Dog` und der Objektinstanz-ID „1“ würde das folgendermaßen aussehen:
 
@@ -76,7 +80,7 @@ Wenn ihr bereit seid, die Komfortzone der Java-Abstraktionsebenen zu verlassen u
 Schauen wir uns an, wie wir unser Beispiel in ein triggerbasiertes Auditing-System umwandeln können.
 Im ersten Schritt zeichnen wir jede Änderungsart in einer separaten Tabelle `dog_audit_log` auf, die eine Spalte für `new_value` und eine für `old_value`, jeweils vom Typ `jsonb`, beinhaltet. Wir verwenden `jsonb` für eine einfache Handhabung und um Anpassungen flexibel zu gestalten. Änderungen in der Struktur der Entität `Dog`, wie das Hinzufügen oder Entfernen von Spalten, beeinflussen unsere Audit-Log-Tabelle nicht.
 
-![Zwei Tabellen, die linke bildet die Entität 'dog' ab, die rechte das Audit-Log](/src/images/pexels-barbaventuras-20116341.jpg "Zwei Tabellen, die linke bildet die Entität 'dog' ab, die rechte das Audit-Log")
+![Zwei Tabellen, die linke bildet die Entität 'dog' ab, die rechte das Audit-Log](../../../images/pexels-barbaventuras-20116341.jpg "Zwei Tabellen, die linke bildet die Entität 'dog' ab, die rechte das Audit-Log")
 
 Damit wir das erreichen, setzen wir eine Funktion in der *PostgreSQL*-Datenbank um, die die vorgenommenen Änderungen verarbeitet. Zudem müssen wir einen Trigger einrichten, der diese Funktion aktiviert, sobald eine `INSERT`-, `UPDATE`- oder `DELETE`-Operation durchgeführt wird.
 

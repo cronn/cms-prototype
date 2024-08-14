@@ -11,6 +11,7 @@ const blog = defineCollection({
     authors: z.array(reference("authors")),
     // Transform string to Date object
     pubDate: z.coerce.date(),
+    teaser: z.string().optional(),
   }),
 });
 
@@ -18,7 +19,10 @@ const references = defineCollection({
   type: "content",
   schema: z.object({
     title: z.string(),
+    referenceDate: z.coerce.date(),
     titleImage: z.string(),
+    industry: z.string().optional(),
+    ogTitle: z.string().optional(),
     ogDescription: z.string(),
     customerLogo: z.string(),
     customerTitle: z.string(),
@@ -43,9 +47,9 @@ const jobs = defineCollection({
       z.literal(WORKING_HOURS.partTime),
     ]),
     workingPlace: z.enum([
-      WORKING_PLACES.first,
-      WORKING_PLACES.second,
-      WORKING_PLACES.third,
+      WORKING_PLACES.bonn,
+      WORKING_PLACES.hamburg,
+      WORKING_PLACES.bialystok,
     ]),
     tasks: z.array(z.object({ task: z.string() })),
     qualifications: z.array(z.object({ qualification: z.string() })),

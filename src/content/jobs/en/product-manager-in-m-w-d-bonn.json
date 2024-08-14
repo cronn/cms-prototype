@@ -1,43 +1,46 @@
 {
+  "jobDate": "2024-06-01",
+  "title": "Product Manager/-in",
   "workingHours": "fullTime",
-  "jobDate": "2024-08-02",
-  "title": "Expert IT-Security",
-  "workingPlace": "Standort Eins",
+  "workingPlace": "Bonn",
   "tasks": [
     {
-      "task": "Unterstützung und Beratung unserer Projektteams und unserer Kunden bei der Erstellung, Planung und Umsetzung des Security Development Lifecycle und der Security Architecture"
+      "task": "Du arbeitest mit bestehenden und potenziellen Kunden zusammen, um die Marktanforderungen und Kundenbedürfnisse zu verstehen und daraus klare Produktziele abzuleiten"
     },
     {
-      "task": "Nachverfolgung, Fehlerbehebung und Dokumentation sicherheitsrelevanter Probleme"
+      "task": "Als Teil des Vertriebes ist es Deine Aufgabe neue Kunden der Produkte zu identifizieren, zu akquirieren und Bestandskunden weiterzuentwickeln"
     },
     {
-      "task": "Schwachstellenprüfung und -bewertung für 3rd Party Libraries"
+      "task": "Du bereitest Ideen für unsere Produkte als User Stories auf, um sicherzustellen, dass die Entwicklungsarbeit genau auf die Bedürfnisse unserer Kunden zugeschnitten ist"
     },
     {
-      "task": "Koordination und Steuerung von für die IT-Security relevanten Entwicklungstätigkeiten und Definition technischer Vorgaben"
+      "task": "Du ergänzt das Produkt-Backlog und berätst bei der fortlaufenden Priorisierung der Anforderungen in Abstimmung mit dem Product Owner"
     },
     {
-      "task": "Dokumentation und Reporting des Security-Status"
+      "task": "Du führst Markt- und Wettbewerbsanalysen durch, um frühzeitig neue Produktideen zu identifizieren und Potenziale für Produktverbesserungen sowie die Integration neuer Technologien zu erkennen"
+    },
+    {
+      "task": "Du entwickelst Business Cases und verfolgst diese konsequent und eigenständig"
     }
   ],
   "qualifications": [
     {
-      "qualification": "Du besitzt erste Erfahrung als IT-Security Expert, Expert Cyber-Security oder in einem ähnlichen IT-sicherheitsrelevanten Bereich"
+      "qualification": "Du hast ein Studium in Informatik, Naturwissenschaften oder Betriebswirtschaftslehre mindestens gut abgeschlossen"
     },
     {
-      "qualification": "Du hast ein Studium im Bereich Informatik, IT-Sicherheit oder ein vergleichbares Studium mit gutem Erfolg abgeschlossen"
+      "qualification": "Du bringst bereits Berufserfahrung in einem ähnlichen Tätigkeitsfeld mit, idealerweise im digitalen Produktmanagement, in der Produktentwicklung oder im Vertrieb von Softwareprodukten"
     },
     {
-      "qualification": "Programmierkenntnisse in Java oder TypeScript bringst Du bereits mit"
+      "qualification": "Du hast bereits fundierte Kenntnisse in agilen Entwicklungsmethoden wie Scrum"
     },
     {
-      "qualification": "Dir gehen Deutsch und Englisch fließend über Finger und Zunge"
+      "qualification": "Du bringst Spaß an der Arbeit in Matrixfunktionen und Leidenschaft für digitale Produkte mit"
     },
     {
-      "qualification": "Du bist offen für Neuerungen"
+      "qualification": "Du hast bereits Erfahrung mit cloudbasierten Produkten und Services"
     },
     {
-      "qualification": "Du arbeitest selbstständig und eigenverantwortlich"
+      "qualification": "Du bringst Berufserfahrung im Vertrieb von Softwarelösungen, IT-Dienstleistungen oder IT-Projekten mit"
     }
   ],
   "benefits": [

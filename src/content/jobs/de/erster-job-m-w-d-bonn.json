@@ -1,21 +1,21 @@
 {
   "workingHours": "fullTime",
   "jobDate": "2024-04-15",
-  "title": "First Job",
-  "workingPlace": "Standort Eins",
+  "title": "Erster Job",
+  "workingPlace": "Bonn",
   "tasks": [
     {
-      "task": "Do everything"
+      "task": "Alles abarbeiten"
     }
   ],
   "qualifications": [
     {
-      "qualification": "Be very good"
+      "qualification": "Sehr gut sein"
     }
   ],
   "benefits": [
     {
-      "benefit": "Soda for free"
+      "benefit": "Gratis Limo"
     }
   ]
 }

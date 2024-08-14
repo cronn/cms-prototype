@@ -1,5 +1,5 @@
 {
-  "locationOne": "Standort Eins",
-  "locationTwo": "Standort Zwei",
-  "locationThree": "Standort Drei"
+  "bonn": "Bonn",
+  "hamburg": "Hamburg",
+  "bialystok": "Białystok"
 }

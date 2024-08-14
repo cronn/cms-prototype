@@ -26,39 +26,39 @@ const currentYear = new Date().getFullYear();
 const endOfYear = new Date(currentYear, 11, 31);
 
 let jobLocation: NestedRecord = {};
-if (workingPlace === WORKING_PLACES.first) {
+if (workingPlace === WORKING_PLACES.bonn) {
   jobLocation = {
     "@type": "Place",
     address: {
       "@type": "PostalAddress",
       streetAddress: "Teststreet 1",
-      addressLocality: WORKING_PLACES.first,
+      addressLocality: WORKING_PLACES.bonn,
       postalCode: "53227",
       addressRegion: "North Rhine-Westphalia",
       addressCountry: "Germany",
     },
   };
 }
-if (workingPlace === WORKING_PLACES.second) {
+if (workingPlace === WORKING_PLACES.hamburg) {
   jobLocation = {
     "@type": "Place",
     address: {
       "@type": "PostalAddress",
       streetAddress: "Teststreet 1",
-      addressLocality: WORKING_PLACES.second,
+      addressLocality: WORKING_PLACES.hamburg,
       postalCode: "20457",
       addressRegion: "Hamburg",
       addressCountry: "Germany",
     },
   };
 }
-if (workingPlace === WORKING_PLACES.third) {
+if (workingPlace === WORKING_PLACES.bialystok) {
   jobLocation = {
     "@type": "Place",
     address: {
       "@type": "PostalAddress",
       streetAddress: "Teststreet 1",
-      addressLocality: WORKING_PLACES.third,
+      addressLocality: WORKING_PLACES.bialystok,
       postalCode: "15-445",
       addressRegion: "Podlaskie",
       addressCountry: "Poland",
@@ -82,8 +82,8 @@ const schema: NestedRecord[] = [
   {
     "@context": "http://schema.org",
     "@type": "JobPosting",
-    title: jobTitle,
-    description: `<p>Dann bewirb Dich jetzt bei uns als ${jobTitle}!</p><br>"<p>Was Dich bei uns erwartet</p><ul>${tasks.map(({ task }) => `<li>${task}</li>`)}</ul><br><p>Wenn Du folgende Voraussetzungen mitbringst</p><ul>${qualifications.map(({ qualification }) => `<li>${qualification}</li>`)}</ul><p>… dann wollen wir Dich kennenlernen!</p>"`,
+    title: `${jobTitle} (m/w/d)`,
+    description: `<p>Dann bewirb Dich jetzt bei uns als ${jobTitle} (m/w/d)!</p><br>"<p>Was Dich bei uns erwartet</p><ul>${tasks.map(({ task }) => `<li>${task}</li>`)}</ul><br><p>Wenn Du folgende Voraussetzungen mitbringst</p><ul>${qualifications.map(({ qualification }) => `<li>${qualification}</li>`)}</ul><p>… dann wollen wir Dich kennenlernen!</p>"`,
     datePosted: jobDate.toLocaleDateString("de-DE", {
       year: "numeric",
       month: "2-digit",

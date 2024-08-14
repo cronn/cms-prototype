@@ -9,9 +9,11 @@ import { dynamicImageImport } from "../../utils/dynamicImageImport";
 
 const currentLocale = getCurrentLocale(Astro.currentLocale);
 const { references: referenceTexts } = getLocalizedData({ currentLocale });
-const references = (await getCollection("references")).filter((reference) =>
-  reference.id.includes(`${currentLocale}/`),
-);
+const references = (await getCollection("references"))
+  .filter((reference) => reference.id.includes(`${currentLocale}/`))
+  .toSorted(
+    (a, b) => b.data.referenceDate.getTime() - a.data.referenceDate.getTime(),
+  );
 ---
 
 <BaseLayout title={referenceTexts.title} ogDescription={referenceTexts.title}>
@@ -36,6 +38,11 @@ const references = (await getCollection("references")).filter((reference) =>
                   height={200}
                 />
                 <div class="px-6 py-4">
+                  {reference.data.industry && (
+                    <p class="mb-0 text-sm text-gray-600">
+                      {reference.data.industry}
+                    </p>
+                  )}
                   <h2 class="mb-2 text-xl font-bold">{reference.data.title}</h2>
                 </div>
               </a>

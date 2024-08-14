@@ -3,6 +3,12 @@
   "openPositions": "Open positions",
   "noOpenPositions": "No open positions in",
   "details": {
+    "metaTitleOne": "cronn GmbH - Become a",
+    "metaTitleTwo": "in",
+    "metaTitleThree": "(m/f/d)",
+    "metaDescriptionPartOne": "Are you looking to make it big as an",
+    "metaDescriptionPartTwo": "(m/f/d)?",
+    "metaDescriptionPartThree": "Here is where you can find openings for your new job in",
     "jobDateFrom": "from",
     "workingHoursEnum": {
       "fullTime": "full-time",

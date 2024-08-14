@@ -4,20 +4,21 @@ import PageTitle from "../ui/PageTitle.astro";
 import { getCollection } from "astro:content";
 import JobList from "../jobs/JobList.astro";
 import { getCurrentLocale, getLocalizedData } from "../../i18n/utils";
+import { WORKING_PLACES } from "../../constants";
 
 const currentLocale = getCurrentLocale(Astro.currentLocale);
 const jobs = (await getCollection("jobs"))
   .filter((post) => post.id.includes(`${currentLocale}/`))
   .sort((a, b) => a.data.jobDate.valueOf() - b.data.jobDate.valueOf());
 
-const jobsLoactionOne = jobs.filter(
-  (job) => job.data.workingPlace === "Standort Eins",
+const jobsBonn = jobs.filter(
+  (job) => job.data.workingPlace === WORKING_PLACES.bonn,
 );
-const jobsLocationTwo = jobs.filter(
-  (job) => job.data.workingPlace === "Standort Zwei",
+const jobsHamburg = jobs.filter(
+  (job) => job.data.workingPlace === WORKING_PLACES.hamburg,
 );
-const jobsLocationThree = jobs.filter(
-  (job) => job.data.workingPlace === "Standort Drei",
+const jobsBialystok = jobs.filter(
+  (job) => job.data.workingPlace === WORKING_PLACES.bialystok,
 );
 
 const { jobs: jobTexts, shared } = getLocalizedData({
@@ -29,20 +30,16 @@ const { jobs: jobTexts, shared } = getLocalizedData({
   <PageTitle title={jobTexts.title} />
   <h2 class="mb-12 text-center">{jobTexts.openPositions}</h2>
   <div class="grid grid-cols-3 gap-12">
+    <JobList title={shared.bonn} language={currentLocale} jobs={jobsBonn} />
     <JobList
-      title={shared.locationOne}
+      title={shared.hamburg}
       language={currentLocale}
-      jobs={jobsLoactionOne}
+      jobs={jobsHamburg}
     />
     <JobList
-      title={shared.locationTwo}
+      title={shared.bialystok}
       language={currentLocale}
-      jobs={jobsLocationTwo}
-    />
-    <JobList
-      title={shared.locationThree}
-      language={currentLocale}
-      jobs={jobsLocationThree}
+      jobs={jobsBialystok}
     />
   </div>
 </BaseLayout>

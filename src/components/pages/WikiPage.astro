@@ -22,7 +22,7 @@ const articles = (await getCollection("wiki")).filter((article) =>
           <>
             <li class="mb-8 overflow-hidden rounded shadow-lg hover:shadow-xl">
               <a
-                href={`wiki/${article.slug.split("/")[1]}`}
+                href={`loesungen/${article.slug.split("/")[1]}`}
                 class="grid grid-cols-2"
               >
                 <Image

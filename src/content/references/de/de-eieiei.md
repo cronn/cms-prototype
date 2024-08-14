@@ -1,8 +1,10 @@
 ---
 title: Bequeme Lieferketten- und Auftragsverwaltung
+referenceDate: 2024-08-14
 slug: de/eieiei
 ogDescription: eieiei-Referenz
 titleImage: /src/images/pexels-canacrtrk-20035207.jpg
+industry: Automobil
 customerLogo: /src/images/g4705.png
 customerTitle: eieiei
 projectAspects:
