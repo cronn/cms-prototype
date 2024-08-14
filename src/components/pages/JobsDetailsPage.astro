@@ -69,20 +69,10 @@ const {
         </ul>
       </div>
       <div class="py-16">
-        <h3 class="mb-8">{jobTexts.details.benefits}</h3>
-        <div
-          class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4"
-        >
-          {
-            benefits.map(({ benefit }) => (
-              <div class="rounded shadow-sm shadow-gray-500">
-                <div class="p-6">
-                  <p>{benefit}</p>
-                </div>
-              </div>
-            ))
-          }
-        </div>
+        <h3>{jobTexts.details.benefits}</h3>
+        <ul>
+          {benefits.map(({ benefit }) => <CheckedListItem item={benefit} />)}
+        </ul>
       </div>
     </div>
   </article>

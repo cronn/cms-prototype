@@ -8,7 +8,7 @@ import { dynamicImageImport } from "../../utils/dynamicImageImport";
 
 type Props = CollectionEntry<"blog">["data"];
 
-const { title, authors, ogTitle, ogDescription, pubDate, titleImage } =
+const { title, authors, ogTitle, ogDescription, pubDate, titleImage, teaser } =
   Astro.props;
 
 const currentLocale = getCurrentLocale(Astro.currentLocale);
@@ -22,33 +22,50 @@ const postAuthors = await getEntries(authors);
   ogDescription={ogDescription}
   image={titleImage}
 >
-  <article class="prose text-lg">
-    <div class="mx-auto">
-      {
-        titleImage && (
-          <Image
-            width={1020}
-            height={510}
-            src={dynamicImageImport[titleImage]()}
-            alt={title}
-          />
-        )
-      }
-    </div>
+  <article class="prose mx-auto text-lg prose-blockquote:border-blue-400">
+    {
+      titleImage && (
+        <Image
+          width={1020}
+          height={510}
+          src={dynamicImageImport[titleImage]()}
+          alt={title}
+        />
+      )
+    }
     <div>
       <div>
         <div>
           <FormattedDate date={pubDate} />
         </div>
         <h1>{title}</h1>
-        <h2 class="text-lg text-gray-500">
+        <h2 class="mb-6 text-lg text-gray-500">
           {blog.authors}: {
             postAuthors.map((author) => author.data.name).join(", ")
           }
         </h2>
+        <p class="text-xl text-gray-950">{teaser}</p>
         <hr />
       </div>
       <slot />
+      <hr />
+      <div class="flex items-center gap-4">
+        {
+          postAuthors.map(({ data: { image, name } }) => (
+            <figure class="my-0 flex items-center gap-4 rounded-md p-2">
+              <Image
+                width={56}
+                height={56}
+                src={dynamicImageImport[image]()}
+                alt={name}
+                class="h-14 w-14 rounded-full border border-2 border-blue-400 object-cover"
+                loading="eager"
+              />
+              <p class="!m-0 p-0">{name}</p>
+            </figure>
+          ))
+        }
+      </div>
     </div>
   </article>
 </BaseLayout>

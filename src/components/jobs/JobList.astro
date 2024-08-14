@@ -21,7 +21,7 @@ const { jobs: jobTexts } = getLocalizedData({ currentLocale: language });
     {
       jobs?.length ? (
         jobs.map((job) => (
-          <li class="flex items-center rounded border border-blue-200 bg-blue-50 shadow-md shadow-blue-200 hover:shadow-inner">
+          <li class="mb-3 flex items-center rounded border border-blue-200 bg-blue-50 shadow-sm shadow-blue-200 hover:shadow-inner">
             <a
               href={getRelativeLocaleUrl(
                 language,
@@ -31,7 +31,9 @@ const { jobs: jobTexts } = getLocalizedData({ currentLocale: language });
             >
               <>
                 <ArrowNext className="fill-blue-700" width="16" height="16" />
-                <h4 class="m-0 p-0 text-xl">{job.data.title}</h4>
+                <h4 class="m-0 p-0 text-xl">
+                  {job.data.title} {jobTexts.details.titleSuffix}
+                </h4>
               </>
             </a>
           </li>

@@ -1,5 +1,6 @@
 ---
 title: First reference
+referenceDate: 2024-08-08
 slug: en/erste-referenz
 ogDescription: First reference
 titleImage: /src/images/pexels-marinca-liviu-20064362.jpg

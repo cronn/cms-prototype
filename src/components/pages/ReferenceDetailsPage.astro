@@ -17,6 +17,7 @@ const { reference } = Astro.props;
 
 const {
   title,
+  ogTitle,
   titleImage,
   customerLogo,
   customerTitle,
@@ -30,7 +31,11 @@ const { Content } = await reference.render();
 const relatedReferencesDetails = await getEntries(relatedReferences ?? []);
 ---
 
-<BaseLayout title={title} ogDescription={ogDescription} image={titleImage}>
+<BaseLayout
+  title={ogTitle ?? title}
+  ogDescription={ogDescription}
+  image={titleImage}
+>
   <article class="mx-auto">
     <div class="relative mb-12">
       <Image
@@ -45,27 +50,29 @@ const relatedReferencesDetails = await getEntries(relatedReferences ?? []);
         <h1 class="ml-4 bg-gray-950/30 p-2 text-white">{title}</h1>
       </div>
     </div>
-    <div class="grid-auto-rows col-auto grid gap-8">
+    <div class="grid-auto-rows grid gap-8 md:grid-cols-[1fr_300px] md:gap-16">
       <div class="col-span-1 row-start-2 mb-8 md:row-start-1">
         <h2 class="flex flex-col">
           <span class="text-lg font-normal">{referenceTexts.ourCustomer}:</span>
           {customerTitle}
         </h2>
-        <hr class="h-px w-10/12 border-2 border-solid border-gray-500" />
+        <hr class="h-px w-10/12 border-2 border-solid border-blue-400" />
       </div>
       <div
         class="col-span-1 col-start-1 row-start-1 mb-4 md:col-start-2 md:mb-0"
       >
         <Image
-          width={144}
-          height={144}
+          width={192}
+          height={64}
           src={dynamicImageImport[customerLogo]()}
           alt={`${customerTitle} logo`}
-          class="max-h-36 w-auto"
+          class="max-h-16 w-auto"
           loading="eager"
         />
       </div>
-      <div class="row-start-4 md:row-span-4 md:row-start-2">
+      <div
+        class="prose col-span-1 col-start-1 row-start-4 border-blue-400 text-lg prose-blockquote:border-blue-400 md:row-span-4 md:row-start-2"
+      >
         <Content />
       </div>
 
@@ -103,7 +110,7 @@ const relatedReferencesDetails = await getEntries(relatedReferences ?? []);
             <h3 class="mb-8 text-center">{referenceTexts.otherProjects}</h3>
             <ul class="grid grid-cols-3 grid-rows-subgrid gap-8">
               {relatedReferencesDetails?.map((reference) => (
-                <li class="max-w-sm overflow-hidden rounded shadow-lg hover:shadow-xl">
+                <li class="max-w-sm rounded shadow-lg hover:shadow-xl">
                   <a
                     href={getRelativeLocaleUrl(
                       currentLocale,

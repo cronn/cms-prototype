@@ -3,6 +3,12 @@
   "openPositions": "Offene Stellen",
   "noOpenPositions": "Keine offenen Stellen in",
   "details": {
+    "metaTitleOne": "cronn GmbH - Werde",
+    "metaTitleTwo": "in",
+    "metaTitleThree": "(m/w/d)",
+    "metaDescriptionPartOne": "Du willst Karriere als",
+    "metaDescriptionPartTwo": "(m/w/d) machen?",
+    "metaDescriptionPartThree": "Hier findest Du unsere Stellenanzeige für Deinen neuen Job in",
     "jobDateFrom": "ab",
     "workingHoursEnum": {
       "fullTime": "Vollzeit",

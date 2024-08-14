@@ -1,5 +1,6 @@
 ---
 title: Ein spezialisiertes LIMS für ein spezielles Institut
+referenceDate: 2024-08-10
 slug: de/rechtsmedizin-lims
 ogDescription: limsilims-Referenz
 titleImage: /src/images/pexels-barbaventuras-20116341.jpg
@@ -37,7 +38,7 @@ Zur Organisation der täglichen Arbeit im Bereich der Dienstleistungen wird in d
 
 Über den 15-jährigen Betrieb hinweg wurde das System mehrfach angepasst. Die Pflege und Weiterentwicklung wurden über den Zeitraum allerdings zunehmend aufwändig und arbeitsintensiv. Zudem wuchs am Institut der Wunsch die IT-Sicherheit der Software zusätzlich zu stärken. Das bisher eingesetzte LIMS war eine flexible Standardlösung als Client-Software, die von den Fachleuten des limsilims über die Jahre an die Bedürfnisse der Rechtsmedizin und des eigenen rechtmedizinischen Instituts angepasst wurden. Dieses Customizing stieß nun auch zunehmend an seine Grenzen. Aus diesen Gründen fiel die Entscheidung, eine eigene, maßgefertigte Softwarelösung in Auftrag zu geben. Während Migration und Ablösung sollte der Betrieb zudem kontinuierlich gewährleistet bleiben.
 
-![Die Systemarchitektur von fLIMS bei der limsilims.](/src/images/autor1.jpg "Die Systemarchitektur von fLIMS bei der limsilims.")
+![Die Systemarchitektur von fLIMS bei der limsilims.](../../../images/autor1.jpg "Die Systemarchitektur von fLIMS bei der limsilims.")
 
 > Dieses Projekt zeigt die Notwendigkeit von Lösungen, die passgenau auf die Bedarfe der Anforderer zugeschnitten sind und entsprechend weiter ausgebaut werden können. Dies ist ein Projekt, welches die Komplexität der Rechtsmedizin in innovativen Lösungen abbildet. Hier wurde gemeinsam ein System gebaut, welches die User entlastet und die digitale Transformation intensiv vorantreibt.
 >
@@ -55,7 +56,7 @@ Die Benutzeroberflächen wurden dabei in enger agiler Zusammenarbeit mit den Nut
 
 
 
-![Screenshot einer fLIMS-Benutzeroberfläche mit generischen Testdaten.](/src/images/blog-placeholder-2.jpg "Screenshot einer fLIMS-Benutzeroberfläche mit generischen Testdaten.")
+![Screenshot einer fLIMS-Benutzeroberfläche mit generischen Testdaten.](../../../images/blog-placeholder-2.jpg "Screenshot einer fLIMS-Benutzeroberfläche mit generischen Testdaten.")
 
 Im zweiten Schritt stellte unser Team die Hintergrundsysteme neu auf. Die ursprüngliche Zwei-Schicht-Architektur aus Datenbank und Fat Client wich nach und nach einer modernen und sicheren Drei-Schicht-Webanwendung. Alle Labormessgeräte wurden an das neue Backend angebunden und auch bilaterale Schnittstellen etabliert. So können Laborgeräte und Software in beide Richtungen Daten austauschen. Mit der alten Software mussten etwa Angaben, die bereits im System vorhanden waren, manuell noch mal in den Benutzeroberflächen der Geräte eingegeben werden.
 

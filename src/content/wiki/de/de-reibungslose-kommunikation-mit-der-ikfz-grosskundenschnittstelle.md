@@ -12,7 +12,7 @@ Digitale An- und Abmeldung von hunderten Kraftfahrzeugen? Läuft! Über Software
 
 Seit dem 1. September 2023 ist die Neuverkündung der Fahrzeug-Zulassungsverordnung in Kraft. Das Kraftfahrt-Bundesamt (KBA) stellt im Zuge von i-Kfz 4 eine digitale Schnittstelle (SOAP-basiert) bereit, über die Großkunden (mehr als 500 Zulassungsvorgänge im Jahr) wie Zulasser und Autoleasingunternehmen Fahrzeuge an-, um- und abmelden können. Die Anträge werden also digital eingegeben und vom System des Kraftfahrt-Bundesamtes an die Systeme der lokalen Zulassungsbehörden übermittelt.
 
-![Beispiel für eine mögliche Architektur einer Anwendung zum An- und Abmelden von Fahrzeugen.](/src/images/ikfz-grafik.jpg "Beispiel für eine mögliche Architektur einer Anwendung zum An- und Abmelden von Fahrzeugen.")
+![Beispiel für eine mögliche Architektur einer Anwendung zum An- und Abmelden von Fahrzeugen.](../../../images/ikfz-grafik.jpg "Beispiel für eine mögliche Architektur einer Anwendung zum An- und Abmelden von Fahrzeugen.")
 
 ## Wie greift man auf die neue Schnittstelle des Kraftfahrt-Bundesamtes zu?
 
@@ -22,7 +22,7 @@ Damit das gelingt braucht es auf Seiten der Großkunden aber eine zuverlässige 
 
 Ein Digitalisierungsprojekt wie diese Schnittstelle ergibt nur Sinn, wenn dadurch Menschen auch tatsächlich Arbeit abgenommen und Prozesse effizienter werden. Darum hat cronn den ZULEX-Nutzern die Benutzeroberflächen funktional und intuitiv bedienbar gestaltet. So werden die neuen digitalen Möglichkeiten voll ausgeschöpft und der gesamte Zulassungsprozess vom Autohaus, über den Zulasser bis zur Zulassungsbehörde wird beschleunigt und der Aufwand für alle Beteiligten verringert. Schnellere Prozesse verbessern nicht zuletzt das Kundenerlebnis aus Sicht der Endkunden.
 
-![Screenshots zweier Benutzeroberflächen der Anwendung ZULEX.](/src/images/ikfz-screenshot1.png "Screenshots zweier Benutzeroberflächen der Anwendung ZULEX.")
+![Screenshots zweier Benutzeroberflächen der Anwendung ZULEX.](../../../images/ikfz-screenshot1.png "Screenshots zweier Benutzeroberflächen der Anwendung ZULEX.")
 
 ## Mit cronn als Großkunde von i-Kfz profitieren
 

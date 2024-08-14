@@ -20,7 +20,7 @@ Efficiencies will come from dynamically connecting our NFTs. Reliably productizi
 
 
 
-![Snowdog](/src/images/pexels-elina-volkova-19985436.jpg "Snowdog")
+![Snowdog](../../../images/pexels-elina-volkova-19985436.jpg "Snowdog")
 
 
 

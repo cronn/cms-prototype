@@ -1,4 +1,5 @@
 # when using the default proxy server port
+local_backend: true
 
 backend:
   name: git-gateway
@@ -6,7 +7,7 @@ backend:
   cms_label_prefix: decap-cms/
   squash_merges: true
 
-publish_mode: editorial_workflow
+# publish_mode: editorial_workflow
 
 media_folder: "src/images"
 
@@ -57,6 +58,11 @@ collections:
         multiple: true
         min: 1
         i18n: "duplicate"
+      - label: "Teaser"
+        name: "teaser"
+        widget: "text"
+        i18n: true
+        required: false
       - name: "body"
         widget: "markdown"
         label: "Post Body"
@@ -110,6 +116,7 @@ collections:
     i18n: true
     label: "Referenzen"
     folder: "src/content/references"
+    summary: "{{title}}, {{customerTitle}}, {{referenceDate}}"
     create: true
     delete: true
     slug: "{{fields.slug}}"
@@ -118,10 +125,20 @@ collections:
         label: "Referenz Titel"
         widget: "string"
         i18n: true
+      - label: "Datum"
+        name: "referenceDate"
+        widget: "datetime"
+        format: "YYYY-MM-DD"
+        i18n: "duplicate"
       - label: "Slug"
         name: "slug"
         widget: "string"
         i18n: true
+      - label: "OG Titel"
+        name: "ogTitle"
+        widget: "string"
+        i18n: true
+        required: false
       - label: "OG Beschreibung"
         name: "ogDescription"
         widget: "string"
@@ -130,6 +147,11 @@ collections:
         name: "titleImage"
         widget: "image"
         i18n: true
+      - label: "Branche"
+        name: "industry"
+        widget: "string"
+        i18n: true
+        required: false
       - label: "Kundenlogo"
         name: "customerLogo"
         widget: "image"
@@ -172,7 +194,20 @@ collections:
   - name: "jobs"
     i18n: true
     label: "Jobs"
+    slug: "{{title}}-m-w-d-{{workingPlace}}"
     folder: "src/content/jobs"
+    sortable_fields: ["title", "jobDate", "workingPlace"]
+    summary: "{{workingPlace}}, {{title}}, {{jobDate}}"
+    view_filters:
+      - label: Bonn
+        field: workingPlace
+        pattern: "Bonn"
+      - label: Hamburg
+        field: workingPlace
+        pattern: "Hamburg"
+      - label: Białystok
+        field: workingPlace
+        pattern: "Białystok"
     create: true
     delete: true
     extension: "json"
@@ -199,7 +234,7 @@ collections:
       - label: "Arbeitsort"
         name: "workingPlace"
         widget: "select"
-        options: ["Standort Eins", "Standort Zwei", "Standort Drei"]
+        options: ["Bonn", "Hamburg", "Białystok"]
         i18n: true
       - label: "Aufgaben"
         name: "tasks"

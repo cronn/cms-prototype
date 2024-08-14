@@ -33,7 +33,7 @@ const normalizedPathname = pathname
   ogDescription={ogDescription}
   image={titleImage}
 >
-  <div class="mx-auto">
+  <article class="mx-auto">
     {
       titleImage && (
         <Image
@@ -67,7 +67,9 @@ const normalizedPathname = pathname
       </ol>
     </div>
     <hr class="my-6" />
-    <Content />
+    <div class="prose text-lg prose-blockquote:border-blue-400">
+      <Content />
+    </div>
     {
       !!relatedArticlesDetails.length && (
         <div class="row-start-6 md:col-span-2 md:row-start-7">
@@ -78,7 +80,7 @@ const normalizedPathname = pathname
                 <a
                   href={getRelativeLocaleUrl(
                     currentLocale,
-                    `wiki/${article.slug.split("/")[1]}`,
+                    `loesungen/${article.slug.split("/")[1]}`,
                   )}
                 >
                   <Image
@@ -98,5 +100,5 @@ const normalizedPathname = pathname
         </div>
       )
     }
-  </div>
+  </article>
 </BaseLayout>

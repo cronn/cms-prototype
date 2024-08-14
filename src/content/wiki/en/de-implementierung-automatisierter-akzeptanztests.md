@@ -37,7 +37,7 @@ Komplexe Systeme benötigen mehr als nur eine Testsoftware. Wenn Sie beispielswe
 
 
 
-![Beispiel einer Testumgebung für ein Buchungssystem.](/src/images/blog-placeholder-2.jpg "Beispiel einer Testumgebung für ein Buchungssystem.")
+![Beispiel einer Testumgebung für ein Buchungssystem.](../../../images/blog-placeholder-2.jpg "Beispiel einer Testumgebung für ein Buchungssystem.")
 
 ## Welche Leistungen bietet cronn bei automatisierten Akzeptanztests an?
 

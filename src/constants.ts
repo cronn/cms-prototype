@@ -5,9 +5,9 @@ import { getLocalizedData } from "./i18n/utils";
 const { shared } = getLocalizedData({ currentLocale: "de" });
 
 export const WORKING_PLACES = {
-  first: shared.locationOne,
-  second: shared.locationTwo,
-  third: shared.locationThree,
+  bonn: shared.bonn,
+  hamburg: shared.hamburg,
+  bialystok: shared.bialystok,
 } as const;
 
 export const WORKING_HOURS = {

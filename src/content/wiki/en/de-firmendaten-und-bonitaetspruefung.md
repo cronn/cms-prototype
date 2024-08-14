@@ -35,7 +35,7 @@ cronn unterstützt bei der Beantragung der Zugriffsrechte bei den entsprechenden
 3. Struktur der Anbindung zu Creditreform und North Data.
 4. Expertise und Implementierung
 
-![Struktur der Anbindung zu Creditreform und North Data.](/src/images/pexels-marinca-liviu-20064362.jpg "Struktur der Anbindung zu Creditreform und North Data.")
+![Struktur der Anbindung zu Creditreform und North Data.](../../../images/pexels-marinca-liviu-20064362.jpg "Struktur der Anbindung zu Creditreform und North Data.")
 
 cronn verfügt über umfassende Expertise aus zahlreichenden Kundenprojekten. Unsere Experten übernehmen die Implementierung und Integration der Auskunftei-Schnitt­stellen in Ihre bestehende Software oder erstellen eine individuelle Lösung, die genau auf Ihre Anforderungen abgestimmt ist.
 

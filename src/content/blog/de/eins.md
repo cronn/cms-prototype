@@ -20,7 +20,7 @@ Innovative agile workflows are becoming unparalleled standpoint experts. In the 
 
 R. war hier
 
-![Schneehund](/src/images/pexels-elina-volkova-19985436.jpg "Schneehund")
+![Schneehund](../../../images/pexels-elina-volkova-19985436.jpg "Schneehund")
 
 ## Reliably engineering globally customer-focused digital nomads is crucial to our corporate prince2 practitioner.
 

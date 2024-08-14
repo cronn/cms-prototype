@@ -1,5 +1,6 @@
 ---
 title: Die beste Formel für das Risikomanagement
+referenceDate: 2024-08-11
 slug: de/testbau-referenz
 ogDescription: testbau-Referenz
 titleImage: /src/images/pexels-winson-ng-20057853.jpg
