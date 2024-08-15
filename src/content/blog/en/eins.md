@@ -30,4 +30,4 @@ Our Unparalleled Enterprise solution offers enterprises a suite of end-to-end of
 
 Our alignment development lifecycle enables immersive, innovative drivers. So we can hit the ground running, we will be effectively virtualising every smart contract in our space. We aim to conservatively transform our standard setter by globally productizing our best-in-class wholesale intrapreneurs. Efficiencies will come from intelligently revolutionizing our low hanging fruit.
 
-![Placeholder](/src/images/blog-placeholder-2.jpg "Placeholder")
+![Placeholder](/src/images/blog-placeholder-about.jpg "Placeholder")
