@@ -16,7 +16,7 @@ sub-title: This article discusses the reason for and handling of the
   applying it.
 lang: en
 date: 2024-08-13
-title: Behandlung der this-escape-Warnung in JDK 21
+title: Handling of the 'this-escape' warning in JDK 21
 teaser: This article discusses the reason for and handling of the 'this-escape'
   linter rule, introduced in JDK 21. The article uses examples to explain why
   the rule was introduced and what needs to be considered when applying it.
