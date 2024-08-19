@@ -1,30 +1,29 @@
 ---
+ogTitle: Handling of the 'this-escape' warning in JDK 21
+excerpt: The article explains the new linter rule `this-escape` in JDK 21. We
+  show why it was introduced and how to stop receiving this warning.
+ogDescription: The article explains the new linter rule `this-escape` in JDK 21.
+  We show why it was introduced and how to stop receiving this warning.
+titleImage: /src/images/pexels-winson-ng-20057853.jpg
+feature-image: /img/posts/this-escape/feature-img.jpg
+pubDate: 2024-08-19
+authors:
+  - rudi-rempel
 layout: post
-title: Behandlung der this-escape-Warnung in JDK 21
 sub-title: This article discusses the reason for and handling of the
   'this-escape' linter rule, introduced in JDK 21. The article uses examples to
   explain why the rule was introduced and what needs to be considered when
   applying it.
+lang: en
 date: 2024-08-13
+title: Behandlung der this-escape-Warnung in JDK 21
+teaser: This article discusses the reason for and handling of the 'this-escape'
+  linter rule, introduced in JDK 21. The article uses examples to explain why
+  the rule was introduced and what needs to be considered when applying it.
+lang-ref: this-escape
+preview-image: /img/posts/this-escape/preview-img.jpg
 categories:
   - java
-authors:
-  - rudi-rempel
-preview-image: /img/posts/this-escape/preview-img.jpg
-feature-image: /img/posts/this-escape/feature-img.jpg
-excerpt: The article explains the new linter rule `this-escape` in JDK 21. We
-  show why it was introduced and how to stop receiving this warning.
-lang: en
-lang-ref: this-escape
-ogTitle: en/Behandlung der this-escape-Warnung in JDK 21
-ogDescription: Der Artikel erklärt die neue Linter-Regel 'this-escape' in JDK
-  21. Wir zeigen, warum sie eingeführt wurde und wie man die Warnung umgeht.
-titleImage: /src/images/pexels-winson-ng-20057853.jpg
-pubDate: 2024-08-19
-teaser: In dem Beitrag wird der Grund und der Umgang mit der in JDK 21
-  eingeführten Linter-Regel 'this-escape' besprochen. Der Beitrag soll anhand
-  von Beispielen vermitteln, wieso die Regel eingeführt wurde und was bei der
-  Einhaltung zu beachten ist.
 ---
 
 JDK version 21 introduced a new rule to the Java linter. According to this rule it is not permitted to call an overridable method within the constructor of a class [^jdk-bug]. If this rule is disregarded and the Java code compiled using the <span style="white-space: pre;">`-Xlint:all`</span> or <span style="white-space: pre;">`-Xlint:this-escape`</span> flag, this leads to the following `this-escape` warning:
