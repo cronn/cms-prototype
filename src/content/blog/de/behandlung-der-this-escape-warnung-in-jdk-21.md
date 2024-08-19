@@ -1,6 +1,6 @@
 ---
 title: Behandlung der this-escape-Warnung in JDK 21
-ogTitle: Behandlung der this-escape-Warnung in JDK 21
+ogTitle: "JDK 21: Behandlung der this-escape-Warnung"
 ogDescription: Der Artikel erklärt die neue Linter-Regel 'this-escape' in JDK
   21. Wir zeigen, warum sie eingeführt wurde und wie man die Warnung umgeht.
 titleImage: /src/images/pexels-winson-ng-20057853.jpg
