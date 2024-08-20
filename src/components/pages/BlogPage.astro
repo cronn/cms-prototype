@@ -11,7 +11,7 @@ const currentLocale = getCurrentLocale(Astro.currentLocale);
 const { blog } = getLocalizedData({ currentLocale });
 const posts = (await getCollection("blog"))
   .filter((post) => post.slug.includes(`${currentLocale}/`))
-  .sort((a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf());
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 const authors = await getEntries(
   posts.map((post) => post.data.authors.map((author) => author)).flat(),
 );
