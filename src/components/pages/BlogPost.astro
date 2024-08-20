@@ -55,8 +55,8 @@ const authorsTitle = postAuthors.length > 1 ? blog.authors : blog.author;
           postAuthors.map(({ data: { image, name } }) => (
             <figure class="my-0 flex items-center gap-4 rounded-md p-2">
               <Image
-                width={56}
-                height={56}
+                width={112}
+                height={112}
                 src={dynamicImageImport[image]()}
                 alt={name}
                 class="h-14 w-14 rounded-full border border-2 border-blue-400 object-cover"
