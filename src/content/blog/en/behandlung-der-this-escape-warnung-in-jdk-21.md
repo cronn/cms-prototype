@@ -1,41 +1,27 @@
 ---
+title: Handling of the 'this-escape' warning in JDK 21
 ogTitle: "JDK 21: Handling of the 'this-escape' warning"
-excerpt: The article explains the new linter rule `this-escape` in JDK 21. We
-  show why it was introduced and how to stop receiving this warning.
 ogDescription: The article explains the new linter rule `this-escape` in JDK 21.
   We show why it was introduced and how to stop receiving this warning.
 titleImage: /src/images/pexels-winson-ng-20057853.jpg
-feature-image: /img/posts/this-escape/feature-img.jpg
 pubDate: 2024-08-19
 authors:
   - rudi-rempel
-layout: post
-sub-title: This article discusses the reason for and handling of the
-  'this-escape' linter rule, introduced in JDK 21. The article uses examples to
-  explain why the rule was introduced and what needs to be considered when
-  applying it.
-lang: en
-date: 2024-08-13
-title: Handling of the 'this-escape' warning in JDK 21
 teaser: This article discusses the reason for and handling of the 'this-escape'
   linter rule, introduced in JDK 21. The article uses examples to explain why
   the rule was introduced and what needs to be considered when applying it.
-lang-ref: this-escape
-preview-image: /img/posts/this-escape/preview-img.jpg
-categories:
-  - java
 ---
 JDK version 21 introduced a new rule to the Java linter. According to this rule it is not permitted to call an overridable method within the constructor of a class [^jdk-bug]. If this rule is disregarded and the Java code compiled using the `-Xlint:all` or `-Xlint:this-escape` flag, this leads to the following `this-escape` warning:
 
-```
+```java
 warning: [this-escape] possible `this` escape before subclass is fully initialized
 ```
 
 **You can jump to the three approaches here:**
 
-* [Using the keywords `final`, `private` or `static`](#Using the keywords `final`, `private` or `static`)
-* [Usage of the annotation `@PostConstruct`](#Usage of the annotation `@PostConstruct`)
-* \[Revise the class design](#Revise the class design)
+* [Using the keywords `final`, `private` or `static`](#using-the-keywords-final-private-or-static)
+* [Usage of the annotation `@PostConstruct`](#usage-of-the-annotation-postconstruct)
+* [Revise the class design](#revise-the-class-design)
 
 ### Background
 
@@ -100,8 +86,6 @@ It should be noted that the error in this example seems obvious as we have looke
 
 The following three sections present ways of preventing or circumventing the calling of an overridable method from the constructor.
 
-<a id="Using the keywords `final`, `private` or `static`"></a>
-
 #### Using the keywords `final`, `private` or `static`
 
 The most direct way to prevent the `this-escape` warning is to prohibit the overwriting of all methods called by the constructor. This can be achieved in Java with the keywords `final`, `private`, and `static`. If a class is declared as `final`, it is no longer possible to extend it. Accordingly, none of its methods can be overwritten. The declaration of a method as `final`, `private` or `static` ensures that it is the method alone which cannot be overwritten.
@@ -152,7 +136,6 @@ I heard you play guitar! Awesome!
 
 However, it is not always possible to declare a class as `final` or method as `final`, `private`, or `static`. If the class is managed by a dependency injection framework, such as Spring or Quarkus, the call of overridable methods from the constructor can usually be bypassed in another way. We will look at these in the next section.
 
-<a id="Usage of the annotation `@PostConstruct`"></a>
 
 #### Usage of the annotation `@PostConstruct`
 
@@ -274,7 +257,6 @@ The procedure with `@PostConstruct` makes it possible to link the use of overrid
 
 The previous two sections described two small tweaks to  satisfy the linter. In the next section we will look at another way of dealing with the warning.
 
-<a id="Revise the class design"></a>
 
 #### Revise the class design
 
