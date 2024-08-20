@@ -14,6 +14,7 @@ const { title, authors, ogTitle, ogDescription, pubDate, titleImage, teaser } =
 const currentLocale = getCurrentLocale(Astro.currentLocale);
 const { blog } = getLocalizedData({ currentLocale });
 const postAuthors = await getEntries(authors);
+const authorsTitle = postAuthors.length > 1 ? blog.authors : blog.author;
 ---
 
 <BaseLayout
@@ -40,7 +41,7 @@ const postAuthors = await getEntries(authors);
         </div>
         <h1>{title}</h1>
         <h2 class="mb-6 text-lg text-gray-500">
-          {blog.authors}: {
+          {authorsTitle}: {
             postAuthors.map((author) => author.data.name).join(", ")
           }
         </h2>

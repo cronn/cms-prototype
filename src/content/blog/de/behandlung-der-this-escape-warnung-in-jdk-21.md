@@ -22,9 +22,9 @@ In diesem Beitrag wollen wir kurz betrachten, wieso im Konstruktor keine übersc
 
 **Hier kommt ihr gleich zu den drei Lösungswegen:**
 
-* [Verwendung der Schlüsselwörter `final`, `private` oder `static`](#Verwendung der Schlüsselwörter `final`, `private` oder `static`)
-* [Verwendung der Annotation `@PostConstruct`](#Verwendung der Annotation `@PostConstruct`)
-* \[Überarbeiten des Klassendesigns](#Überarbeiten des Klassendesigns)
+* [Verwendung der Schlüsselwörter `final`, `private` oder `static`](#verwendung-der-schlüsselwörter-final-private-oder-static)
+* [Verwendung der Annotation `@PostConstruct`](#verwendung-der-annotation-postconstruct)
+* [Überarbeiten des Klassendesigns](#überarbeiten-des-klassendesigns)
 
 ### Hintergrund
 
@@ -87,8 +87,6 @@ Zu beachten ist, dass der Fehler in diesem Beispiel offensichtlich sein mag. Wir
 
 In den folgenden drei Abschnitten werden Möglichkeiten vorgestellt, wie das Aufrufen einer überschreibbaren Methode aus dem Konstruktor verhindert oder umgangen werden kann.
 
-<a id="Verwendung der Schlüsselwörter `final`, `private` oder `static`"></a>
-
 #### Verwendung der Schlüsselwörter `final`, `private` oder `static`
 
 Die direkteste Möglichkeit, die `this-escape`-Warnung zu verhindern, ist das Überschreiben aller vom Konstruktor aufgerufenen Methoden zu verbieten. Dies ist in Java mit den Schlüsselwörtern `final`, `private` und `static` erreichbar. Wird eine Klasse als `final` deklariert, ist es nicht mehr möglich, diese zu erweitern. Dementsprechend ist auch keiner ihrer Methoden überschreibbar. Die Deklaration einer Methode als `final`, `private` oder `static` sorgt dafür, dass nur die Methode nicht überschrieben werden kann.
@@ -138,8 +136,6 @@ I heard you play guitar! Awesome!
 ```
 
 Nicht immer ist es möglich, eine Klasse als `final` oder eine Methode als `final`, `private` oder `static` zu deklarieren. Falls die Klasse von einem Dependency Injection Framework, wie Spring oder Quarkus, verwaltet wird, kann der Aufruf von überschreibbaren Methoden aus dem Konstruktor meist auch auf eine andere Weise umgangen werden. Diese schauen wir uns im nächsten Abschnitt an.
-
-<a id="Verwendung der Annotation `@PostConstruct`"></a>
 
 #### Verwendung der Annotation `@PostConstruct`
 
@@ -261,7 +257,6 @@ Das Vorgehen mit `@PostConstruct` ermöglicht die Verwendung von überschreibbar
 
 In den vorherigen beiden Abschnitten wurden Vorgehen beschrieben, um den Linter durch kleine Kniffe wieder zufriedenzustellen. In dem nächsten Abschnitt betrachten wir noch eine andere Möglichkeit, mit der Warnung umzugehen.
 
-<a id="Überarbeiten des Klassendesigns"></a>
 
 #### Überarbeiten des Klassendesigns
 

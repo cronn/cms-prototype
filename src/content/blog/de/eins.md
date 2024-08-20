@@ -32,4 +32,4 @@ Key players will take ownership of their blockchains by effectively investing be
 
 We use our innovative NFTs to dynamically manage our innovation expectations. Conservatively synergising virtually end-to-end industry leaders is crucial to our long-term capability. Our business right-sizes stand-ups to globally and ethically reuse our unparalleled organic growth. Key players will take ownership of their team players by strategically strategizing corporate imagineerings.
 
-![Placeholder](/src/images/blog-placeholder-about.jpg "Placeholder")
+![Placeholder](../../../images/blog-placeholder-about.jpg "Placeholder")
