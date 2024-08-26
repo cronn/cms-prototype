@@ -1,7 +1,7 @@
 ---
 title: Erste Referenz
 referenceDate: 2024-08-08
-slug: de/erste-referenz
+slug: en/erste-referenz
 ogTitle: Blabla
 ogDescription: Erste Referenz
 titleImage: /src/images/pexels-marinca-liviu-20064362.jpg
