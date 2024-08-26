@@ -3,7 +3,7 @@ title: Neue Referenz
 referenceDate: 2024-08-09
 slug: de/urlderreferenz
 ogTitle: Testtitel
-ogDescription: OG
+ogDescription: Erfahren Sie, wie cronn das Projekt umgesetzt hat.
 titleImage: /src/images/pexels-winson-ng-20057853.jpg
 industry: Dienstleistungen
 customerLogo: /src/images/g50groß.png
