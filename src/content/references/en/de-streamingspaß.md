@@ -3,7 +3,9 @@ title: Competent expertise for entertaining streaming
 referenceDate: 2024-08-12
 slug: en/streamingspaß
 ogTitle: cronn GmbH - unsere success story mit streamingspaß
-ogDescription: streamingspaß-Referenz
+ogDescription: Lesen Sie in unserer Kundenreferenz, wie cronn für den
+  Streamingdienst streamingspaß schnell die Softwareentwicklung unterstützen
+  konnte.
 titleImage: /src/images/pexels-elina-volkova-19985436.jpg
 industry: Entertainment
 customerLogo: /src/images/g4611.png
