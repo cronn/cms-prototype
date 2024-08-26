@@ -1,7 +1,7 @@
 ---
 title: Neue Referenz
 referenceDate: 2024-08-09
-slug: de/urlderreferenz
+slug: en/urlderreferenz
 ogTitle: Testtitel
 ogDescription: OG
 titleImage: /src/images/pexels-winson-ng-20057853.jpg
