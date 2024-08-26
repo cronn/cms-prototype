@@ -1,7 +1,7 @@
 ---
 title: Ein spezialisiertes LIMS für ein spezielles Institut
 referenceDate: 2024-08-10
-slug: de/rechtsmedizin-lims
+slug: en/rechtsmedizin-lims
 ogTitle: cronn GmbH - Success Story mit der limsilims
 ogDescription: limsilims-Referenz
 titleImage: /src/images/pexels-barbaventuras-20116341.jpg
