@@ -3,7 +3,7 @@ title: Erste Referenz
 referenceDate: 2024-08-08
 slug: de/erste-referenz
 ogTitle: Blabla
-ogDescription: Erste Referenz
+ogDescription: Erfahren Sie, wie cronn das supertolle erste Projekt umgesetzt hat.
 titleImage: /src/images/pexels-marinca-liviu-20064362.jpg
 industry: Entertainment
 customerLogo: /src/images/pexels-canacrtrk-20035207.jpg
