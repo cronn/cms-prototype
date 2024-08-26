@@ -2,8 +2,10 @@
 title: Erste Referenz
 referenceDate: 2024-08-08
 slug: de/erste-referenz
+ogTitle: Blabla
 ogDescription: Erste Referenz
 titleImage: /src/images/pexels-marinca-liviu-20064362.jpg
+industry: Entertainment
 customerLogo: /src/images/pexels-canacrtrk-20035207.jpg
 customerTitle: Straßenbahnfahren
 projectAspects:
