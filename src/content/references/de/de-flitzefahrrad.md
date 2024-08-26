@@ -3,7 +3,9 @@ title: Software-as-a-Service-Applikation mit NB-IoT
 referenceDate: 2024-08-13
 slug: de/flitzefahrrad
 ogTitle: cronn GmbH - unsere success story mit flitzefahrrad
-ogDescription: flitzefahrrad-Referenz
+ogDescription: Erfahren Sie, wie cronn zusammen mit flitzefahrrad in kurzer Zeit
+  eine personalisierte Fahrrad-App für ein großes Versicherungsunternehmen
+  entwickelt hat.
 titleImage: /src/images/pexels-canacrtrk-20035207.jpg
 industry: Mobilität
 customerLogo: /src/images/g50.png
