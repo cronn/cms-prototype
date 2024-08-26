@@ -1,6 +1,6 @@
 ---
 title: Bequeme Lieferketten- und Auftragsverwaltung
-referenceDate: 2024-08-14
+referenceDate: 2007-08-14
 slug: de/eieiei
 ogTitle: cronn GmbH - unsere success story mit eieiei
 ogDescription: eieiei-Referenz
