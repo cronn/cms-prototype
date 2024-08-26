@@ -3,7 +3,8 @@ title: Die beste Formel für das Risikomanagement
 referenceDate: 2024-08-11
 slug: de/testbau-referenz
 ogTitle: cronn GmbH - unsere success story mit testbau
-ogDescription: testbau-Referenz
+ogDescription: Lesen Sie in unserer Kundenreferenz, wie cronn für testbau eine
+  Webanwendung für das Risikomanagement entwickelt hat.
 titleImage: /src/images/pexels-winson-ng-20057853.jpg
 industry: E-Government
 customerLogo: /src/images/g311.png
