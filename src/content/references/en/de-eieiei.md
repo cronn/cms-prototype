@@ -3,7 +3,8 @@ title: Convenient supply chain and order management
 referenceDate: 2007-08-14
 slug: en/eieiei
 ogTitle: cronn GmbH - unsere success story mit eieiei
-ogDescription: eieiei-Referenz
+ogDescription: "Lesen Sie, wie cronn für den Dienstleister eieiei den Prozess
+  der Lieferketten- und Auftragsverwaltung vereinfacht hat.  "
 titleImage: /src/images/pexels-canacrtrk-20035207.jpg
 industry: Dienstleistungen
 customerLogo: /src/images/g4705.png
