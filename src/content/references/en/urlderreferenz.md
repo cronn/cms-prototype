@@ -1,17 +1,19 @@
 ---
 title: Neue Referenz
 referenceDate: 2024-08-09
-slug: en/urlderreferenz
+slug: de/urlderreferenz
+ogTitle: Testtitel
 ogDescription: OG
 titleImage: /src/images/pexels-winson-ng-20057853.jpg
+industry: Dienstleistungen
 customerLogo: /src/images/g50groß.png
 customerTitle: Kunde
 projectAspects:
-  - title: Nice sausage
-    specification: We make the bestest!
+  - title: Tolle Wurst
+    specification: Wir machen die Beste!
 plusPoints:
-  - title: Math.
-    specification: Plus is better than minus!
+  - title: Mathe
+    specification: Besser Plus als Minus – Punkt!
 relatedReferences:
   - de/erste-referenz
 ---
