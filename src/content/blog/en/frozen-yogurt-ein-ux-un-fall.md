@@ -1,5 +1,5 @@
 ---
-title: Frozen Yogurt. An UX-ident   as a use case
+title: Frozen Yogurt. An UX-ident   as a use case.
 ogTitle: cronn – Frozen Yogurt. An UX-ident   as a use case.
 ogDescription: Our author Fabien uses a not so successful UI to show what is
   important in good UX.
@@ -20,7 +20,7 @@ The contents of the refrigerator were frozen. How could this happen? The cooling
 
 As it turned out, we were to blame for the frozen yogurt, as we had unintentionally set the temperature of the fridge to 1 °C. Pretty stupid!
 
-![Illustration of the user interface of the refrigerator, the unit for „°C“ is hard to notice.](../../../images/ux_unfall_interface_en.png "Illustration of the user interface of the refrigerator.")
+![Illustration of the user interface of the refrigerator, the unit for „°C“ is hard to notice.](/src/images/ux_unfall_interface_en.png "Illustration of the user interface of the refrigerator.")
 
 ## How did this accident happen?
 
@@ -34,7 +34,7 @@ The question can be answered with a clear “no”. While we were the culprits w
 
 The term “mental model” was coined by Donald Norman as early as 1988 in his book “The Design of Everyday Things”. Even before the actual interaction, we have a certain idea of how an interface works or will behave. This idea is shaped by our personal experience, cultural influences and general conventions. We form a mental model of how a system will behave during interaction. This model is based on an expectation and not on facts.
 
-![Graph showing the divergent mental models in the frozen yogurt case.](../../../images/ux_unfall_mentale_modelle_en.png "The divergent mental models in the frozen yogurt case.")
+![Graph showing the divergent mental models in the frozen yogurt case.](/src/images/ux_unfall_mentale_modelle_en.png "The divergent mental models in the frozen yogurt case.")
 
 ## So did the fault really lie with us, the users?
 
