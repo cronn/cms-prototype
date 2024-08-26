@@ -1,9 +1,11 @@
 ---
 title: Ein spezialisiertes LIMS für ein spezielles Institut
 referenceDate: 2024-08-10
-slug: en/rechtsmedizin-lims
+slug: de/rechtsmedizin-lims
+ogTitle: cronn GmbH - Success Story mit der limsilims
 ogDescription: limsilims-Referenz
 titleImage: /src/images/pexels-barbaventuras-20116341.jpg
+industry: Dienstleistungen
 customerLogo: /src/images/g4629.png
 customerTitle: limsilims
 projectAspects:
@@ -25,8 +27,8 @@ plusPoints:
   - title: "Langfristige Unterstützung "
     specification: Wartung, Weiterentwicklung und Support – alles aus einer Hand
 relatedReferences:
-  - de/eieiei
   - de/erste-referenz
+  - de/eieiei
 ---
 Das limsilims blickt auf eine 204-jährige Geschichte zurück. In den 38 Kliniken und 31 Instituten betreibt man mit mehr als 8.000 Mitarbeiter:innen Forschung und medizinische Versorgung auf Spitzenniveau. Jedes Jahr werden über eine halbe Million Patient:innen ambulant und stationär behandelt.
 
