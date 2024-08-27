@@ -2,19 +2,21 @@
 import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { Image } from "astro:assets";
-import PageTitle from "../../components/ui/PageTitle.astro";
+import PageTitle from "../ui/PageTitle.astro";
 import { getCurrentLocale, getLocalizedData } from "../../i18n/utils";
 import { dynamicImageImport } from "../../utils/dynamicImageImport";
 
 const currentLocale = getCurrentLocale(Astro.currentLocale);
-const { wiki } = getLocalizedData({ currentLocale });
-const articles = (await getCollection("wiki")).filter((article) =>
-  article.id.includes(`${currentLocale}/`),
-);
+const { solutions } = getLocalizedData({ currentLocale });
+const articles = (await getCollection("solutions"))
+  .filter((article) => article.id.includes(`${currentLocale}/`))
+  .toSorted(
+    (a, b) => b.data.articleDate.getTime() - a.data.articleDate.getTime(),
+  );
 ---
 
-<BaseLayout title={wiki.title} ogDescription={wiki.title}>
-  <PageTitle title={wiki.title} />
+<BaseLayout title={solutions.title} ogDescription={solutions.title}>
+  <PageTitle title={solutions.title} />
   <section>
     <ul class="w-full">
       {

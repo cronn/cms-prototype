@@ -1,9 +1,9 @@
 ---
 import { type CollectionEntry, getCollection } from "astro:content";
-import WikiDetailsPage from "../../components/pages/WikiDetailsPage.astro";
+import SolutionsDetailsPage from "../../components/pages/SolutionsDetailsPage.astro";
 
 export async function getStaticPaths() {
-  const articles = await getCollection("wiki");
+  const articles = await getCollection("solutions");
   return articles
     .filter((article) => article.id.includes("de/"))
     .map((article) => {
@@ -14,9 +14,9 @@ export async function getStaticPaths() {
       };
     });
 }
-type Props = CollectionEntry<"wiki">;
+type Props = CollectionEntry<"solutions">;
 
 const article = Astro.props;
 ---
 
-<WikiDetailsPage article={article} />
+<SolutionsDetailsPage article={article} />

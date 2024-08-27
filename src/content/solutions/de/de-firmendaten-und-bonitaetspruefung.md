@@ -1,7 +1,8 @@
 ---
 title: Firmendaten- und Bonitätsprüfung – Der Schlüssel zur optimalen
   Geschäftsentscheidung
-slug: en/firmendaten-und-bonitaetspruefung
+slug: de/firmendaten-und-bonitaetspruefung
+articleDate: 2007-08-04
 titleImage: /src/images/pexels-winson-ng-20057853.jpg
 ogTitle: Firmendaten- und Bonitätsprüfung – Ihr Schlüssel zur optimalen
   Geschäftsentscheidung

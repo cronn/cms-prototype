@@ -1,6 +1,7 @@
 ---
-title: Erster Wiki Eintrag
-slug: de/erster-wiki-eintrag
+title: Erster Lösungen Eintrag
+slug: de/erster-loesungen-eintrag
+articleDate: 2007-08-01
 titleImage: /src/images/pexels-winson-ng-20057853.jpg
 ogTitle: Berge
 ogDescription: Berge sind voller Schnee und so schön

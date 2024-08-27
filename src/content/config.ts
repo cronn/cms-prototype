@@ -57,14 +57,15 @@ const jobs = defineCollection({
   }),
 });
 
-const wiki = defineCollection({
+const solutions = defineCollection({
   type: "content",
   schema: z.object({
     ogTitle: z.string(),
     ogDescription: z.string(),
     title: z.string(),
+    articleDate: z.coerce.date(),
     titleImage: z.string(),
-    relatedArticles: z.array(reference("wiki")).max(3).optional(),
+    relatedArticles: z.array(reference("solutions")).max(3).optional(),
   }),
 });
 
@@ -76,4 +77,4 @@ const authors = defineCollection({
   }),
 });
 
-export const collections = { blog, references, jobs, wiki, authors };
+export const collections = { blog, references, jobs, solutions, authors };

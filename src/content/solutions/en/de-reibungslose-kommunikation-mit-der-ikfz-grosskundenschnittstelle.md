@@ -1,6 +1,7 @@
 ---
 title: Reibungslose Kommunikation mit der i-Kfz-Großkundenschnittstelle
 slug: en/ikfz
+articleDate: 2007-08-02
 titleImage: /src/images/ikfz-titel.svg
 ogTitle: Ihre Software als Kfz-Großkunde
 ogDescription: Mit maßgeschneiderten Anwendungen von cronn melden Sie problemlos

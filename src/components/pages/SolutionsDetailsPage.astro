@@ -2,17 +2,17 @@
 import { getEntries, type CollectionEntry } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { Image } from "astro:assets";
-import InternalLink from "../../components/InternalLink.astro";
+import InternalLink from "../InternalLink.astro";
 import { getCurrentLocale, getLocalizedData } from "../../i18n/utils";
 import { getRelativeLocaleUrl } from "astro:i18n";
 import { dynamicImageImport } from "../../utils/dynamicImageImport";
 
 interface Props {
-  article: CollectionEntry<"wiki">;
+  article: CollectionEntry<"solutions">;
 }
 
 const currentLocale = getCurrentLocale(Astro.currentLocale);
-const { wiki } = getLocalizedData({ currentLocale });
+const { solutions } = getLocalizedData({ currentLocale });
 
 const { article } = Astro.props;
 const { title, titleImage, ogDescription, ogTitle, relatedArticles } =
@@ -49,7 +49,7 @@ const normalizedPathname = pathname
     <h1 class="my-8">{title}</h1>
     <hr class="my-6" />
     <div class="">
-      <p class="text-2xl">{wiki.content}:</p>
+      <p class="text-2xl">{solutions.content}:</p>
       <ol class="mb-8">
         {
           headings
@@ -73,7 +73,7 @@ const normalizedPathname = pathname
     {
       !!relatedArticlesDetails.length && (
         <div class="row-start-6 md:col-span-2 md:row-start-7">
-          <h3 class="mb-8 text-center">{wiki.relatedArticles}</h3>
+          <h3 class="mb-8 text-center">{solutions.relatedArticles}</h3>
           <ul class="grid grid-cols-3 grid-rows-subgrid gap-8">
             {relatedArticlesDetails?.map((article) => (
               <li class="max-w-sm overflow-hidden rounded shadow-lg hover:shadow-xl">
