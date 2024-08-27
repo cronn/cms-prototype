@@ -1,43 +1,55 @@
 {
   "workingHours": "fullTime",
   "jobDate": "2024-08-01",
-  "title": "Expert IT-Security",
+  "title": "IT – Projektleiter/-in",
   "workingPlace": "Hamburg",
   "tasks": [
     {
-      "task": "Unterstützung und Beratung unserer Projektteams und unserer Kunden bei der Erstellung, Planung und Umsetzung des Security Development Lifecycle und der Security Architecture"
+      "task": "Du arbeitest projektbezogen an agilen Softwareentwicklungsprojekten und übernimmst die Verantwortung für die Planung, den Ablauf und die Organisation"
     },
     {
-      "task": "Nachverfolgung, Fehlerbehebung und Dokumentation sicherheitsrelevanter Probleme"
+      "task": "Du erstellst und pflegst Dokumentationen über Projektstatus und Fortschritte"
     },
     {
-      "task": "Schwachstellenprüfung und -bewertung für 3rd Party Libraries"
+      "task": "Du koordinierst und führst fachlich Projektteams"
     },
     {
-      "task": "Koordination und Steuerung von für die IT-Security relevanten Entwicklungstätigkeiten und Definition technischer Vorgaben"
+      "task": "Du arbeitest eng mit Kunden zusammen und berücksichtigst deren Wünsche"
     },
     {
-      "task": "Dokumentation und Reporting des Security-Status"
+      "task": "Du bist das Sprachrohr der agilen Teams und sicherst persönlich eine erfolgreiche Kommunikation zu allen Stakeholdern"
+    },
+    {
+      "task": "Du bist vertraut mit Projektmanagement-Tools (Jira etc.), schreibst bei Bedarf selbstständig User Stories und managst inhaltlich und zeitlich das GoLive"
+    },
+    {
+      "task": "Mit viel Empathie und Feingefühl identifizierst Du weitere Projektbedarfe beim Kunden und bist auch nach Projektabschluss / in der Wartungsphase der Accounting-Partner für ihn"
+    },
+    {
+      "task": "Du bist die erste Ansprechperson für dein Team und sicherst die individuelle Entwicklung und Zufriedenheit deiner Kollegen und Kolleginnen"
     }
   ],
   "qualifications": [
     {
-      "qualification": "Du besitzt erste Erfahrung als IT-Security Expert, Expert Cyber-Security oder in einem ähnlichen IT-sicherheitsrelevanten Bereich"
+      "qualification": "Dein Studium in Informatik, Wirtschaftsinformatik oder einer vergleichbaren naturwissenschaftlichen Fachrichtung hast du sehr gut abgeschlossen"
     },
     {
-      "qualification": "Du hast ein Studium im Bereich Informatik, IT-Sicherheit oder ein vergleichbares Studium mit gutem Erfolg abgeschlossen"
+      "qualification": "Du hast bereits Berufserfahrung in der Leitung von (agilen) IT-Projektenit gutem Erfolg abgeschlossen"
     },
     {
-      "qualification": "Programmierkenntnisse in Java oder TypeScript bringst Du bereits mit"
+      "qualification": "Du überzeugst mit Deinem sicheren Auftreten, Deiner Eloquenz, viel Empathie und Präsentationsgeschick"
     },
     {
-      "qualification": "Dir gehen Deutsch und Englisch fließend über Finger und Zunge"
+      "qualification": "Du hast ein natürliches Gespür für weitere Projektchancen"
     },
     {
-      "qualification": "Du bist offen für Neuerungen"
+      "qualification": "Du hast Erfahrung in der (agilen) Softwareentwicklung im Bereich Open Source"
     },
     {
-      "qualification": "Du arbeitest selbstständig und eigenverantwortlich"
+      "qualification": "Du arbeitest bei deinen eigenen Aufgaben selbstständig und immer strukturiert"
+    },
+    {
+      "qualification": "Deutsch und Englisch gehen Dir fließend über Finger und Zunge"
     }
   ],
   "benefits": [
