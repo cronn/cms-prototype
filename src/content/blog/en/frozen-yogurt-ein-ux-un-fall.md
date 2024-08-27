@@ -7,9 +7,9 @@ titleImage: /src/images/frozen-joghurt-featured-en.jpg
 pubDate: 2024-08-08
 authors:
   - ui-ux
+teaser: If the mental model of the UI designers does not match that of the
+  users, it can quickly lead to unintended results – as our example shows.
 ---
-**If the mental model of the UI designers does not match that of the users, it can quickly lead to unintended results – as our example shows.**
-
 Rarely has our apartment looked as good as it did during the lockdown period of 2021. For the first time in years, we had the time and no excuse to deal with the deferred projects in our own four walls. The basement and the closet were cleaned out in the finest Marie-Kondō-manner and small DIY projects to improve the apartment were more or less successfully implemented.
 
 Next up was the fridge. The freezer compartment had to be de-iced again and the vegetable drawer needed to be cleaned. So we cleared the refrigerator out, scraped the ice out and cleaned everything thoroughly. After we adjusted the temperature control we could check off another project on our list. “Nice!” we thought, until we were caught by surprise a few hours later.
