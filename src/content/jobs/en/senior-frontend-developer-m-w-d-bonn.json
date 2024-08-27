@@ -1,0 +1,63 @@
+{
+  "workingHours": "fullTime",
+  "jobDate": "2024-08-27",
+  "title": "Senior-Frontend-Developer",
+  "workingPlace": "Bonn",
+  "tasks": [
+    {
+      "task": "Du entwickelst geschäftskritische Individualsoftware für Kunden"
+    },
+    {
+      "task": "Du gehst deine Arbeit mit Methoden wie TDD und Pair Programming an"
+    },
+    {
+      "task": "Dein Tagesablauf wird dabei geprägt von der agilen Zusammenarbeit unter anderem mit Stakeholdern, Entwicklern, Testern, Analysten und UX-/UI-Designern"
+    },
+    {
+      "task": "Entwickelt wird mit JavaScript/TypeScript, React, Angular, Selenium/Playwright/Cypress, Jenkins/GitLab - Du musst aber nicht in allen Bereichen Experte sein"
+    }
+  ],
+  "qualifications": [
+    {
+      "qualification": "Du hast langjährige Erfahrung in der (agilen) Softwareentwicklung mit o.g. Stack"
+    },
+    {
+      "qualification": "Du hast Lust, immer weiter dazuzulernen, es macht Dir andererseits aber auch Spaß, Dein eigenes Wissen zu teilen"
+    },
+    {
+      "qualification": "Du magst Clean Code und schreibst Tests genauso gerne wie produktiven Code"
+    },
+    {
+      "qualification": "Deutsch und Englisch gehen Dir fließend über Finger und Zunge"
+    },
+    {
+      "qualification": "Du hast ein fachbezogenes Studium erfolgreich abgeschlossen"
+    }
+  ],
+  "benefits": [
+    {
+      "benefit": "Flexible Arbeitszeiten, 30 Urlaubstage und mögliche Home-Office-Tage bringen Work und Life in Balance"
+    },
+    {
+      "benefit": "Dein jährliches Fortbildungsbudget und zwei Sonderurlaubstage für Deine Weiterbildung bringen Dich persönlich vorwärts"
+    },
+    {
+      "benefit": "Deine Endgeräte, Betriebssysteme und Tools wählst Du selbst aus"
+    },
+    {
+      "benefit": "Unsere schicken Büros am Bonner Bogen sind modern und ergonomisch ausgestattet und Du bekommst ein Deutschland-Ticket, um stressfrei und nachhaltig dahin zu gelangen"
+    },
+    {
+      "benefit": "Du erhältst im Office für Dein Mittagessen einen Zuschuss vom Arbeitgeber"
+    },
+    {
+      "benefit": "Nach der Probezeit kannst Du auf Wunsch ein cronn-bike bekommen"
+    },
+    {
+      "benefit": "Gestaltungsfreiraum und Zusammenarbeit auf Augenhöhe gehören bei uns zur CI"
+    },
+    {
+      "benefit": "Auf den großen und kleineren Teamevents wird der Zusammenhalt gestärkt"
+    }
+  ]
+}
