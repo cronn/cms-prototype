@@ -1,6 +1,7 @@
 ---
-title: First wiki entry
-slug: en/erster-wiki-eintrag
+title: First solutions entry
+slug: en/erster-loesungen-eintrag
+articleDate: 2007-08-01
 titleImage: /src/images/pexels-winson-ng-20057853.jpg
 ogTitle: Mointains
 ogDescription: Snowy mountains are beatiful

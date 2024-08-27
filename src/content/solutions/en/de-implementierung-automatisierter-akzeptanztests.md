@@ -2,6 +2,7 @@
 title: Testfallerstellung – Automatisierte Akzeptanztests für effiziente und
   fehlerfreie Softwareentwicklung
 slug: en/implementierung-automatisierter-akzeptanztests
+articleDate: 2007-08-03
 titleImage: /src/images/pexels-elina-volkova-19985436.jpg
 ogTitle: Implementierung automatischer Akzeptanztests
 ogDescription: Softwaretests sollten automatisiert sein – auch Akzeptanz-, bzw.

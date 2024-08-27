@@ -60,7 +60,6 @@ collections:
         name: "teaser"
         widget: "text"
         i18n: true
-        required: false
       - name: "body"
         widget: "markdown"
         label: "Post Body"
@@ -68,8 +67,8 @@ collections:
   - name: "articles"
     title: "articles"
     i18n: true
-    label: "Wiki Artikel"
-    folder: "src/content/wiki"
+    label: "Lösungen"
+    folder: "src/content/solutions"
     create: true
     delete: true
     slug: "{{fields.slug}}"
@@ -82,6 +81,11 @@ collections:
         name: "slug"
         widget: "string"
         i18n: true
+      - label: "Datum"
+        name: "articleDate"
+        widget: "datetime"
+        format: "YYYY-MM-DD"
+        i18n: "duplicate"
       - label: "Titelbild"
         name: "titleImage"
         widget: "image"

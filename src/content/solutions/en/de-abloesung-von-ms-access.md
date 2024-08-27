@@ -1,6 +1,7 @@
 ---
 title: Ablösung von MS Access mittels webbasierter Lösungen
 slug: en/Abloesung-von-MS-Access
+articleDate: 2007-08-06
 titleImage: /src/images/pexels-barbaventuras-20116341.jpg
 ogTitle: Ablösung von MS-Access-Anwendungen
 ogDescription: Ersetzen Sie Ihre MS Access-Anwendung für eine bessere

@@ -1,6 +1,7 @@
 ---
 title: Automatische Datenextraktion durch künstliche Intelligenz
-slug: de/datenextraktion-mit-ki
+slug: en/datenextraktion-mit-ki
+articleDate: 2007-08-05
 titleImage: /src/images/datenextraktion-titel.svg
 ogTitle: Automatische Datenextraktion mit KI
 ogDescription: Entdecken Sie, wie KI Unternehmen bei der Extraktion von Daten
@@ -10,17 +11,13 @@ relatedArticles:
 ---
 Unternehmen jonglieren täglich mit zahlreichen Daten in Form von E-Mails, Nachrichten oder Dokumenten. Diese Daten manuell zu erfassen und zu analysieren wird schnell zeitaufwändig. In diesem Artikel stellen wir vor, wie künstliche Intelligenzen wie ChatGPT Abhilfe schaffen können, indem sie Informationen automatisch auslesen.
 
-
-
 ## Welche Vorteile bietet die automatische Datenextraktion für Unternehmen?
 
 Die automatische Datenextraktion mit künstlicher Intelligenz (KI) aus E-Mails, Nachrichten und Dokumenten bietet eine Reihe von Vorteilen aus Unternehmenssicht:
 
-
-
 * Zeit- und Kosten­ersparnis:
 
- Automatisierte Daten­extraktion kann den Zeitaufwand und die Kosten für manuelle Datenanalysen und -erfassung erheblich reduzieren. Viele Prozesse werden durch Automatisierung erst möglich.
+  Automatisierte Daten­extraktion kann den Zeitaufwand und die Kosten für manuelle Datenanalysen und -erfassung erheblich reduzieren. Viele Prozesse werden durch Automatisierung erst möglich.
 * Intelligente Kunden­interaktionen:
 
   Mit der Fähigkeit, Informationen aus Texten wie E-Mails oder sozialen Medien zu extrahieren, können Unternehmen ihre Kunden besser verstehen und Anfragen sogar automatisiert beantworten. Zum Beispiel können Anfragen nach Angeboten für standardisierte Leistungen (etwa Druck­erzeugnisse oder Transporte) direkt vom System beantwortet werden oder als Auftrag in das Auftrags­system fließen.
@@ -41,13 +38,9 @@ Die automatische Datenextraktion mit künstlicher Intelligenz (KI) aus E-Mails, 
 
 Trotz dieser Vorteile sind bei der Implementierung solcher Systeme auch Herausforderungen zu berücksichtigen, wie beispiel­sweise Datenschutz und Sicherheit, die Qualität und Relevanz der extrahierten Daten und die Notwendigkeit, das System ständig zu überwachen und anzupassen, um sicherzustellen, dass es wie beabsichtigt funktioniert.
 
-
-
 ## Wie funktioniert die Datenextraktion mit KI?
 
 Die Daten­extraktion aus Texten mit ChatGPT, oder allgemein mit großen Sprach­modellen (Large Language Models, LLMs), basiert auf der Fähigkeit dieser Modelle, menschliche Sprache zu „verstehen“ und semantische Zusammenhänge in Texten zu erkennen. Im Kern handelt es sich dabei um eine automatisierte Textanalyse. Der grundlegende Prozess sieht wie folgt aus:
-
-
 
 * Prompt-Erstellung:
 
