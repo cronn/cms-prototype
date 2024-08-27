@@ -7,7 +7,7 @@ titleImage: /src/images/frozen-joghurt-featured.jpg
 pubDate: 2024-08-08
 authors:
   - ui-ux
-teaser: >+
+teaser: >
   Wenn das mentale Modell der UI-Designer*innen   nicht mit dem der User
   übereinstimmt, kann es schnell zu ungewollten Ergebnissen führen – wie unser
   Beispiel zeigt.
