@@ -7,6 +7,8 @@ pubDate: 2024-04-12
 authors:
   - marie-musterfrau
   - max-mustermann
+teaser: Teasers are texts, that will give the reader an idea of what the text is
+  about an will raise interest.
 ---
 ## Company-wide propositions are becoming mobile market focus experts.
 

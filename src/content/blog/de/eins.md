@@ -7,6 +7,8 @@ pubDate: 2024-04-12
 authors:
   - marie-musterfrau
   - max-mustermann
+teaser: Teasers are texts, that will give the reader an idea of what the text is
+  about an will raise interest.
 ---
 ## Is your bandwidth prepared for senior brand growth?
 
