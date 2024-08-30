@@ -1,7 +1,7 @@
 ---
 title: Automatische Datenextraktion durch künstliche Intelligenz
 slug: de/datenextraktion-mit-ki
-articleDate: 2007-08-05
+articleDate: 2024-08-30
 titleImage: /src/images/datenextraktion-titel.svg
 ogTitle: Automatische Datenextraktion mit KI
 ogDescription: Entdecken Sie, wie KI Unternehmen bei der Extraktion von Daten
