@@ -8,7 +8,7 @@ ogDescription: Erfahren Sie, wie cronn zusammen mit flitzefahrrad in kurzer Zeit
   entwickelt hat.
 titleImage: /src/images/pexels-canacrtrk-20035207.jpg
 industry: Mobilität
-customerLogo: /src/images/g50.png
+customerLogo: /src/images/logoipsum-300.svg
 customerTitle: flitzefahrrad
 projectAspects:
   - title: "Leistungen "
