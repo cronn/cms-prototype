@@ -6,7 +6,7 @@ ogTitle: Blabla
 ogDescription: Erfahren Sie, wie cronn das supertolle erste Projekt umgesetzt hat.
 titleImage: /src/images/pexels-marinca-liviu-20064362.jpg
 industry: Entertainment
-customerLogo: /src/images/pexels-canacrtrk-20035207.jpg
+customerLogo: /src/images/logoipsum-331.svg
 customerTitle: Straßenbahnfahren
 projectAspects:
   - title: Setup
