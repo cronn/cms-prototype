@@ -25,7 +25,7 @@ plusPoints:
     specification: Hohe Sicherheitsstandards
 relatedReferences:
   - de/erste-referenz
-  - de/urlderreferenz
+  - de/flitzefahrrad
 ---
 Eier ohne Kükentöten: Dafür engagiert sich eieiei. Als Dienstleister bietet eieiei. eine technische Lösung zur Geschlechtsbestimmung im Brutei an. Die männlichen Bruteier können dadurch also bereits vor dem Schlüpfen aussortiert werden – so wird sichergestellt, dass keine männlichen Küken getötet werden. Nur die weiblichen Bruteier schlüpfen und wachsen als Legehennen heran, welche unbefruchtete Frischeier legen. Im Supermarkt sind diese Eier mit dem Siegel „Ohne Kükentöten“ ausgezeichnet, das mit einer genauen Lieferkettenverifizierung garantiert werden kann. Verbraucher:innen können dank eines Codes auf dem Ei über die Website von eieiei diesen Mehrwert selbst überprüfen.
 
