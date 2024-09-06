@@ -1,0 +1,21 @@
+{
+  "workingHours": "fullTime",
+  "jobDate": "2024-04-15",
+  "title": "Erster Job",
+  "workingPlace": "Bonn",
+  "tasks": [
+    {
+      "task": "Alles abarbeiten"
+    }
+  ],
+  "qualifications": [
+    {
+      "qualification": "Sehr gut sein"
+    }
+  ],
+  "benefits": [
+    {
+      "benefit": "Gratis Limo"
+    }
+  ]
+}
