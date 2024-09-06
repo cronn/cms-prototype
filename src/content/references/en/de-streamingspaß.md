@@ -28,7 +28,7 @@ plusPoints:
     specification: If necessary, the required expertise was added to the cronn team
 relatedReferences:
   - de/eieiei
-  - de/erste-referenz
+  - de/flitzefahrrad
 ---
 Series, movies, live sports, music and more: with the multimedia portal streamingspaß, streamingspaß is stepping up to provide a real alternative to international streaming portals. With its impressive 3,4 million subscribers the platform is on a steady growth course.
 

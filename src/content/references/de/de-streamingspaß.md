@@ -29,7 +29,7 @@ plusPoints:
     specification: " Bei Bedarf wurde dem cronn-Team die benötigte Expertise hinzugefügt"
 relatedReferences:
   - de/eieiei
-  - de/erste-referenz
+  - de/flitzefahrrad
 ---
 Serien, Filme, Livesport, Musik und mehr. Mit dem Multimediaportal streamingspaß tritt streamingspaß Deutschland an, um den internationalen Streamingportalen eine echte Alternative entgegenzustellen. Mittlerweile mehr als 3,4 Millionen Abonnenten sind schon eine echte Ansage und die Plattform bleibt voll auf Wachstumskurs.
 
