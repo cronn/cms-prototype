@@ -30,7 +30,6 @@ plusPoints:
 relatedReferences:
   - de/eieiei
   - de/erste-referenz
-  - de/urlderreferenz
 ---
 Serien, Filme, Livesport, Musik und mehr. Mit dem Multimediaportal streamingspaß tritt streamingspaß Deutschland an, um den internationalen Streamingportalen eine echte Alternative entgegenzustellen. Mittlerweile mehr als 3,4 Millionen Abonnenten sind schon eine echte Ansage und die Plattform bleibt voll auf Wachstumskurs.
 
