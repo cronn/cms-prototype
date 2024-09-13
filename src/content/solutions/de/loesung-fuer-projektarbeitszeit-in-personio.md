@@ -1,6 +1,6 @@
 ---
 title: Projektarbeitszeiterfassung – cronns Ergänzung zu Personio
-slug: /loesung-fuer-projektarbeitszeit-in-personio
+slug: de/loesung-fuer-projektarbeitszeit-in-personio
 articleDate: 2024-09-13
 titleImage: /src/images/g4611.png
 ogTitle: Projektarbeitszeitserfassung – cronns Ergänzung zu Personio
