@@ -1,5 +1,5 @@
 ---
-import { getEntries, type CollectionEntry } from "astro:content";
+import { getEntries, type CollectionEntry, render } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { Image } from "astro:assets";
 import { getCurrentLocale, getLocalizedData } from "../../i18n/utils";
@@ -26,7 +26,7 @@ const {
   relatedReferences,
   ogDescription,
 } = reference.data;
-const { Content } = await reference.render();
+const { Content } = await render(reference);
 
 const relatedReferencesDetails = await getEntries(relatedReferences ?? []);
 ---
@@ -75,7 +75,6 @@ const relatedReferencesDetails = await getEntries(relatedReferences ?? []);
       >
         <Content />
       </div>
-
       <div
         class="col-span-1 row-start-3 md:col-start-2 md:row-span-1 md:row-start-2"
       >
@@ -114,7 +113,7 @@ const relatedReferencesDetails = await getEntries(relatedReferences ?? []);
                   <a
                     href={getRelativeLocaleUrl(
                       currentLocale,
-                      `referenzen/${reference.slug.split("/")[1]}`,
+                      `referenzen/${reference.id.split("/")[1]}`,
                     )}
                   >
                     <Image

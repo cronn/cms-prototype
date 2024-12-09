@@ -1,5 +1,5 @@
 ---
-import { getEntries, type CollectionEntry } from "astro:content";
+import { getEntries, type CollectionEntry, render } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { Image } from "astro:assets";
 import InternalLink from "../InternalLink.astro";
@@ -17,7 +17,7 @@ const { solutions } = getLocalizedData({ currentLocale });
 const { article } = Astro.props;
 const { title, titleImage, ogDescription, ogTitle, relatedArticles } =
   article.data;
-const { Content, headings } = await article.render();
+const { Content, headings } = await render(article);
 const relatedArticlesDetails = await getEntries(relatedArticles ?? []);
 const pathname = Astro.url.pathname;
 
@@ -80,7 +80,7 @@ const normalizedPathname = pathname
                 <a
                   href={getRelativeLocaleUrl(
                     currentLocale,
-                    `loesungen/${article.slug.split("/")[1]}`,
+                    `loesungen/${article.id.split("/")[1]}`,
                   )}
                 >
                   <Image

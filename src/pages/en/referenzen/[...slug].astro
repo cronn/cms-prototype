@@ -7,7 +7,7 @@ export async function getStaticPaths() {
   return references
     .filter((reference) => reference.id.includes("en/"))
     .map((reference) => {
-      const [lang, ...slug] = reference.slug.split("/");
+      const [lang, ...slug] = reference.id.split("/");
       return {
         params: { lang, slug: slug.join("/") || undefined },
         props: reference,

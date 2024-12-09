@@ -1,8 +1,9 @@
 import { defineCollection, reference, z } from "astro:content";
-import { WORKING_HOURS, WORKING_PLACES } from "../constants";
+import { glob } from "astro/loaders";
+import { WORKING_HOURS, WORKING_PLACES } from "./constants";
 
 const blog = defineCollection({
-  type: "content",
+  loader: glob({ pattern: "**/*.md", base: "./src/content/blog" }),
   schema: z.object({
     ogTitle: z.string(),
     ogDescription: z.string(),
@@ -16,7 +17,7 @@ const blog = defineCollection({
 });
 
 const references = defineCollection({
-  type: "content",
+  loader: glob({ pattern: "**/*.md", base: "./src/content/references" }),
   schema: z.object({
     title: z.string(),
     referenceDate: z.coerce.date(),
@@ -37,7 +38,7 @@ const references = defineCollection({
 });
 
 const jobs = defineCollection({
-  type: "data",
+  loader: glob({ pattern: "**/*.json", base: "./src/content/jobs" }),
   schema: z.object({
     title: z.string(),
     // Transform string to Date object
@@ -58,7 +59,7 @@ const jobs = defineCollection({
 });
 
 const solutions = defineCollection({
-  type: "content",
+  loader: glob({ pattern: "**/*.md", base: "./src/content/solutions" }),
   schema: z.object({
     ogTitle: z.string(),
     ogDescription: z.string(),
@@ -70,7 +71,7 @@ const solutions = defineCollection({
 });
 
 const authors = defineCollection({
-  type: "data",
+  loader: glob({ pattern: "**/*.json", base: "./src/content/authors" }),
   schema: z.object({
     name: z.string(),
     image: z.string(),
