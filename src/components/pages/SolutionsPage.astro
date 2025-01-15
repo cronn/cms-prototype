@@ -21,26 +21,24 @@ const articles = (await getCollection("solutions"))
     <ul class="w-full">
       {
         articles.map((article) => (
-          <>
-            <li class="mb-8 overflow-hidden rounded shadow-lg hover:shadow-xl">
-              <a
-                href={`loesungen/${article.slug.split("/")[1]}`}
-                class="grid grid-cols-2"
-              >
-                <Image
-                  class="max-h-48 w-full shrink rounded-none object-cover"
-                  src={dynamicImageImport[article.data.titleImage]()}
-                  alt={article.data.title}
-                  width={550}
-                  height={200}
-                />
-                <div class="px-6 py-4">
-                  <h2 class="mb-2 text-xl font-bold">{article.data.title}</h2>
-                  <p class="text-gray-950">{article.data.ogDescription}</p>
-                </div>
-              </a>
-            </li>
-          </>
+          <li class="mb-8 overflow-hidden rounded shadow-lg hover:shadow-xl">
+            <a
+              href={`loesungen/${article.id.split("/")[1]}`}
+              class="grid grid-cols-2"
+            >
+              <Image
+                class="max-h-48 w-full shrink rounded-none object-cover"
+                src={dynamicImageImport[article.data.titleImage]()}
+                alt={article.data.title}
+                width={550}
+                height={200}
+              />
+              <div class="px-6 py-4">
+                <h2 class="mb-2 text-xl font-bold">{article.data.title}</h2>
+                <p class="text-gray-950">{article.data.ogDescription}</p>
+              </div>
+            </a>
+          </li>
         ))
       }
     </ul>

@@ -51,7 +51,7 @@ Translations for both German and English are placed in the `src/i18n/locales` fo
 
 Any static assets, like images, can be placed in the `public/` directory. Moreover, everything related to Decap CMS configuration resides in `public/admin`. Bootsrapping Decap CMS is done via `public/admin/index.html`, which additionally contains custom widget components (like the quote component) for the Decap markdown editor. The main Decap configuration can be adjusted in `public/admin/config.yml` where every type of content collection needs to be defined and the Git provider connection is set up. To start a local Decap server, set **local_backend: true**, run **npx decap-server** and go to `localhost:4321/admin/index.html`. All markdown or json entries created via Decap will be placed in their respective subfolders in `src/content/`. Images uploaded to Decap CMS are stored in `src/images`.
 
-> ⚠️ To sync Decap CMS content collections (`public/admin/config.yml`) with Astro's content collections (`src/content/config.ts`), both configs and their type definitions need to match ⚠️
+> ⚠️ To sync Decap CMS content collections (`public/admin/config.yml`) with Astro's content collections (`src/content.config.ts`), both configs and their type definitions need to match ⚠️
 
 ## 🧞 Commands
 

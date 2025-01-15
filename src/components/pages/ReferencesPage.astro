@@ -22,32 +22,30 @@ const references = (await getCollection("references"))
     <ul class="grid grid-cols-3 gap-6">
       {
         references.map((reference) => (
-          <>
-            <li class="max-w-sm overflow-hidden rounded shadow-lg hover:shadow-xl">
-              <a
-                href={getRelativeLocaleUrl(
-                  currentLocale,
-                  `referenzen/${reference.slug.split("/")[1]}`,
+          <li class="max-w-sm overflow-hidden rounded shadow-lg hover:shadow-xl">
+            <a
+              href={getRelativeLocaleUrl(
+                currentLocale,
+                `referenzen/${reference.id.split("/")[1]}`,
+              )}
+            >
+              <Image
+                class="max-h-40 w-full rounded-none object-cover"
+                src={dynamicImageImport[reference.data.titleImage]()}
+                alt={reference.data.title}
+                width={350}
+                height={200}
+              />
+              <div class="px-6 py-4">
+                {reference.data.industry && (
+                  <p class="mb-0 text-sm text-gray-600">
+                    {reference.data.industry}
+                  </p>
                 )}
-              >
-                <Image
-                  class="max-h-40 w-full rounded-none object-cover"
-                  src={dynamicImageImport[reference.data.titleImage]()}
-                  alt={reference.data.title}
-                  width={350}
-                  height={200}
-                />
-                <div class="px-6 py-4">
-                  {reference.data.industry && (
-                    <p class="mb-0 text-sm text-gray-600">
-                      {reference.data.industry}
-                    </p>
-                  )}
-                  <h2 class="mb-2 text-xl font-bold">{reference.data.title}</h2>
-                </div>
-              </a>
-            </li>
-          </>
+                <h2 class="mb-2 text-xl font-bold">{reference.data.title}</h2>
+              </div>
+            </a>
+          </li>
         ))
       }
     </ul>

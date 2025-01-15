@@ -29,12 +29,10 @@ const { jobs: jobTexts } = getLocalizedData({ currentLocale: language });
               )}
               class="flex w-full flex-row items-center gap-2 p-2"
             >
-              <>
-                <ArrowNext className="fill-blue-700" width="16" height="16" />
-                <h4 class="m-0 p-0 text-xl">
-                  {job.data.title} {jobTexts.details.titleSuffix}
-                </h4>
-              </>
+              <ArrowNext className="fill-blue-700" width="16" height="16" />
+              <h4 class="m-0 p-0 text-xl">
+                {job.data.title} {jobTexts.details.titleSuffix}
+              </h4>
             </a>
           </li>
         ))
