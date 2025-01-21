@@ -1,0 +1,37 @@
+---
+import { getCollection } from "astro:content";
+import ReferencesIndustryPage from "../../../components/pages/ReferencesIndustryPage.astro";
+import { getFilterOptions } from "../../../utils/data";
+
+export async function getStaticPaths() {
+  const references = (await getCollection("references"))
+    .filter((ref) => ref.id.includes("de/"))
+    .toSorted(
+      (a, b) => b.data.referenceDate.getTime() - a.data.referenceDate.getTime(),
+    );
+
+  const industryFilterOptions = getFilterOptions(references, "industry");
+
+  return [
+    ...industryFilterOptions.flatMap((industry) => {
+      const filteredReferences = references.filter(
+        (entry) => entry.data.industry.toLowerCase() === industry,
+      );
+      return {
+        params: { industry },
+        props: {
+          industryFilterOptions,
+          references: filteredReferences,
+        },
+      };
+    }),
+  ];
+}
+
+const { industryFilterOptions, references } = Astro.props;
+---
+
+<ReferencesIndustryPage
+  industryFilterOptions={industryFilterOptions}
+  references={references}
+/>

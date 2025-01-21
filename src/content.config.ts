@@ -22,7 +22,7 @@ const references = defineCollection({
     title: z.string(),
     referenceDate: z.coerce.date(),
     titleImage: z.string(),
-    industry: z.string().optional(),
+    industry: z.string(),
     ogTitle: z.string().optional(),
     ogDescription: z.string(),
     customerLogo: z.string(),

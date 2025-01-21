@@ -1,0 +1,33 @@
+---
+import { getRelativeLocaleUrl } from "astro:i18n";
+import { getCurrentLocale } from "../../i18n/utils";
+
+const currentLocale = getCurrentLocale(Astro.currentLocale);
+interface Props {
+  linkPath: string;
+  filterOptions: string[];
+  sectionHeadline?: string;
+}
+
+const { linkPath, filterOptions, sectionHeadline } = Astro.props;
+---
+
+{
+  sectionHeadline && (
+    <p class="mb-2 text-center text-xl uppercase">{sectionHeadline}</p>
+  )
+}
+<ul class="mb-16 flex justify-center gap-2">
+  {
+    filterOptions.map((option) => (
+      <li>
+        <a
+          class="rounded bg-blue-500 p-2 capitalize text-gray-50 hover:bg-blue-600 hover:text-gray-50"
+          href={getRelativeLocaleUrl(currentLocale, `${linkPath}/${option}`)}
+        >
+          {option}
+        </a>
+      </li>
+    ))
+  }
+</ul>
