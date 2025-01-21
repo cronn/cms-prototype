@@ -1,23 +1,22 @@
 ---
-import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { getRelativeLocaleUrl } from "astro:i18n";
 import { Image } from "astro:assets";
 import { getCurrentLocale, getLocalizedData } from "../../i18n/utils";
-import PageTitle from "../ui/PageTitle.astro";
 import { dynamicImageImport } from "../../utils/dynamicImageImport";
+import PageTitle from "../../components/ui/PageTitle.astro";
 import FilterLinkList from "../ui/FilterLinkList.astro";
-import { getFilterOptions } from "../../utils/data";
+import type { CollectionEntry } from "astro:content";
+
+interface Props {
+  industryFilterOptions: string[];
+  references: CollectionEntry<"references">[];
+}
 
 const currentLocale = getCurrentLocale(Astro.currentLocale);
 const { references: referenceTexts } = getLocalizedData({ currentLocale });
-const references = (await getCollection("references"))
-  .filter((reference) => reference.id.includes(`${currentLocale}/`))
-  .toSorted(
-    (a, b) => b.data.referenceDate.getTime() - a.data.referenceDate.getTime(),
-  );
 
-const industryFilterOptions = getFilterOptions(references, "industry");
+const { industryFilterOptions, references } = Astro.props;
 ---
 
 <BaseLayout title={referenceTexts.title} ogDescription={referenceTexts.title}>
