@@ -27,4 +27,4 @@ Beim testbau ist die Stabsstelle Risiko­management des gesamten testbaus angesi
 
 Dieses Modell sollte in einer modernen, webbasierten Plattform mit einer userfreundlichen Bedien­oberfläche umgesetzt werden. Das User Interface sollte die Dateneingabe und die inhaltliche Administration der Daten dabei vereinfachen und die Möglichkeiten erweitern. Gleichzeitig verfügte die testbau nicht über die IT-Infrastruktur für den Betrieb einer Webanwendung.
 
-Mit diesen Anforderungen startete der testbau eine Ausschreibung und entschied sich am Ende für cronn als Partner für die Entwicklung der Plattform.
+Mit diesen Anforderungen startete der testbau eine Ausschreibung und entschied sich am Ende für cronn als Partner für die Entwicklung der Plattform. ewqwwW:
