@@ -7,7 +7,7 @@ ogDescription: Erfahren Sie, wie cronn zusammen mit flitzefahrrad in kurzer Zeit
   eine personalisierte Fahrrad-App für ein großes Versicherungsunternehmen
   entwickelt hat.
 titleImage: /src/images/pexels-canacrtrk-20035207.jpg
-industry: Mobilität
+industry: Flitzeräder
 customerLogo: /src/images/logoipsum-300.svg
 customerTitle: flitzefahrrad
 projectAspects:
