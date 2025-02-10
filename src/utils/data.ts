@@ -16,11 +16,13 @@ export function getFilterOptions<T extends CollectionEntry<keyof DataEntryMap>>(
 ): string[] {
   return [
     ...new Set(
-      entries.map(({ data }): string => {
-        // TODO verify if type casting could be improved / avoided
-        const value = data[filterAttribute as keyof typeof data] as string;
-        return value.toLowerCase();
-      }),
+      entries
+        .map(({ data }): string => {
+          // TODO verify if type casting could be improved / avoided
+          const value = data[filterAttribute as keyof typeof data] as string;
+          return value.toLowerCase();
+        })
+        .toSorted((a, b) => a.localeCompare(b)),
     ),
   ];
 }
