@@ -1,5 +1,5 @@
 {
-  "workingHours": "partTime",
+  "workingHours": ["partTime"],
   "jobDate": "2024-08-02",
   "title": "Sales Manager/-in Softwarelösungen",
   "workingPlace": "Hamburg",

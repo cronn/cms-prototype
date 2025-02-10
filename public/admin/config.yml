@@ -231,7 +231,9 @@ collections:
             { label: "Teilzeit", value: "partTime" },
           ]
         default: ["Vollzeit"]
-        i18n: true
+        min: 1
+        multiple: true
+        i18n: duplicate
       - label: "Arbeitsort"
         name: "workingPlace"
         widget: "select"

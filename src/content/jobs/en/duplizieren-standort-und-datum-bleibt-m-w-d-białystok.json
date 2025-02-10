@@ -1,6 +1,6 @@
 {
   "title": "Duplizieren Standort und Datum bleibt",
-  "workingHours": "fullTime",
+  "workingHours": ["fullTime"],
   "workingPlace": "Białystok",
   "tasks": [
     {

@@ -43,10 +43,14 @@ const jobs = defineCollection({
     title: z.string(),
     // Transform string to Date object
     jobDate: z.coerce.date(),
-    workingHours: z.union([
-      z.literal(WORKING_HOURS.fullTime),
-      z.literal(WORKING_HOURS.partTime),
-    ]),
+    workingHours: z
+      .array(
+        z.union([
+          z.literal(WORKING_HOURS.fullTime),
+          z.literal(WORKING_HOURS.partTime),
+        ]),
+      )
+      .nonempty(),
     workingPlace: z.enum([
       WORKING_PLACES.bonn,
       WORKING_PLACES.hamburg,

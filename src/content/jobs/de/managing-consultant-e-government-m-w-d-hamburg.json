@@ -1,5 +1,5 @@
 {
-  "workingHours": "fullTime",
+  "workingHours": ["fullTime"],
   "title": "Managing Consultant e-Government",
   "jobDate": "2024-08-01",
   "workingPlace": "Hamburg",

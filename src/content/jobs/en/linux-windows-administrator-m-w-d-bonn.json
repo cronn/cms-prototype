@@ -1,5 +1,5 @@
 {
-  "workingHours": "fullTime",
+  "workingHours": ["fullTime"],
   "jobDate": "2024-10-02",
   "title": "Linux- / Windows- Administrator",
   "workingPlace": "Bonn",

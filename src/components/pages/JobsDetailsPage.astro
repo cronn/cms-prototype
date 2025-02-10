@@ -41,7 +41,11 @@ const {
         <h1 class="ml-8 text-white">{title} {jobTexts.details.titleSuffix}</h1>
         <p class="ml-8 text-white">
           {jobTexts.details.jobDateFrom}<FormattedDate date={jobDate} /> | {
-            jobTexts.details.workingHoursEnum[workingHours]
+            workingHours
+              .map(
+                (workingHour) => jobTexts.details.workingHoursEnum[workingHour],
+              )
+              .join(", ")
           }
         </p>
       </div>

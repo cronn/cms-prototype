@@ -1,6 +1,6 @@
 {
   "title": "Senior-Frontend-Developer",
-  "workingHours": "fullTime",
+  "workingHours": ["fullTime"],
   "workingPlace": "Hamburg",
   "tasks": [
     {
