@@ -38,12 +38,15 @@ const {
       />
       <div class="absolute inset-0 flex flex-col items-start justify-center">
         <p class="my-2 ml-8 text-white">{workingPlace}</p>
-        <h1 class="ml-8 text-white">{title} {jobTexts.details.titleSuffix}</h1>
+        <h1 class="ml-8 text-white">
+          {title}
+          {jobTexts.details.titleSuffix}
+        </h1>
         <p class="ml-8 text-white">
           {jobTexts.details.jobDateFrom}<FormattedDate date={jobDate} /> | {
             workingHours
               .map(
-                (workingHour) => jobTexts.details.workingHoursEnum[workingHour],
+                (workingHour) => jobTexts.details.workingHoursEnum[workingHour]
               )
               .join(", ")
           }

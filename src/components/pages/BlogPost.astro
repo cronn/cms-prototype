@@ -23,7 +23,7 @@ const authorsTitle = postAuthors.length > 1 ? blog.authors : blog.author;
   ogDescription={ogDescription}
   image={titleImage}
 >
-  <article class="prose mx-auto text-lg prose-blockquote:border-blue-400">
+  <article class="prose prose-blockquote:border-blue-400 mx-auto text-lg">
     {
       titleImage && (
         <Image
@@ -62,7 +62,7 @@ const authorsTitle = postAuthors.length > 1 ? blog.authors : blog.author;
                 class="h-14 w-14 rounded-full border border-2 border-blue-400 object-cover"
                 loading="eager"
               />
-              <p class="!m-0 p-0">{name}</p>
+              <p class="m-0! p-0">{name}</p>
             </figure>
           ))
         }

@@ -21,7 +21,9 @@ const {
 } = job.data;
 const currentLocale = getCurrentLocale(Astro.currentLocale);
 const { jobs: jobTexts } = getLocalizedData({ currentLocale });
-const employmentType = workingHours.map(workingHour => jobTexts.details.workingHoursLDEnum[workingHour]).join(", ") ;
+const employmentType = workingHours
+  .map((workingHour) => jobTexts.details.workingHoursLDEnum[workingHour])
+  .join(", ");
 const currentYear = new Date().getFullYear();
 const endOfYear = new Date(currentYear, 11, 31);
 

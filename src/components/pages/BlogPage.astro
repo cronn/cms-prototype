@@ -13,17 +13,17 @@ const posts = (await getCollection("blog"))
   .filter((post) => post.id.includes(`${currentLocale}/`))
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 const authors = await getEntries(
-  posts.map((post) => post.data.authors.map((author) => author)).flat(),
+  posts.map((post) => post.data.authors.map((author) => author)).flat()
 );
 
 function getAuthors(
   articleAuthors: {
     collection: "authors";
     id: string;
-  }[],
+  }[]
 ) {
   const authorList = articleAuthors.map(
-    (author) => authors.find((a) => a.id === author.id)?.data.name,
+    (author) => authors.find((a) => a.id === author.id)?.data.name
   );
   return authorList.join(", ");
 }

@@ -22,7 +22,7 @@ const { linkPath, filterOptions, sectionHeadline } = Astro.props;
     filterOptions.map((option) => (
       <li>
         <a
-          class="rounded bg-blue-500 p-2 capitalize text-gray-50 hover:bg-blue-600 hover:text-gray-50"
+          class="rounded-sm bg-blue-500 p-2 text-gray-50 capitalize hover:bg-blue-600 hover:text-gray-50"
           href={getRelativeLocaleUrl(currentLocale, `${linkPath}/${option}`)}
         >
           {option}

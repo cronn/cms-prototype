@@ -12,13 +12,13 @@ const jobs = (await getCollection("jobs"))
   .sort((a, b) => a.data.jobDate.valueOf() - b.data.jobDate.valueOf());
 
 const jobsBonn = jobs.filter(
-  (job) => job.data.workingPlace === WORKING_PLACES.bonn,
+  (job) => job.data.workingPlace === WORKING_PLACES.bonn
 );
 const jobsHamburg = jobs.filter(
-  (job) => job.data.workingPlace === WORKING_PLACES.hamburg,
+  (job) => job.data.workingPlace === WORKING_PLACES.hamburg
 );
 const jobsBialystok = jobs.filter(
-  (job) => job.data.workingPlace === WORKING_PLACES.bialystok,
+  (job) => job.data.workingPlace === WORKING_PLACES.bialystok
 );
 
 const { jobs: jobTexts, shared } = getLocalizedData({

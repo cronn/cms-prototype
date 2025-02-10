@@ -67,7 +67,7 @@ const normalizedPathname = pathname
       </ol>
     </div>
     <hr class="my-6" />
-    <div class="prose text-lg prose-blockquote:border-blue-400">
+    <div class="prose prose-blockquote:border-blue-400 text-lg">
       <Content />
     </div>
     {
@@ -76,7 +76,7 @@ const normalizedPathname = pathname
           <h3 class="mb-8 text-center">{solutions.relatedArticles}</h3>
           <ul class="grid grid-cols-3 grid-rows-subgrid gap-8">
             {relatedArticlesDetails?.map((article) => (
-              <li class="max-w-sm overflow-hidden rounded shadow-lg hover:shadow-xl">
+              <li class="max-w-sm overflow-hidden rounded-sm shadow-lg hover:shadow-xl">
                 <a
                   href={getRelativeLocaleUrl(
                     currentLocale,
