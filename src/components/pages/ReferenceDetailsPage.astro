@@ -17,6 +17,7 @@ const { reference } = Astro.props;
 
 const {
   title,
+  industry,
   ogTitle,
   titleImage,
   customerLogo,
@@ -47,7 +48,11 @@ const relatedReferencesDetails = await getEntries(relatedReferences ?? []);
         loading="eager"
       />
       <div class="absolute inset-0 flex items-center justify-start">
-        <h1 class="ml-4 bg-gray-950/30 p-2 text-white">{title}</h1>
+        <h1 class="ml-4 flex flex-col bg-gray-950/30 p-2 text-white">
+          <span class="text-xl">{referenceTexts.industryEnum[industry]}</span>{
+            title
+          }
+        </h1>
       </div>
     </div>
     <div class="grid-auto-rows grid gap-8 md:grid-cols-[1fr_300px] md:gap-16">
@@ -113,7 +118,7 @@ const relatedReferencesDetails = await getEntries(relatedReferences ?? []);
                   <a
                     href={getRelativeLocaleUrl(
                       currentLocale,
-                      `referenzen/${reference.id.split("/")[1]}`,
+                      `referenzen/${reference.id.split("/")[1]}`
                     )}
                   >
                     <Image
