@@ -51,6 +51,7 @@ const jobs = defineCollection({
     title: z.string(),
     // Transform string to Date object
     jobDate: z.coerce.date(),
+    applicationLink: z.string().optional(),
     workingHours: z
       .array(
         z.union([

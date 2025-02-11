@@ -232,6 +232,11 @@ collections:
         widget: "datetime"
         format: "YYYY-MM-DD"
         i18n: "duplicate"
+      - label: "Personio Link"
+        name: "applicationLink"
+        widget: "string"
+        i18n: "duplicate"
+        required: false
       - label: "Arbeitszeit"
         name: "workingHours"
         widget: "select"
