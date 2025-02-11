@@ -7,9 +7,10 @@ import { dynamicImageImport } from "../../utils/dynamicImageImport";
 import PageTitle from "../../components/ui/PageTitle.astro";
 import FilterLinkList from "../ui/FilterLinkList.astro";
 import type { CollectionEntry } from "astro:content";
+import type { TReferenceIndustry } from "../../types/data";
 
 interface Props {
-  industryFilterOptions: string[];
+  industryFilterOptions: TReferenceIndustry[];
   references: CollectionEntry<"references">[];
 }
 
@@ -47,7 +48,7 @@ const { industryFilterOptions, references } = Astro.props;
               <div class="px-6 py-4">
                 {reference.data.industry && (
                   <p class="mb-0 text-sm text-gray-600">
-                    {reference.data.industry}
+                    {referenceTexts.industryEnum[reference.data.industry]}
                   </p>
                 )}
                 <h2 class="mb-2 text-xl font-bold">{reference.data.title}</h2>

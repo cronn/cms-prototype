@@ -5,5 +5,14 @@
   "theProject": "The Project",
   "plusPoints": "Pluspoints",
   "otherProjects": "Other projects",
-  "backToOverview": "To the project overview"
+  "backToOverview": "To the project overview",
+  "industryEnum": {
+    "E-Government": "E-Government",
+    "Entertainment": "Entertainment",
+    "KI": "KI",
+    "Logistik": "Logistics",
+    "Dienstleistungen": "Services",
+    "Telekommunikation": "Telecommunication",
+    "Mobilität": "Mobility"
+  }
 }

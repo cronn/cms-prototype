@@ -1,6 +1,6 @@
 import { defineCollection, reference, z } from "astro:content";
 import { glob } from "astro/loaders";
-import { WORKING_HOURS, WORKING_PLACES } from "./constants";
+import { INDUSTRY_OPTIONS, WORKING_HOURS, WORKING_PLACES } from "./constants";
 
 const blog = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "./src/content/blog" }),
@@ -22,7 +22,15 @@ const references = defineCollection({
     title: z.string(),
     referenceDate: z.coerce.date(),
     titleImage: z.string(),
-    industry: z.string(),
+    industry: z.enum([
+      INDUSTRY_OPTIONS.eGovernment,
+      INDUSTRY_OPTIONS.entertainment,
+      INDUSTRY_OPTIONS.ki,
+      INDUSTRY_OPTIONS.logistics,
+      INDUSTRY_OPTIONS.services,
+      INDUSTRY_OPTIONS.telecommunication,
+      INDUSTRY_OPTIONS.mobility,
+    ]),
     ogTitle: z.string().optional(),
     ogDescription: z.string(),
     customerLogo: z.string(),

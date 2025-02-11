@@ -15,5 +15,15 @@ export const WORKING_HOURS = {
   partTime: "partTime",
 } as const;
 
+export const INDUSTRY_OPTIONS = {
+  eGovernment: "E-Government",
+  entertainment: "Entertainment",
+  ki: "KI",
+  logistics: "Logistik",
+  services: "Dienstleistungen",
+  telecommunication: "Telekommunikation",
+  mobility: "Mobilität",
+} as const;
+
 export const SITE_TITLE = "cms prototype";
 export const SITE_DESCRIPTION = "prototyping";

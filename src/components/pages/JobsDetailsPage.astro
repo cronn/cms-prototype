@@ -46,7 +46,7 @@ const {
           {jobTexts.details.jobDateFrom}<FormattedDate date={jobDate} /> | {
             workingHours
               .map(
-                (workingHour) => jobTexts.details.workingHoursEnum[workingHour]
+                (workingHour) => jobTexts.details.workingHoursEnum[workingHour],
               )
               .join(", ")
           }

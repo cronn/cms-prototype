@@ -5,7 +5,7 @@ slug: en/erste-referenz
 ogTitle: Blabla
 ogDescription: Erfahren Sie, wie cronn das supertolle erste Projekt umgesetzt hat.
 titleImage: /src/images/pexels-marinca-liviu-20064362.jpg
-industry: Entertainment
+industry: Logistik
 customerLogo: /src/images/logoipsum-331.svg
 customerTitle: Straßenbahnfahren
 projectAspects:

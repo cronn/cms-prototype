@@ -6,7 +6,7 @@ ogTitle: cronn GmbH - unsere success story mit eieiei
 ogDescription: "Lesen Sie, wie cronn für den Dienstleister eieiei den Prozess
   der Lieferketten- und Auftragsverwaltung vereinfacht hat.  "
 titleImage: /src/images/pexels-canacrtrk-20035207.jpg
-industry: Eier
+industry: Mobilität
 customerLogo: /src/images/g4705.png
 customerTitle: eieiei
 projectAspects:
@@ -23,9 +23,7 @@ plusPoints:
     specification: Stetige Wartung und Pflege der Software
   - title: Increased IT security
     specification: Hohe Sicherheitsstandards
-relatedReferences:
-  - de/erste-referenz
-  - de/flitzefahrrad
+relatedReferences: []
 ---
 Eggs without chick culling: this is what eieiei is committed to. As a service provider, eieiei offers a technical solution for sex determination in hatcheries. This means that the male eggs can be sorted out before hatching, ensuring no male chicks are killed. Only the female eggs hatch and grow into laying hens, which then lay unfertilized, fresh eggs. On supermarket shelves these eggs are labelled with the "No Chick Killing" seal, which can be guaranteed thanks to accurate supply chain verification. Consumers can check this for themselves via the eieiei website by scanning a code on the egg.
 

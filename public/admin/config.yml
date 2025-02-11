@@ -151,8 +151,18 @@ collections:
         i18n: true
       - label: "Branche"
         name: "industry"
-        widget: "string"
-        i18n: true
+        widget: "select"
+        options:
+          [
+            "E-Government",
+            "Entertainment",
+            "KI",
+            "Logistik",
+            "Dienstleistungen",
+            "Telekommunikation",
+            "Mobilität",
+          ]
+        i18n: "duplicate"
       - label: "Kundenlogo"
         name: "customerLogo"
         widget: "image"

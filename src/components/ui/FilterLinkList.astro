@@ -1,11 +1,13 @@
 ---
 import { getRelativeLocaleUrl } from "astro:i18n";
-import { getCurrentLocale } from "../../i18n/utils";
+import { getCurrentLocale, getLocalizedData } from "../../i18n/utils";
+import type { TReferenceIndustry } from "../../types/data";
 
 const currentLocale = getCurrentLocale(Astro.currentLocale);
+const { references: referencesTexts } = getLocalizedData({ currentLocale });
 interface Props {
   linkPath: string;
-  filterOptions: string[];
+  filterOptions: TReferenceIndustry[];
   sectionHeadline?: string;
 }
 
@@ -23,9 +25,14 @@ const { linkPath, filterOptions, sectionHeadline } = Astro.props;
       <li>
         <a
           class="rounded-sm bg-blue-500 p-2 text-gray-50 capitalize hover:bg-blue-600 hover:text-gray-50"
-          href={getRelativeLocaleUrl(currentLocale, `${linkPath}/${option}`)}
+          href={encodeURI(
+            getRelativeLocaleUrl(
+              currentLocale,
+              `${linkPath}/${encodeURIComponent(option.toLowerCase())}`,
+            ),
+          )}
         >
-          {option}
+          {referencesTexts.industryEnum[option]}
         </a>
       </li>
     ))
