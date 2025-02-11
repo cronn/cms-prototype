@@ -6,7 +6,7 @@ ogTitle: cronn GmbH - unsere success story mit eieiei
 ogDescription: "Lesen Sie, wie cronn für den Dienstleister eieiei den Prozess
   der Lieferketten- und Auftragsverwaltung vereinfacht hat.  "
 titleImage: /src/images/pexels-canacrtrk-20035207.jpg
-industry: Eier
+industry: Mobilität
 customerLogo: /src/images/g4705.png
 customerTitle: eieiei
 projectAspects:

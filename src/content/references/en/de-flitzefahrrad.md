@@ -6,7 +6,7 @@ ogTitle: cronn GmbH - unsere success story mit flitzefahrrad
 ogDescription: Read about how cronn realized a customized bike app for a large
   insurance company together with CyBike in a short time.
 titleImage: /src/images/pexels-canacrtrk-20035207.jpg
-industry: Flitzeräder
+industry: KI
 customerLogo: /src/images/logoipsum-300.svg
 customerTitle: flitzefahrrad
 projectAspects:

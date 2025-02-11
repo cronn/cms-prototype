@@ -1,5 +1,5 @@
 {
-  "workingHours": "fullTime",
+  "workingHours": ["fullTime"],
   "jobDate": "2024-08-02",
   "title": "Expert IT-Security",
   "workingPlace": "Bonn",

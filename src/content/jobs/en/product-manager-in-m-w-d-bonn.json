@@ -1,7 +1,7 @@
 {
   "jobDate": "2024-06-01",
   "title": "Product Manager/-in",
-  "workingHours": "fullTime",
+  "workingHours": ["fullTime"],
   "workingPlace": "Bonn",
   "tasks": [
     {

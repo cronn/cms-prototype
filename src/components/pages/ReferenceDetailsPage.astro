@@ -17,6 +17,7 @@ const { reference } = Astro.props;
 
 const {
   title,
+  industry,
   ogTitle,
   titleImage,
   customerLogo,
@@ -47,7 +48,11 @@ const relatedReferencesDetails = await getEntries(relatedReferences ?? []);
         loading="eager"
       />
       <div class="absolute inset-0 flex items-center justify-start">
-        <h1 class="ml-4 bg-gray-950/30 p-2 text-white">{title}</h1>
+        <h1 class="ml-4 flex flex-col bg-gray-950/30 p-2 text-white">
+          <span class="text-xl">{referenceTexts.industryEnum[industry]}</span>{
+            title
+          }
+        </h1>
       </div>
     </div>
     <div class="grid-auto-rows grid gap-8 md:grid-cols-[1fr_300px] md:gap-16">
@@ -71,7 +76,7 @@ const relatedReferencesDetails = await getEntries(relatedReferences ?? []);
         />
       </div>
       <div
-        class="prose col-span-1 col-start-1 row-start-4 border-blue-400 text-lg prose-blockquote:border-blue-400 md:row-span-4 md:row-start-2"
+        class="prose prose-blockquote:border-blue-400 col-span-1 col-start-1 row-start-4 border-blue-400 text-lg md:row-span-4 md:row-start-2"
       >
         <Content />
       </div>
@@ -109,7 +114,7 @@ const relatedReferencesDetails = await getEntries(relatedReferences ?? []);
             <h3 class="mb-8 text-center">{referenceTexts.otherProjects}</h3>
             <ul class="grid grid-cols-3 grid-rows-subgrid gap-8">
               {relatedReferencesDetails?.map((reference) => (
-                <li class="max-w-sm rounded shadow-lg hover:shadow-xl">
+                <li class="max-w-sm rounded-sm shadow-lg hover:shadow-xl">
                   <a
                     href={getRelativeLocaleUrl(
                       currentLocale,

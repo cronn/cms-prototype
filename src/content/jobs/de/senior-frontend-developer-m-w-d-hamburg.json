@@ -1,5 +1,5 @@
 {
-  "workingHours": "fullTime",
+  "workingHours": ["fullTime"],
   "title": "Senior-Frontend-Developer",
   "jobDate": "2024-08-25",
   "workingPlace": "Hamburg",

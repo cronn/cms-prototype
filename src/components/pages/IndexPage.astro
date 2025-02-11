@@ -1,13 +1,14 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { getCurrentLocale, getLocalizedData } from "../../i18n/utils";
+import PageTitle from "../ui/PageTitle.astro";
 
 const currentLocale = getCurrentLocale(Astro.currentLocale);
 const { index } = getLocalizedData({ currentLocale });
 ---
 
 <BaseLayout title={index.title} ogDescription={index.title}>
-  <h1>🧑‍🚀 {index.primaryHeading}</h1>
+  <PageTitle title={`🧑‍🚀 ${index.primaryHeading}`} />
   <p>
     {index.paragraphOne}
   </p>

@@ -15,10 +15,12 @@ export async function getStaticPaths() {
   return [
     ...industryFilterOptions.map((industry) => {
       const filteredReferences = references.filter(
-        (entry) => entry.data.industry.toLowerCase() === industry,
+        (entry) => entry.data.industry.toLowerCase() === industry.toLowerCase(),
       );
       return {
-        params: { industry },
+        params: {
+          industry: encodeURIComponent(industry.toLowerCase()),
+        },
         props: {
           industryFilterOptions,
           references: filteredReferences,

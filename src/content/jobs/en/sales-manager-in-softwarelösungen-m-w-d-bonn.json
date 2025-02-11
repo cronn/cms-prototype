@@ -1,6 +1,6 @@
 {
   "title": "Sales Manager/-in Softwarelösungen",
-  "workingHours": "partTime",
+  "workingHours": ["partTime"],
   "workingPlace": "Bonn",
   "tasks": [
     {

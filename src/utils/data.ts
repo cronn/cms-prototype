@@ -10,17 +10,16 @@ type StringKeys<T> = {
  * @param {string} filterAttribute - Attribute to be filtered by
  * @returns {string[Array]} Array of filter options
  */
-export function getFilterOptions<T extends CollectionEntry<keyof DataEntryMap>>(
-  entries: T[],
-  filterAttribute: StringKeys<T["data"]>,
-): string[] {
+
+export function getFilterOptions<
+  T extends CollectionEntry<keyof DataEntryMap>,
+  E extends StringKeys<T["data"]>,
+>(entries: T[], filterAttribute: E): T["data"][E][] {
   return [
-    ...new Set(
-      entries.map(({ data }): string => {
-        // TODO verify if type casting could be improved / avoided
-        const value = data[filterAttribute as keyof typeof data] as string;
-        return value.toLowerCase();
-      }),
-    ),
+    ...(new Set(
+      entries
+        .map(({ data }) => data[filterAttribute as keyof typeof data] as string)
+        .toSorted((a, b) => a.localeCompare(b)),
+    ) as unknown as T["data"][E][]),
   ];
 }

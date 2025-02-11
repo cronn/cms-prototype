@@ -151,8 +151,18 @@ collections:
         i18n: true
       - label: "Branche"
         name: "industry"
-        widget: "string"
-        i18n: true
+        widget: "select"
+        options:
+          [
+            "E-Government",
+            "Entertainment",
+            "KI",
+            "Logistik",
+            "Dienstleistungen",
+            "Telekommunikation",
+            "Mobilität",
+          ]
+        i18n: "duplicate"
       - label: "Kundenlogo"
         name: "customerLogo"
         widget: "image"
@@ -222,6 +232,11 @@ collections:
         widget: "datetime"
         format: "YYYY-MM-DD"
         i18n: "duplicate"
+      - label: "Personio Link"
+        name: "applicationLink"
+        widget: "string"
+        i18n: "duplicate"
+        required: false
       - label: "Arbeitszeit"
         name: "workingHours"
         widget: "select"
@@ -231,7 +246,9 @@ collections:
             { label: "Teilzeit", value: "partTime" },
           ]
         default: ["Vollzeit"]
-        i18n: true
+        min: 1
+        multiple: true
+        i18n: duplicate
       - label: "Arbeitsort"
         name: "workingPlace"
         widget: "select"

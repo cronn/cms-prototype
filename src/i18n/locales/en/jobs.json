@@ -25,6 +25,9 @@
     "tasks": "What tasks await you",
     "qualifications": "If you meet the following requirements",
     "benefits": "our benefits",
-    "benefitsTitle": "Work at company"
+    "benefitsTitle": "Work at company",
+    "applyNow": "Apply now",
+    "applyInfoOne": "Does this job offer suit you?",
+    "applyInfoTwo": "Then we look forward to receiving your application through our application form!"
   }
 }

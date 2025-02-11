@@ -21,7 +21,7 @@ const articles = (await getCollection("solutions"))
     <ul class="w-full">
       {
         articles.map((article) => (
-          <li class="mb-8 overflow-hidden rounded shadow-lg hover:shadow-xl">
+          <li class="mb-8 overflow-hidden rounded-sm shadow-lg hover:shadow-xl">
             <a
               href={`loesungen/${article.id.split("/")[1]}`}
               class="grid grid-cols-2"
