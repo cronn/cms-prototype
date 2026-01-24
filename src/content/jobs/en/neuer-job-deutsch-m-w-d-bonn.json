@@ -1,0 +1,48 @@
+{
+  "workingHours": "fullTime",
+  "title": "Neuer Job Deutsch",
+  "jobDate": "2024-10-14",
+  "workingPlace": "Bonn",
+  "tasks": [
+    {
+      "task": "Dies"
+    },
+    {
+      "task": "Das"
+    },
+    {
+      "task": "Jenes"
+    }
+  ],
+  "qualifications": [
+    {
+      "qualification": "Wer"
+    },
+    {
+      "qualification": "Wie"
+    },
+    {
+      "qualification": "Was"
+    },
+    {
+      "qualification": "Warum"
+    }
+  ],
+  "benefits": [
+    {
+      "benefit": "Benefit 1"
+    },
+    {
+      "benefit": "Benefit 2"
+    },
+    {
+      "benefit": "Benefit 3"
+    },
+    {
+      "benefit": "Benefit 4"
+    },
+    {
+      "benefit": "Benefit 5"
+    }
+  ]
+}
